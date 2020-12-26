@@ -1,5 +1,3 @@
-> Rails might not be your best option! Learn more about the [Beyond Rails](https://tutorials.yax.com/articles/beyond-rails/index.html) tutorial series I'm writing.
-
 How to install Ruby on Rails on a Mac. With Rails 6.1 on macOS Big Sur or Catalina. Up-to-date and kitchen-tested instructions, with troubleshooting tips, from the author of the book, _[Learn Ruby on Rails](https://learn-rails.com/)_.
 
 This article will help you set up a development environment for Ruby on Rails, whether you are an experienced developer setting up a new computer or only a Rails beginner. This guide can be used with either macOS Big Sur or Catalina (instructions are the same).

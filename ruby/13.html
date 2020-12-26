@@ -47,67 +47,7 @@
           <div class="column is-9">
 
             <div id="doc-content" class="content">
-<h2>Install Ruby with Homebrew</h2>
-<p>If you are a casual user and won't be using Ruby frequently, you can use Homebrew to install Ruby.</p>
-<p>Most developers should install a software version manager before installing Ruby. It will help you manage multiple versions of Ruby. You will need to install newer Ruby versions as they are released. And you will need a version manager if you maintain older Rails applications. For a software version manager, I recommend <a href="https://asdf-vm.com/">asdf</a>. Asdf can manage versions of many languages, including Ruby and Node. Instructions for asdf are in the section, <a href="/install-rails-mac/4.html">Asdf Version Manager</a>.</p>
-<p>Here are instructions for installing Ruby with Homebrew, as well as Node and Yarn (needed for Rails).</p>
-<p>Complete the section, <a href="/install-rails-mac/2.html">Install Homebrew</a>, before you start.</p>
-<h3>Mac system Ruby</h3>
-<p>MacOS comes with a &quot;system Ruby&quot; pre-installed. MacOS Big Sur or Catalina includes Ruby 2.6.3 which is not the newest version. Do not use the system Ruby (see <a href="https://robots.thoughtbot.com/psa-do-not-use-system-ruby">an article</a> for why). You can see the system Ruby with <code>which ruby</code> and <code>ruby -v</code>.</p>
-<p><img src="/assets/images/install-rails-mac/macos-system-ruby.png" alt="" /></p>
-<p>Leave the system Ruby in place and install the newest Ruby version using Homebrew.</p>
-<h2>Install Ruby</h2>
-<p>Use Homebrew to install the newest Ruby version.</p>
-<pre><code class="language-bash">$ brew install ruby
-</code></pre>
-<p>You’ll see diagnostic messages and progress updates.</p>
-<h3>Configure the .zshrc file</h3>
-<p>Edit the <code>.zshrc</code> file in your text editor. If you haven’t installed a text editor, use the macOS TextEdit application. Here’s a shortcut to open the file in TextEdit from the Terminal:</p>
-<pre><code class="language-bash">$ open -e .zshrc
-</code></pre>
-<p>Set the PATH environment variable.</p>
-<pre><code class="language-bash">### ~/.zshrc~
-if [ -d &quot;/usr/local/opt/ruby/bin&quot; ]; then
-  export PATH=/usr/local/opt/ruby/bin:$PATH
-  export PATH=`gem environment gemdir`/bin:$PATH
-fi
-</code></pre>
-<p>This sets the Homebrew-installed Ruby to a higher priority than the system Ruby and adds the directory used for Ruby gems.</p>
-<p>Save the file.</p>
-<p>🚩 Close and reopen the Terminal window for the changes to the <code>.zshrc</code> file to be recognized.</p>
-<p>Verify that the newest version of Ruby is installed with <code>ruby -v</code>.</p>
-<p><img src="/assets/images/install-rails-mac/verify-ruby-install.png" alt="" /></p>
-<p>If you see Ruby version 2.6.3, it is the system Ruby. Try closing and re-opening the terminal window.</p>
-<h2>Install Node and Yarn</h2>
-<p>Node and Yarn manage the JavaScript used by a Rails application. Unless you create backend-only (API) Rails applications, there will always be a little (and sometimes too much) JavaScript in your Rails application.</p>
-<h3>Install Node</h3>
-<p>You’ll need to install Node, the server version of JavaScript, before you develop any Rails applications. Node must be installed on your computer to run JavaScript in the local development environment.</p>
-<p>Early versions of Rails only required the Ruby language for development. More recently (after Rails 5.1), Rails uses Node to run the JavaScript build tool, Webpack, to bundle together any JavaScript files used in an application. It’s difficult to develop fullstack Rails applications without installing Node.</p>
-<p>It’s easy to install Node with Homebrew. Alternatively, you can download and install Node directly from the <a href="https://nodejs.org/">nodejs.org</a> website. Or you can <a href="https://github.com/nvm-sh/nvm">install NVM</a>, the Node version manager, and use NVM to install Node. Both alternatives require changes to the <code>.zshrc</code> file, so it’s easier to install Node with Homebrew.</p>
-<p>Use Homebrew to install Node:</p>
-<pre><code class="language-bash">$ brew install node
-</code></pre>
-<p>To verify that Node is installed:</p>
-<pre><code class="language-bash">
-$ node --version
-v15.4.0
-</code></pre>
-<p>You should see <code>v15.4.0</code> or newer.</p>
-<p><img src="/assets/images/install-rails-mac/brew-install-node.png" alt="" /></p>
-<h3>Install Yarn</h3>
-<p>Yarn is a package manager for JavaScript. It’s similar to the better-known NPM (Node Package Manager). It’s used by Rails to manage JavaScript dependencies.</p>
-<p>Use Homebrew to install Yarn:</p>
-<pre><code class="language-bash">$ brew install yarn
-</code></pre>
-<p>To verify that Yarn is installed:</p>
-<pre><code class="language-bash">
-$ yarn --version
-v1.22.10
-</code></pre>
-<p>You should see <code>v1.22.10</code> or newer.</p>
-<p><img src="/assets/images/install-rails-mac/brew-install-yarn.png" alt="" /></p>
-<p>The JavaScript build tools are now installed and ready.</p>
-<p>Next, you can optimize the Ruby development environment by updating gems. See the <a href="/install-rails-mac/7.html">Update gems</a> section.</p>
+              <yax-markdown theme="okaidia" mdsrc=""></yax-markdown>
             </div>
 
             <yax-tutorial-paginate></yax-tutorial-paginate>

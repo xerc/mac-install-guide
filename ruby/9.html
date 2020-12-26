@@ -47,65 +47,7 @@
           <div class="column is-9">
 
             <div id="doc-content" class="content">
-<h2>Troubleshooting</h2>
-<p>Here is help if you’ve encountered issues installing or running Ruby on Rails.</p>
-<h3>asdf &quot;No version set for command&quot;</h3>
-<p>If you see &quot;No version set for command&quot; like this:</p>
-<pre><code class="language-bash">$ node -v
-No version set for command node
-Consider adding one of the following versions in your config file at
-nodejs 15.4.0
-</code></pre>
-<p>You need to specify a default version of the language in your home <code>~/.tool-versions</code> file.</p>
-<p>You can set the <code>~/.tool-versions</code> file with a command:</p>
-<pre><code class="language-bash">$ asdf global nodejs 15.4.0
-$ asdf global ruby 2.7.2
-</code></pre>
-<p>Your <code>~/.tool-versions</code> file will look like this:</p>
-<pre><code class="language-bash">nodejs 15.4.0
-ruby 2.7.2
-</code></pre>
-<h3>Rails is not currently installed (Chruby)</h3>
-<p>If you try <code>rails new</code> and see the error:</p>
-<pre><code class="language-bash">$ rails new myapp
-Rails is not currently installed on this system...
-</code></pre>
-<p>You may be running the system Ruby in your terminal, instead of the version you installed. Try closing and reopening your terminal or switching Ruby versions with Chruby.</p>
-<pre><code class="language-bash">$ ruby -v
-ruby 2.6.3 ...
-$ chruby
-* ruby-2.7.2
-$ chruby ruby-2.7.2
-$ ruby -v
-ruby 2.7.2 ...
-</code></pre>
-<h3>Gem pristine warning</h3>
-<p>If you get a warning, <code>Ignoring ... because its extensions are not built. Try: gem pristine ...</code>:</p>
-<p><img src="/assets/images/install-rails-mac/gem-pristine-error.png" alt="" /></p>
-<p>Close and re-open the terminal window to start a new terminal session and try again.</p>
-<h3>Node or Yarn not installed</h3>
-<p>If you tried <code>rails new</code> and got the error:</p>
-<pre><code class="language-bash">$ rails new myapp
-sh: node: command not found
-sh: nodejs: command not found
-Node.js not installed. Please download and install Node.js https://nodejs.org/en/download/
-</code></pre>
-<p>or the error:</p>
-<pre><code class="language-bash">Yarn not installed.
-</code></pre>
-<p>See the section “Install Node and Yarn.”</p>
-<h3>Conflicting Bundler Versions</h3>
-<p>If you install a version of Bundler that is newer than the default installed with Ruby, you will get a message <code>Warning: the running version of Bundler (2.1.2) is older than the version that created the lockfile (2.1.4)</code> when you run a Rails command. You can avoid the warning by prepending <code>bundle exec</code>, for example <code>bundle exec rails -T</code>. It's not possible to remove a default gem with <code>gem uninstall bundler</code> so it's advisable not to install a newer version of Bundler unless absolutely necessary.</p>
-<h3>Problems with &quot;Gem::RemoteFetcher::FetchError: SSL_connect&quot;</h3>
-<p>Ruby and RubyGems (starting with Ruby 1.9.3p194 and RubyGems 1.8.23) require verification of server SSL certificates when Ruby makes an Internet connection via https. If you run <code>rails new</code> and get an error <code>Gem::RemoteFetcher::FetchError: SSL_connect returned=1 errno=0 state=SSLv3 read server certificate</code> see this article suggesting solutions: <a href="http://railsapps.github.io/openssl-certificate-verify-failed.html">OpenSSL errors and Rails</a>.</p>
-<h3>Problems with &quot;Certificate Verify Failed&quot;</h3>
-<p>Are you getting an error <code>OpenSSL certificate verify failed</code> when you try to generate a new Rails app from an application template? See this article suggesting solutions: <a href="http://railsapps.github.io/openssl-certificate-verify-failed.html">OpenSSL errors and Rails</a>.</p>
-<h3>Installing in a Second Account</h3>
-<p>If you've created a second user account on your Mac, and the first user has already installed Homebrew, the first user may have to change permissions for the <code>/usr/local/bin</code> and <code>/usr/local/Cellar</code> folders:</p>
-<pre><code class="language-bash">$ sudo chmod g+w /usr/local/bin
-$ sudo chmod g+w /usr/local/Cellar
-</code></pre>
-<p>The second user account should be given admin privileges using the System Preferences &quot;Users and Groups&quot; setting.</p>
+              <yax-markdown theme="okaidia" mdsrc=""></yax-markdown>
             </div>
 
             <yax-tutorial-paginate></yax-tutorial-paginate>

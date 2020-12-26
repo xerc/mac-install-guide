@@ -46,50 +46,9 @@
 
           <div class="column is-9">
 
-            <div id="doc-content" class="content">
-<h2>Configure Git</h2>
-<p><a href="http://git-scm.com/">Git</a> is automatically installed as part of the Xcode Command Line Tools. It is essential software for save-as-you-go control of the code you write.</p>
-<p>Before installing Ruby on Rails, you should configure Git. Using <a href="https://github.com/">GitHub</a> or a similar service, developers collaborate with others and deploy applications for hosting. As a Rails developer, you'll use Git with a GitHub account for remote backup and collaboration.</p>
-<p>Before you configure Git, you should <a href="https://help.github.com/articles/signing-up-for-a-new-github-account/">create an account on GitHub</a> (it's free). It is important to use the same email address for GitHub and your Git configuration.</p>
-<p>Check that Git is installed:</p>
-<pre><code class="language-bash">$ git version
-</code></pre>
-<p>You should see git version 2.24.3 (or newer).</p>
-<p>Configure Git if you haven't used it before. First, list the current settings with the git config -l --global command.</p>
-<pre><code class="language-bash">$ git config -l --global
-fatal: unable to read config file '/Users/.../.gitconfig': No such file or directory
-</code></pre>
-<p>Then set your name and email address (use your real name and the same email address as your GitHub account). Don't just copy and paste the code you see here, use your own name and email.</p>
-<pre><code class="language-bash">$ git config --global user.name &quot;Your Real Name&quot;
-$ git config --global user.email me@example.com
-</code></pre>
-<p>Check your Git configuration:</p>
-<pre><code class="language-bash">$ git config -l --global
-user.name=Your Real Name
-user.email=me@example.com
-</code></pre>
-<p><img src="/assets/images/install-rails-mac/configure-git.png" alt="" /></p>
-<h3>Set up password-less login</h3>
-<p>After you create an account on GitHub, <a href="https://help.github.com/articles/connecting-to-github-with-ssh/">set up an SSH key</a> so you don't have to enter a username and password every time you connect to GitHub from the Terminal.</p>
-<pre><code class="language-bash">$ ssh-keygen -t rsa -C &quot;me@example.com&quot;
-</code></pre>
-<p>The <code>ssh-keygen</code> command creates an encrypted key. Use a shortcut to copy the encrypted key to your macOS clipboard:</p>
-<pre><code class="language-bash">$ pbcopy &lt; ~/.ssh/id_rsa.pub
-</code></pre>
-<p>Or you can display the encrypted key with the <code>cat ~/.ssh/id_rsa.pub</code> command and copy and paste it.</p>
-<p>Copy the encrypted key from the Terminal and <a href="https://github.com/settings/ssh">paste it here</a>.</p>
-<p>Verify the SSH key is configured correctly:</p>
-<pre><code class="language-bash">$ ssh -T git@github.com
-The authenticity of host 'github.com (52.74.223.119)' can't be established.
-RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
-Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
-</code></pre>
-<p>After answering &quot;yes&quot; to continue, you should see:</p>
-<pre><code class="language-bash">Warning: Permanently added 'github.com,52.74.223.119' (RSA) to the list of known hosts.
-Hi (name)! You've successfully authenticated, but GitHub does not provide shell access.
-</code></pre>
-<p>Now you'll be ready to use Git when you need it.</p>
-            </div>
+           <div id="doc-content" class="content">
+             <yax-markdown theme="okaidia" mdsrc=""></yax-markdown>
+           </div>
 
             <yax-tutorial-paginate></yax-tutorial-paginate>
           </div>

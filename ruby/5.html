@@ -46,41 +46,9 @@
 
           <div class="column is-9">
 
-            <div id="doc-content" class="content">
-<h2>Install Ruby</h2>
-<p>Here are instructions for installing Ruby using asdf, the software version manager. First, be sure you've completed the section, <a href="/install-rails-mac/4.html">Asdf Version Manager</a>.</p>
-<h3>Mac system Ruby</h3>
-<p>MacOS comes with a &quot;system Ruby&quot; pre-installed. MacOS Big Sur and Catalina include Ruby 2.6.3 which is not the newest version. Do not use the system Ruby (see <a href="https://robots.thoughtbot.com/psa-do-not-use-system-ruby">an article</a> for why). You can see the system Ruby with <code>which ruby</code> and <code>ruby -v</code>.</p>
-<p><img src="/assets/images/install-rails-mac/macos-system-ruby.png" alt="" /></p>
-<p>Leave the system Ruby in place and use the software version manager to install the newest Ruby version.</p>
-<h3>Install Ruby with asdf</h3>
-<p>Check online for the current <a href="http://www.ruby-lang.org/en/downloads/">recommended version of Ruby</a>.</p>
-<p>When this was written, Ruby 2.7.2 was the newest version. Ruby 3.0.0 was due to be released on Dec 25, 2020.</p>
-<p>First, install the asdf plugin for Ruby:</p>
-<pre><code class="language-bash">$ asdf plugin add ruby
-</code></pre>
-<p>See all the versions of Ruby that are available:</p>
-<pre><code class="language-bash">$ asdf list all ruby
-</code></pre>
-<p>Install the latest version of Ruby:</p>
-<pre><code class="language-bash">$ asdf install ruby latest
-</code></pre>
-<p>You’ll see diagnostic messages and progress updates. Installation may take thirty minutes or more.</p>
-<p>You need to specify a default version of Ruby in your home <code>~/.tool-versions</code> file. You can set the <code>~/.tool-versions</code> file with a command:</p>
-<pre><code class="language-bash">$ asdf global ruby 2.7.2
-</code></pre>
-<p>🚩 After installation, close and re-open the terminal window.</p>
-<h3>Verify installation of Ruby</h3>
-<p>Verify that the newest version of Ruby is installed with <code>ruby -v</code>.</p>
-<p><img src="/assets/images/install-rails-mac/verify-ruby-install.png" alt="" /></p>
-<p>If you see Ruby version 2.6.3, it is the system Ruby and you likely forgot to close and re-open the terminal window.</p>
-<p>If you see <code>No version set for command ruby</code>, you need to specify a default version of Ruby in your asdf <code>~/.tool-versions</code> file.</p>
-<p>For example, create a <code>~/.tool-versions</code> file like this:</p>
-<pre><code class="language-bash">ruby 2.7.2
-</code></pre>
-<p>The <a href="/install-rails-mac/19.html">Tips</a> section explains where Ruby versions are installed and how to remove them.</p>
-<p>Next, you can optimize the Ruby development environment by updating gems.</p>
-            </div>
+           <div id="doc-content" class="content">
+             <yax-markdown theme="okaidia" mdsrc=""></yax-markdown>
+           </div>
 
             <yax-tutorial-paginate></yax-tutorial-paginate>
           </div>
