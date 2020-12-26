@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Databases for Ruby on Rails</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script>
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.13.1";
+      analytics.load("35vwh0md9c");
+      analytics.page();
+      }}();
+    </script>
+    <meta name="description" content="Databases for Ruby on Rails. From the author of the book, Learn Ruby on Rails." />
+    <meta property="og:title" content="Databases for Ruby on Rails" />
+    <meta property="og:description" content="Databases for Ruby on Rails. From the author of the book, Learn Ruby on Rails." />
+    <meta property="og:image" content="/images/icons/rails.png">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:url" content="https://learn-rails.com/install-rails-mac/11.html" />
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="/assets/styles/articles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script type="module" src="https://assets.yax.com/scripts/yax-tags-library.js"></script>
+    <script type="module" src="/assets/scripts/learnrails-navbar.js"></script>
+    <script type="module" src="/assets/scripts/learnrails-ad.js"></script>
+    <script type="module" src="/assets/scripts/learnrails-footer.js"></script>
+  </head>
+
+  <body>
+    <header style="min-height: 64px;">
+      <learnrails-navbar></learnrails-navbar>
+    </header>
+
+    <div style="min-height: 180px;">
+      <yax-tutorial-hero></yax-tutorial-hero>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-3 is-hidden-mobile">
+            <learnrails-ad></learnrails-ad>
+            <yax-tutorial-toc></yax-tutorial-toc>
+          </div>
+
+          <div class="column is-9">
+
+            <div id="doc-content" class="content">
+<h2>Databases for Rails</h2>
+<p>Rails uses the <a href="http://www.sqlite.org/">SQLite</a> database by default. MacOS come with SQLite pre-installed and there's nothing to configure.</p>
+<p>Though SQLite is adequate for development (and even some production applications), a new Rails application can be configured for other databases. The command <code>rails new myapp --database=</code> will show you a list of supported databases.</p>
+<pre><code class="language-bash">$ new myapp --database=
+Invalid value for --database option. Supported preconfigurations are:
+mysql, postgresql, sqlite3, oracle, sqlserver, jdbcmysql, jdbcsqlite3,
+jdbcpostgresql, jdbc.
+</code></pre>
+<h3>PostgreSQL</h3>
+<p>Use the easy-to-install macOS <a href="http://postgresapp.com/">Postgres.app</a> if you'd like to use PostgreSQL.</p>
+<p>To create a new Rails application to use <a href="http://www.postgresql.org/">PostgreSQL</a>:</p>
+<pre><code class="language-bash">$ rails new myapp --database=postgresql
+</code></pre>
+<p>The <code>--database=postgresql</code> parameter will add the pg database adapter gem to the Gemfile and create a suitable <code>config/database.yml</code> file.</p>
+            </div>
+
+            <yax-tutorial-paginate></yax-tutorial-paginate>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <learnrails-footer></learnrails-footer>
+    </footer>
+  </body>
+</html>

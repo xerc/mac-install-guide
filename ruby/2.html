@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Install Homebrew</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script>
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.13.1";
+      analytics.load("35vwh0md9c");
+      analytics.page();
+      }}();
+    </script>
+    <meta name="description" content="How to install Homebrew on a Mac. From the author of the book, Learn Ruby on Rails." />
+    <meta property="og:title" content="Install Homebrew" />
+    <meta property="og:description" content="How to install Homebrew on a Mac. From the author of the book, Learn Ruby on Rails." />
+    <meta property="og:image" content="/images/icons/rails.png">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:url" content="https://learn-rails.com/install-rails-mac/2.html" />
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="/assets/styles/articles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script type="module" src="https://assets.yax.com/scripts/yax-tags-library.js"></script>
+    <script type="module" src="/assets/scripts/learnrails-navbar.js"></script>
+    <script type="module" src="/assets/scripts/learnrails-ad.js"></script>
+    <script type="module" src="/assets/scripts/learnrails-footer.js"></script>
+  </head>
+
+  <body>
+    <header style="min-height: 64px;">
+      <learnrails-navbar></learnrails-navbar>
+    </header>
+
+    <div style="min-height: 180px;">
+      <yax-tutorial-hero></yax-tutorial-hero>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-3 is-hidden-mobile">
+            <learnrails-ad></learnrails-ad>
+            <yax-tutorial-toc></yax-tutorial-toc>
+          </div>
+
+          <div class="column is-9">
+
+            <div id="doc-content" class="content">
+<h2>Install Homebrew</h2>
+<p>Developers use the <a href="https://brew.sh/">Homebrew</a> utility to install various Unix software packages. If you haven't already installed Xcode Command Line Tools, Homebrew will install it.</p>
+<p>Tip: If you did not use a password to log in to your Mac (that is, if your password is blank), you cannot install Homebrew.</p>
+<p>Check if Homebrew is installed:</p>
+<pre><code class="language-bash">$ brew
+</code></pre>
+<p>Homebrew is not installed if you see:</p>
+<pre><code class="language-bash">zsh: command not found: brew
+</code></pre>
+<p>Install Homebrew:</p>
+<pre><code class="language-bash">$ /bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;
+</code></pre>
+<p>You'll see a list of files and folders that Homebrew will install. If you haven't already installed XCode CommandLine Tools, you'll see a message that &quot;The XCode Command Line Tools will be installed.&quot; Press return to continue when prompted by the Homebrew installation script. It takes five to ten minutes to download and install the Command Line Tools.</p>
+<p><img src="/assets/images/install-rails-mac/install-homebrew.png" alt="" /></p>
+<p>The Homebrew installation script will ask you to enter your Mac user password.</p>
+<pre><code class="language-bash">Password:🔑
+</code></pre>
+<p>You won't see the characters as you type. Press enter when you are done.</p>
+<p><img src="/assets/images/install-rails-mac/homebrew-enter-password.png" alt="" /></p>
+<p>Homebrew installation takes many minutes (you’ll see diagnostic and progress messages).</p>
+<p>After you've installed Homebrew, check that Homebrew is installed properly.</p>
+<pre><code class="language-bash">$ brew doctor
+</code></pre>
+<p>You should see:</p>
+<pre><code class="language-bash">Your system is ready to brew.
+</code></pre>
+<p><img src="/assets/images/install-rails-mac/brew-doctor.png" alt="" /></p>
+<h3>Verify Command Line Tools</h3>
+<p>Verify that you've successfully installed Xcode Command Line Tools.</p>
+<pre><code class="language-bash">$ xcode-select -p
+</code></pre>
+<p><img src="/assets/images/install-rails-mac/verify-command-line-tools.png" alt="" /></p>
+<p>You should see:</p>
+<pre><code class="language-bash">
+/Library/Developer/CommandLineTools
+</code></pre>
+<p>Just to be certain, verify that the Command Line Tools executables are available:</p>
+<pre><code class="language-bash">$ /usr/sbin/pkgutil --packages | grep CL
+</code></pre>
+<p>You should see:</p>
+<pre><code class="language-bash">com.apple.pkg.CLTools_Executables
+</code></pre>
+<p>Also try:</p>
+<pre><code class="language-bash">$ /usr/sbin/pkgutil --pkg-info com.apple.pkg.CLTools_Executables
+</code></pre>
+<p>You should see:</p>
+<pre><code class="language-bash">package-id: com.apple.pkg.CLTools_Executables
+</code></pre>
+<p>If the Command Line Tools executables are available, you'll have no problem installing Ruby and compiling gems that require native extensions.</p>
+<p>Next we'll configure Git, an essential tool for any developer.</p>
+            </div>
+
+            <yax-tutorial-paginate></yax-tutorial-paginate>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <learnrails-footer></learnrails-footer>
+    </footer>
+  </body>
+</html>

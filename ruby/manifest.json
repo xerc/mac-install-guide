@@ -1,0 +1,32 @@
+{
+  "title": "Install Ruby on Rails 6.1 · macOS Big Sur or Catalina",
+  "pubdate": "2020-12-20",
+  "pagination": "multipage",
+  "subscribers": "free",
+  "audience": "developer",
+  "level": "all",
+  "topic": "Ruby on Rails",
+  "subtopic": "Installation",
+  "pages": [
+    {"title": "Update macOS", "url": "/install-rails-mac/index.html"},
+    {"title": "Xcode Command Line Tools", "url": "/install-rails-mac/1.html"},
+    {"title": "Install Homebrew", "url": "/install-rails-mac/2.html"},
+    {"title": "Configure Git", "url": "/install-rails-mac/3.html"},
+    {"title": "Asdf Version Manager", "url": "/install-rails-mac/4.html"},
+    {"title": "Install Node and Yarn", "url": "/install-rails-mac/5.html"},
+    {"title": "Install Ruby", "url": "/install-rails-mac/6.html"},
+    {"title": "Update Gems", "url": "/install-rails-mac/7.html"},
+    {"title": "Install Rails", "url": "/install-rails-mac/8.html"},
+    {"title": "Rails New", "url": "/install-rails-mac/9.html"},
+    {"title": "Tips: Minimal Rails", "url": "/install-rails-mac/10.html"},
+    {"title": "Tips: Databases", "url": "/install-rails-mac/11.html"},
+    {"title": "Tips: Deployment", "url": "/install-rails-mac/12.html"},
+    {"title": "Tips: Security", "url": "/install-rails-mac/13.html"},
+    {"title": "Tips: Removing Ruby", "url": "/install-rails-mac/14.html"},
+    {"title": "Troubleshooting", "url": "/install-rails-mac/15.html"},
+    {"title": "Where to Get Help", "url": "/install-rails-mac/16.html"},
+    {"title": "Extra: First steps for beginners", "url": "/install-rails-mac/17.html"},
+    {"title": "Extra: Chruby Version Manager", "url": "/install-rails-mac/18.html"},
+    {"title": "Extra: Install Ruby with Homebrew", "url": "/install-rails-mac/19.html"}
+  ]
+}

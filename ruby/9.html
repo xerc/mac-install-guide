@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rails New · Generate a Minimal Rails Application</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script>
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.13.1";
+      analytics.load("35vwh0md9c");
+      analytics.page();
+      }}();
+    </script>
+    <meta name="description" content="How to generate a minimal Rails application on a Mac. From the author of the book, Learn Ruby on Rails." />
+    <meta property="og:title" content="Rails New · Generate a Minimal Rails Application" />
+    <meta property="og:description" content="How to generate a minimal Rails application on a Mac. From the author of the book, Learn Ruby on Rails." />
+    <meta property="og:image" content="/images/icons/rails.png">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:url" content="https://learn-rails.com/install-rails-mac/9.html" />
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="/assets/styles/articles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script type="module" src="https://assets.yax.com/scripts/yax-tags-library.js"></script>
+    <script type="module" src="/assets/scripts/learnrails-navbar.js"></script>
+    <script type="module" src="/assets/scripts/learnrails-ad.js"></script>
+    <script type="module" src="/assets/scripts/learnrails-footer.js"></script>
+  </head>
+
+  <body>
+    <header style="min-height: 64px;">
+      <learnrails-navbar></learnrails-navbar>
+    </header>
+
+    <div style="min-height: 180px;">
+      <yax-tutorial-hero></yax-tutorial-hero>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-3 is-hidden-mobile">
+            <learnrails-ad></learnrails-ad>
+            <yax-tutorial-toc></yax-tutorial-toc>
+          </div>
+
+          <div class="column is-9">
+
+            <div id="doc-content" class="content">
+<h2>Rails New</h2>
+<h3>Create a Workspace Folder</h3>
+<p>You'll need a convenient folder to store your Rails projects. You can give it any name, such as <code>code</code> or <code>projects</code>. For this tutorial, we'll call it <code>workspace</code>.</p>
+<p>Create a projects folder and move into the folder:</p>
+<pre><code class="language-bash">$ mkdir workspace
+$ cd workspace
+</code></pre>
+<p>This is where you'll create your Rails applications.</p>
+<h3>Rails new</h3>
+<p>Here's how to create a simple Rails application.</p>
+<pre><code class="language-bash">$ rails new --minimal myapp
+</code></pre>
+<p>The <code>rails new</code> command generates the default Rails starter app. The option <code>--minimal</code> speeds up creation of a  Rails app, leaving out many Rails &quot;extras&quot; that are not needed for a simple application.</p>
+<p>We'll name the new application <code>myapp</code>. You can give it another name you like.</p>
+<p><img src="/assets/images/install-rails-mac/rails-new.png" alt="" /></p>
+<p>You'll do all the work of developing your application inside the <code>myapp</code> folder, sometimes called the project root.</p>
+<p>For a &quot;smoke test&quot; to see if everything runs, move into the <code>myapp</code> folder and run <code>rails -T</code> to display a list of Rake tasks.</p>
+<pre><code class="language-bash">$ cd myapp
+$ rails -T
+</code></pre>
+<p>Run the application with the Rails server command:</p>
+<pre><code class="language-bash">$ rails server
+</code></pre>
+<p>Use your web browser to visit the application at <a href="http://localhost:3000/">http://localhost:3000/</a>.</p>
+<p><img src="/assets/images/install-rails-mac/rails-success.png" alt="" /></p>
+<p>Use Control-c to stop the server.</p>
+<p>This concludes the instructions for installing Ruby and Rails. Read on for additional advice and tips.</p>
+            </div>
+
+            <yax-tutorial-paginate></yax-tutorial-paginate>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <learnrails-footer></learnrails-footer>
+    </footer>
+  </body>
+</html>

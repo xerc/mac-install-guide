@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Update Gems for Ruby on Rails</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script>
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.13.1";
+      analytics.load("35vwh0md9c");
+      analytics.page();
+      }}();
+    </script>
+    <meta name="description" content="How to update Gems for Ruby on Rails. From the author of the book, Learn Ruby on Rails." />
+    <meta property="og:title" content="Update Gems for Ruby on Rails" />
+    <meta property="og:description" content="How to update Gems for Ruby on Rails. From the author of the book, Learn Ruby on Rails." />
+    <meta property="og:image" content="/images/icons/rails.png">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:url" content="https://learn-rails.com/install-rails-mac/7.html" />
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="/assets/styles/articles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script type="module" src="https://assets.yax.com/scripts/yax-tags-library.js"></script>
+    <script type="module" src="/assets/scripts/learnrails-navbar.js"></script>
+    <script type="module" src="/assets/scripts/learnrails-ad.js"></script>
+    <script type="module" src="/assets/scripts/learnrails-footer.js"></script>
+  </head>
+
+  <body>
+    <header style="min-height: 64px;">
+      <learnrails-navbar></learnrails-navbar>
+    </header>
+
+    <div style="min-height: 180px;">
+      <yax-tutorial-hero></yax-tutorial-hero>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-3 is-hidden-mobile">
+            <learnrails-ad></learnrails-ad>
+            <yax-tutorial-toc></yax-tutorial-toc>
+          </div>
+
+          <div class="column is-9">
+
+            <div id="doc-content" class="content">
+<h2>Update gems</h2>
+<p>Experienced developers use a few tricks to optimize the Ruby development environment and keep it up to date. It's best if everything is up to date before you start a new project.</p>
+<h3>Faster Gem Installation</h3>
+<p>By default, when you install gems, documentation files will be installed. Developers seldom use gem documentation files (they browse the web instead). Installing gem documentation files takes time, so many developers like to toggle the default so no documentation is installed.</p>
+<p>Here's how to speed up gem installation by disabling the documentation step:</p>
+<pre><code class="language-bash">$ echo &quot;gem: --no-document&quot; &gt;&gt; ~/.gemrc
+</code></pre>
+<p>This adds the line <code>gem: --no-document</code> to a hidden <code>.gemrc</code> file in your home directory.</p>
+<p><img src="/assets/images/install-rails-mac/faster-gem-installation.png" alt="" /></p>
+<h3>Check the gem manager</h3>
+<p><a href="https://rubygems.org/gems/rubygems-update">RubyGems</a> is the package manager in Ruby. We use it to install software packages that add functionality to Ruby.</p>
+<p>Check the installed gem manager version.</p>
+<pre><code class="language-bash">$ gem -v
+3.1.4
+</code></pre>
+<p>You can check if a <a href="https://rubygems.org/gems/rubygems-update">newer RubyGems</a> version is available. Use <code>gem update --system</code> to upgrade the Ruby gem manager if your version is old:</p>
+<pre><code class="language-bash">
+$ gem update --system
+</code></pre>
+<p><img src="/assets/images/install-rails-mac/update-system-gem.png" alt="" /></p>
+<h3>Updating gems</h3>
+<p>With Ruby, you’ve installed a collection of default gems that were current at the time of the Ruby release. It is likely some gems have been updated since the newest version of Ruby was released.</p>
+<p>You can see a list of all gems installed with Ruby:</p>
+<pre><code class="language-bash">$ gem list
+*** LOCAL GEMS ***
+.
+.
+.
+</code></pre>
+<p>To get a list of gems that are outdated:</p>
+<pre><code class="language-bash">$ gem outdated
+.
+.
+.
+</code></pre>
+<p>To update all stale gems:</p>
+<pre><code class="language-bash">$ gem update
+Updating installed gems
+.
+.
+.
+</code></pre>
+<p>You can track updates to gems at the RubyGems.org site by creating an account and visiting your <a href="https://rubygems.org/dashboard">dashboard</a>.</p>
+<h3>Install Nokogiri</h3>
+<p><a href="http://nokogiri.org/">Nokogiri</a> is a gem that is a dependency for many other gems. Nokogiri is a gem that requires compilation for your specific operating system (it’s one of the reasons we installed Xcode Command Line Tools). As such, if your system environment doesn't match Nokogiri's requirements, compilation of Nokogiri will fail. If your system is configured properly, you'll be able to compile Nokogiri. However, compilation takes time. Every time you install the Nokogiri gem, you'll wait (as long as five minutes).</p>
+<p>To save time, install the Nokogiri gem:</p>
+<pre><code class="language-bash">$ gem install nokogiri
+</code></pre>
+<p>During installation, Nokogiri will display two lengthy messages in the console. It will also pause without displaying any progress for as long as five minutes while it builds the native extensions. Don't assume installation has failed unless you see an error message or you've waited more than ten minutes.</p>
+<p><img src="/assets/images/install-rails-mac/install-nokogiri-gem.png" alt="" /></p>
+<p>If Nokogiri installation fails, it's likely your Xcode Command Line Tools are not installed correctly. The Nokogiri maintainers provide instructions for <a href="https://nokogiri.org/tutorials/installing_nokogiri.html">Installing Nokogiri</a>.</p>
+<p>Everything is ready, You can install Rails.</p>
+            </div>
+
+            <yax-tutorial-paginate></yax-tutorial-paginate>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <learnrails-footer></learnrails-footer>
+    </footer>
+  </body>
+</html>

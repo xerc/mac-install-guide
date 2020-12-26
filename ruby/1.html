@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Install Xcode Command Line Tools</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script>
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.13.1";
+      analytics.load("35vwh0md9c");
+      analytics.page();
+      }}();
+    </script>
+    <meta name="description" content="How to install Xcode Command Line Tools on a Mac. From the author of the book, Learn Ruby on Rails." />
+    <meta property="og:title" content="Install Xcode Command Line Tools" />
+    <meta property="og:description" content="How to install Xcode Command Line Tools on a Mac. From the author of the book, Learn Ruby on Rails." />
+    <meta property="og:image" content="/images/icons/rails.png">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:url" content="https://learn-rails.com/install-rails-mac/1.html" />
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="/assets/styles/articles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script type="module" src="https://assets.yax.com/scripts/yax-tags-library.js"></script>
+    <script type="module" src="/assets/scripts/learnrails-navbar.js"></script>
+    <script type="module" src="/assets/scripts/learnrails-ad.js"></script>
+    <script type="module" src="/assets/scripts/learnrails-footer.js"></script>
+  </head>
+
+  <body>
+    <header style="min-height: 64px;">
+      <learnrails-navbar></learnrails-navbar>
+    </header>
+
+    <div style="min-height: 180px;">
+      <yax-tutorial-hero></yax-tutorial-hero>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-3 is-hidden-mobile">
+            <learnrails-ad></learnrails-ad>
+            <yax-tutorial-toc></yax-tutorial-toc>
+          </div>
+
+          <div class="column is-9">
+
+            <div id="doc-content" class="content">
+<h2>Xcode Command Line Tools</h2>
+<p>You need to install Apple's Xcode Command Line Tools to get the Unix tools needed to install Ruby and develop with Rails. Apple’s Xcode Command Line Tools provide a C language compiler. You'll need it to install Ruby. Also, for many Rails projects, you will need the C language compiler to automatically install gems that use native extensions (some gems speed up Ruby by using code written in C).</p>
+<p>Xcode is Apple's software library for macOS developers. You don't need all of Xcode (it’s over 40GB!). You just need the Xcode Command Line Tools. Only install the full Xcode package if you plan on doing development of applications for the Apple operating systems (macOS or IOS apps). Here you’ll learn how to just install the Command Line Tools that give you common Unix utilities.</p>
+<p>It's easiest to install Command Line Tools as a part of installing Homebrew, the Unix utilities package manager. <strong>If you have a fresh install of macOS, skip ahead to the next section,</strong> <a href="/install-rails-mac/2.html">Install Homebrew</a>.</p>
+<p>If you updated your macOS from an earlier version, you may have an outdated version of Xcode. Read on to check if you have a troublesome out-of-date Command Line Tools.</p>
+<h3>Is Xcode already installed?</h3>
+<p>If you updated your macOS from an earlier version (sometimes called an &quot;over the top&quot; installation), and you previously installed a Rails development environment, your earlier installation remains intact. You will need to install the new version of Xcode Command Line Tools to avoid headaches. First, check what you have.</p>
+<p>Check if you previously installed the full Xcode package:</p>
+<pre><code class="language-bash">$ xcode-select -p
+</code></pre>
+<h4>Scenario 1</h4>
+<p>If you see, <code>xcode-select: error: unable to get active developer directory...</code>, the Xcode package is not installed.</p>
+<p>Good! Jump to the section, <a href="/install-rails-mac/2.html">Install Homebrew</a>.</p>
+<p><img src="/assets/images/install-rails-mac/xcode-not-installed.png" alt="" />
+<em>The Xcode package is not installed</em></p>
+<h4>Scenario 2</h4>
+<p>If you see a file location that contains spaces in the path:</p>
+<pre><code class="language-bash">/Applications/Apple Dev Tools/Xcode.app/Contents/Developer
+</code></pre>
+<p>you will have problems installing Ruby. You should delete Xcode before continuing.</p>
+<h4>Scenario 3</h4>
+<p>If you see:</p>
+<pre><code class="language-bash">/Applications/Xcode.app/Contents/Developer
+</code></pre>
+<p>The full Xcode package is already installed. Perhaps you installed it previously. If Xcode is installed, you will need to update Xcode to the newest version (Xcode 12.2 or newer). Go to the App Store application and check &quot;Updates.&quot; After updating Xcode, be sure to launch the Xcode application and accept the Apple license terms.</p>
+<h4>Scenario 4</h4>
+<p>If you see:</p>
+<pre><code class="language-bash">/Library/Developer/CommandLineTools
+</code></pre>
+<p>The Xcode Command Line Tools may be installed or <em>an older version</em> is installed.</p>
+<p>Here's how to test:</p>
+<pre><code class="language-bash">$ /usr/sbin/pkgutil --packages | grep CL
+</code></pre>
+<p>You should see:</p>
+<pre><code class="language-bash">com.apple.pkg.CLTools_Executables
+</code></pre>
+<p>Also try:</p>
+<pre><code class="language-bash">/usr/sbin/pkgutil --pkg-info com.apple.pkg.CLTools_Executables
+</code></pre>
+<p>You should see:</p>
+<pre><code class="language-bash">package-id: com.apple.pkg.CLTools_Executables
+</code></pre>
+<p>If you get a response from the test, you're done. The Xcode Command Line Tools are installed and you can skip ahead to install Homebrew.</p>
+<p>If you get no response from the test, you have an older version of Xcode Command Line Tools and you must remove it.</p>
+<p>Remove the old version:</p>
+<pre><code class="language-bash">$ sudo rm -rf /Library/Developer/CommandLineTools
+</code></pre>
+<p>You are using sudo for admin access so you must enter the password you use to log in to your computer (you will not see the password after entering it). After removing the old version, continue to the section, &quot;Install Homebrew.&quot;</p>
+            </div>
+
+            <yax-tutorial-paginate></yax-tutorial-paginate>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <learnrails-footer></learnrails-footer>
+    </footer>
+  </body>
+</html>

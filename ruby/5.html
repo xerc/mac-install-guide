@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Install Node and Yarn</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script>
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.13.1";
+      analytics.load("35vwh0md9c");
+      analytics.page();
+      }}();
+    </script>
+    <meta name="description" content="How to install Node and Yarn on a Mac. From the author of the book, Learn Ruby on Rails." />
+    <meta property="og:title" content="Install Node and Yarn" />
+    <meta property="og:description" content="How to install Node and Yarn on a Mac. From the author of the book, Learn Ruby on Rails." />
+    <meta property="og:image" content="/images/icons/rails.png">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:url" content="https://learn-rails.com/install-rails-mac/5.html" />
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="/assets/styles/articles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script type="module" src="https://assets.yax.com/scripts/yax-tags-library.js"></script>
+    <script type="module" src="/assets/scripts/learnrails-navbar.js"></script>
+    <script type="module" src="/assets/scripts/learnrails-ad.js"></script>
+    <script type="module" src="/assets/scripts/learnrails-footer.js"></script>
+  </head>
+
+  <body>
+    <header style="min-height: 64px;">
+      <learnrails-navbar></learnrails-navbar>
+    </header>
+
+    <div style="min-height: 180px;">
+      <yax-tutorial-hero></yax-tutorial-hero>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-3 is-hidden-mobile">
+            <learnrails-ad></learnrails-ad>
+            <yax-tutorial-toc></yax-tutorial-toc>
+          </div>
+
+          <div class="column is-9">
+
+            <div id="doc-content" class="content">
+<h2>Install Node and Yarn</h2>
+<p>Node and Yarn manage the JavaScript used by a Rails application. Unless you create backend-only (API) Rails applications, there will always be a little (and sometimes too much) JavaScript in your Rails application.</p>
+<h3>Install Node</h3>
+<p>You’ll need to install Node, the server version of JavaScript, before you develop any Rails applications. Node must be installed on your computer to run JavaScript in the local development environment.</p>
+<p>Early versions of Rails only required the Ruby language for development. More recently (after Rails 5.1), Rails uses Node to run the JavaScript build tool, Webpack, to bundle together any JavaScript files used in an application. It’s difficult to develop fullstack Rails applications without installing Node.</p>
+<p>It’s easy to install Node with asdf. Alternatively, you can download and install Node with Homebrew with <code>brew install node</code>, or directly from the <a href="https://nodejs.org/">nodejs.org</a> website. Or you can <a href="https://github.com/nvm-sh/nvm">install NVM</a>, the Node version manager, and use NVM to install Node. It’s easiest to install Node with asdf.</p>
+<p>First, be sure you've completed the section, <a href="/install-rails-mac/4.html">Asdf Version Manager</a>.</p>
+<p>Install the asdf plugin for Node (it tells asdf how to install Node):</p>
+<pre><code class="language-bash">$ asdf plugin add nodejs
+initializing plugin repository...
+Cloning into '/Users/macbook/.asdf/repository'...
+remote: Enumerating objects: 33, done.
+remote: Counting objects: 100% (33/33), done.
+remote: Compressing objects: 100% (30/30), done.
+remote: Total 2633 (delta 18), reused 10 (delta 3), pack-reused 2600
+Receiving objects: 100% (2633/2633), 611.28 KiB | 619.00 KiB/s, done.
+Resolving deltas: 100% (1253/1253), done.
+</code></pre>
+<p>See all the versions of Node that are available:</p>
+<pre><code class="language-bash">$ asdf list all nodejs
+</code></pre>
+<p>Download authentication keys (required for security):</p>
+<pre><code class="language-bash">$ bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-keyring'
+</code></pre>
+<p>Install the latest version of Node:</p>
+<pre><code class="language-bash">$ asdf install nodejs latest
+</code></pre>
+<p>You need to specify a default version of Node in your home <code>~/.tool-versions</code> file. You can set the <code>~/.tool-versions</code> file with a command:</p>
+<pre><code class="language-bash">$ asdf global nodejs 15.4.0
+</code></pre>
+<p>To verify that Node is installed:</p>
+<pre><code class="language-bash">$ node --version
+v15.4.0
+</code></pre>
+<p>You should see <code>v15.4.0</code> or newer.</p>
+<h3>Install Yarn</h3>
+<p>Yarn is a package manager for JavaScript. It’s similar to the better-known NPM (Node Package Manager). It’s used by Rails to manage JavaScript dependencies.</p>
+<p>Install the asdf plugin for Yarn:</p>
+<pre><code class="language-bash">$ asdf plugin add yarn
+</code></pre>
+<p>See all the versions of Yarn that are available:</p>
+<pre><code class="language-bash">$ asdf list all yarn
+</code></pre>
+<p>Install the latest version of Yarn:</p>
+<pre><code class="language-bash">$ asdf install yarn latest
+</code></pre>
+<p>You need to specify a default version of Yarn in your home <code>~/.tool-versions</code> file. You can set the <code>~/.tool-versions</code> file with a command:</p>
+<pre><code class="language-bash">$ asdf global yarn 1.22.10
+</code></pre>
+<p>To verify that Yarn is installed:</p>
+<pre><code class="language-bash">
+$ yarn --version
+v1.22.10
+</code></pre>
+<p>You should see <code>v1.22.10</code> or newer.</p>
+<p>The JavaScript build tools are now installed and ready. Next we'll install Ruby.</p>
+            </div>
+
+            <yax-tutorial-paginate></yax-tutorial-paginate>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <learnrails-footer></learnrails-footer>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Install Ruby on Rails 6.1 · Mac · Complete Guide</title>
+    <link rel="canonical" href="https://learn-rails.com/install-rails-mac/index.html" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script>
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.13.1";
+      analytics.load("35vwh0md9c");
+      analytics.page();
+      }}();
+    </script>
+    <meta name="description" content="How to install Ruby on Rails on a Mac. With Rails 6.1 on macOS Big Sur or Catalina. Up-to-date instructions from the author of the book, Learn Ruby on Rails." />
+    <meta property="og:title" content="Install Ruby on Rails 6.1 · Mac · Complete Guide" />
+    <meta property="og:description" content="How to install Ruby on Rails on a Mac. With Rails 6.1 on macOS Big Sur or Catalina. Up-to-date instructions from the author of the book, Learn Ruby on Rails." />
+    <meta property="og:image" content="/images/icons/rails.png">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:url" content="https://learn-rails.com/install-rails-mac/index.html" />
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="/assets/styles/articles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script type="module" src="https://assets.yax.com/scripts/yax-tags-library.js"></script>
+    <script type="module" src="/assets/scripts/learnrails-navbar.js"></script>
+    <script type="module" src="/assets/scripts/learnrails-footer.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Install Ruby on Rails 6.1 · Mac · Complete Guide",
+        "image": [
+          "https://learn-rails.com/images/icons/rails.png"
+         ],
+        "datePublished": "2020-12-19T08:00:00+08:00",
+        "dateModified": "2020-12-19T08:00:00+08:00"
+      }
+      </script>
+  </head>
+
+  <body>
+    <header style="min-height: 64px;">
+      <learnrails-navbar></learnrails-navbar>
+    </header>
+
+    <div style="min-height: 180px;">
+      <yax-tutorial-hero></yax-tutorial-hero>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-3 is-hidden-mobile">
+            <yax-author-kehoe></yax-author-kehoe>
+            <yax-tutorial-toc></yax-tutorial-toc>
+          </div>
+
+          <div class="column is-9">
+            <p class="has-text-right is-size-7"><em>Last updated December 19, 2020</em></p>
+            <div id="doc-content" class="content">
+<blockquote>
+<p>Rails might not be your best option! Learn more about the <a href="https://tutorials.yax.com/articles/beyond-rails/index.html">Beyond Rails</a> tutorial series I'm writing.</p>
+</blockquote>
+<p>How to install Ruby on Rails on a Mac. With Rails 6.1 on macOS Big Sur or Catalina. Up-to-date and kitchen-tested instructions, with troubleshooting tips, from the author of the book, <em><a href="https://learn-rails.com/">Learn Ruby on Rails</a></em>.</p>
+<p>This article will help you set up a development environment for Ruby on Rails, whether you are an experienced developer setting up a new computer or only a Rails beginner. This guide can be used with either macOS Big Sur or Catalina (instructions are the same).</p>
+<blockquote>
+<p>This is the most complete guide to installing Ruby on Rails.</p>
+</blockquote>
+<p>This guide provides full details, how to:</p>
+<ul>
+<li>update to macOS</li>
+<li>install Xcode Command Line Tools</li>
+<li>install Homebrew</li>
+<li>configure Git</li>
+</ul>
+<blockquote>
+<p><img src="/assets/images/home/learn-rails-book.jpg" alt="" /></p>
+</blockquote>
+<ul>
+<li>install a software version manager</li>
+<li>install Node and Yarn</li>
+<li>install Ruby 3.0</li>
+<li>update gems</li>
+<li>install Rails 6.1</li>
+<li>create a new Rails application</li>
+<li>tips and troubleshooting</li>
+</ul>
+<p>If you've haven't been coding before, see the final section, <a href="/install-rails-mac/17.html">First steps for beginners</a>, to learn about basic tools you'll need.</p>
+<p>Continue to the next section to be sure you've prepared your computer for installing Ruby.</p>
+<h2>Update macOS</h2>
+<p>It's best to use the newest macOS version. The latest release is macOS Big Sur 11.0 (Big Sur was released on November 12, 2020). If you have an older Mac, Big Sur will run slowly, so update to macOS Catalina.</p>
+<h3>Upgrade macOS</h3>
+<p>Check your macOS version. Under the Apple menu, check &quot;About This Mac.&quot; It should show &quot;Version 10.15.7” (for Catalina) or &quot;Version 11.0.1” (for Big Sur) or newer.</p>
+<p><img src="/assets/images/install-rails-mac/macos-big-sur.png" alt="" /></p>
+<p>If you need to upgrade, see Apple's instructions <a href="https://www.apple.com/macos/how-to-upgrade/">Upgrade to macOS Big Sur</a>. From macOS Catalina 10.15 or Mojave 10.14, you can upgrade using Software Update in System Preferences. For earlier versions, you can upgrade to macOS Big Sur from the App Store. Allow plenty of time for the download and installation (it may take several hours, especially if you've owned your Mac for several years and haven't updated macOS).</p>
+<p>After you’ve upgraded, you’ll use the macOS Terminal application to continue with this guide. See the final section, <a href="/install-rails-mac/17.html">First steps for beginners</a>, if you need help finding the Terminal.</p>
+<p>Next, let's check if your Terminal application is set up properly.</p>
+<h3>Z shell</h3>
+<p>By default, <a href="https://en.wikipedia.org/wiki/Z_shell">Zsh</a> (the Z shell) is the program that runs in the Terminal that interprets Unix commands. Before macOS 10.15 Catalina, the Terminal used the Bash shell as its default. Open the Terminal application and check which shell program is running in your terminal:</p>
+<pre><code class="language-bash">$ echo $SHELL
+/bin/zsh
+</code></pre>
+<p>If you see <code>/bin/bash</code> you can update the default to Zsh by running <code>chsh -s /bin/zsh</code>.</p>
+<h3>Configuring the shell</h3>
+<p>You can configure the Zsh system environment by creating a file in your user home folder that the Z shell will read when the Terminal application is launched. The configuration file is named <code>.zshrc</code>. By the way, if you’re curious, the <code>rc</code> in the file name stands for “run commands.”</p>
+<p>The <code>.zshrc</code> file doesn't exist by default in macOS so you need to create it. First, in the Terminal, make sure you are in your home folder:</p>
+<pre><code class="language-bash">$ pwd
+/Users/daniel
+</code></pre>
+<p>Check if the file exists already:</p>
+<pre><code class="language-bash">$ ls .zshrc
+ls: .zshrc: No such file or directory
+</code></pre>
+<p>If the file already exists, you can edit it. Otherwise, create an empty  <code>.zshrc</code> file and check that it exists:</p>
+<pre><code class="language-bash">$ touch .zshrc
+$ ls .zshrc
+.zshrc
+</code></pre>
+<p>Now, when needed, you can edit the file. You'll need to edit the <code>.zshrc</code> file when you set up the software version manager, so it's good to have it ready.</p>
+<p><img src="/assets/images/install-rails-mac/macos-zsh.png" alt="" /></p>
+<h3>Tip: macOS hidden files</h3>
+<p>The <code>.zshrc</code> file is hidden so you won’t see it in the macOS file browser when you want to edit it.</p>
+<p>Configuration files are often hidden in macOS. It’s easy to hide a file; just use a dot as the first character in the file name.</p>
+<p>You can list all files, including hidden files, with the <code>ls -lag</code> command in the Terminal.</p>
+<p>In the macOS Finder (the file browser), you can enter Command + Shift + . to show hidden files. If you want to hide those files again, you can enter the same keystrokes.</p>
+<p>You can force the Mac to always display hidden files by entering the following command in the Terminal application:</p>
+<pre><code class="language-bash">$ defaults write com.apple.finder AppleShowAllFiles TRUE; killall Finder
+</code></pre>
+<p>Hidden files will appear in gray in the Finder window.</p>
+<p>Your macOS and Terminal application are set up. Next we'll check if Apple's Xcode Command Line Tools are installed.</p>
+            </div>
+
+            <yax-tutorial-paginate></yax-tutorial-paginate>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <learnrails-footer></learnrails-footer>
+    </footer>
+  </body>
+</html>

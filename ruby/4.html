@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Install the asdf software version manager</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script>
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.13.1";
+      analytics.load("35vwh0md9c");
+      analytics.page();
+      }}();
+    </script>
+    <meta name="description" content="How to install the asdf software version manager on a Mac. From the author of the book, Learn Ruby on Rails." />
+    <meta property="og:title" content="How to install the asdf software version manager" />
+    <meta property="og:description" content="How to install the asdf software version manager on a Mac. From the author of the book, Learn Ruby on Rails." />
+    <meta property="og:image" content="/images/icons/rails.png">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:url" content="https://learn-rails.com/install-rails-mac/4.html" />
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="/assets/styles/articles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script type="module" src="https://assets.yax.com/scripts/yax-tags-library.js"></script>
+    <script type="module" src="/assets/scripts/learnrails-navbar.js"></script>
+    <script type="module" src="/assets/scripts/learnrails-ad.js"></script>
+    <script type="module" src="/assets/scripts/learnrails-footer.js"></script>
+  </head>
+
+  <body>
+    <header style="min-height: 64px;">
+      <learnrails-navbar></learnrails-navbar>
+    </header>
+
+    <div style="min-height: 180px;">
+      <yax-tutorial-hero></yax-tutorial-hero>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-3 is-hidden-mobile">
+            <learnrails-ad></learnrails-ad>
+            <yax-tutorial-toc></yax-tutorial-toc>
+          </div>
+
+          <div class="column is-9">
+
+            <div id="doc-content" class="content">
+<h2>Software Version Manager</h2>
+<p>Most developers should install a software version manager before installing Ruby. It will help you manage multiple versions of Ruby. You will need to install newer Ruby versions as they are released. And you will need a version manager if you maintain older Rails applications.</p>
+<p>For a software version manager, I recommend <a href="https://asdf-vm.com/">asdf</a>. Asdf can manage versions of many languages, including Ruby and Node.</p>
+<p>In the past, I recommended <a href="https://github.com/postmodern/chruby">Chruby</a>, as it is the smallest and most efficient Ruby version manager. If you don't want to use asdf, or if you have problems with it, see instructions for installing Chruby in the section, <a href="/install-rails-mac/18.html">Install Ruby with the Chruby Version Manager</a>. Other alternatives are RVM and rbenv. <a href="https://rvm.io/">RVM</a> was popular in the past but its additional features (its gemsets) are no longer needed and it adds unnecessary complexity. Sam Stephenson's <a href="https://github.com/sstephenson/rbenv">rbenv</a> is also popular, but requires extra steps as you work (the rehash command), extra files (“shims”), and modifies gems when you install them.</p>
+<p>If you are a casual user and won't be using Ruby frequently, you can use Homebrew to install Ruby. See the section, <a href="/install-rails-mac/19.html">Install Ruby with Homebrew</a>.</p>
+<h3>Install asdf</h3>
+<p>First, use Homebrew to install dependencies required by asdf.</p>
+<pre><code class="language-bash">$ brew install coreutils curl git
+</code></pre>
+<p>You'll also need the gnupg package to install Node later.</p>
+<pre><code class="language-bash">$ brew install gnupg
+</code></pre>
+<p>You can install asdf using Homebrew.</p>
+<pre><code class="language-bash">$ brew install asdf
+</code></pre>
+<p>We must add asdf to the system environment before we can use it to manage Ruby versions.</p>
+<h3>Add asdf to the .zshrc file</h3>
+<p>Use a shortcut to configure your shell to use asdf:</p>
+<pre><code class="language-bash">$ echo -e &quot;\n. $(brew --prefix asdf)/asdf.sh&quot; &gt;&gt; ~/.zshrc
+</code></pre>
+<p>Check the <code>.zshrc</code> file.</p>
+<pre><code class="language-bash">$ cat ~/.zshrc
+</code></pre>
+<p>You should see configuration commands for asdf:</p>
+<pre><code class="language-bash">. /usr/local/opt/asdf/asdf.sh
+</code></pre>
+<p>Configuration for asdf should always be the last line in the <code>.zshrc</code> file, after setting any <code>$PATH</code> configuration.</p>
+<p>🚩 Close and reopen the Terminal window for the changes to the <code>.zshrc</code> file to be recognized.</p>
+<p>After closing and reopening the Terminal window, use <code>asdf -h</code> to check that asdf was installed successfully.</p>
+<pre><code class="language-bash">$ asdf --version
+v0.8.0
+</code></pre>
+<h3>Add the .asdfrc configuration file</h3>
+<p>Add a <code>.asdfrc</code> configuration file to your user home directory to enable asdf to read <code>.ruby-version</code> files. This is helpful with projects that use a <code>.ruby-version</code> file to specify a Ruby version.</p>
+<pre><code class="language-bash">$ echo &quot;legacy_version_file = yes&quot; &gt;&gt; ~/.asdfrc
+</code></pre>
+<p>Confirm the creation of the configuration file.</p>
+<pre><code class="language-bash">$ cat ~/.asdfrc
+legacy_version_file = yes
+</code></pre>
+<h3>Add a tool-versions file</h3>
+<p>For each language you add using asdf, you must specify a default version in your user home <code>~/.tool-versions</code> file.</p>
+<p>Create a <code>~/.tool-versions</code> file like this:</p>
+<pre><code class="language-bash">nodejs 15.4.0
+yarn 1.22.10
+ruby 2.7.2
+</code></pre>
+<p>Here's a shortcut to create the file:</p>
+<pre><code class="language-bash">$ echo -e &quot;nodejs 15.4.0\nyarn 1.22.10\nruby 2.7.2&quot; &gt;&gt; ~/.tool-versions
+</code></pre>
+<p>Now you can install Node, Yarn, and the newest Ruby version.</p>
+            </div>
+
+            <yax-tutorial-paginate></yax-tutorial-paginate>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <learnrails-footer></learnrails-footer>
+    </footer>
+  </body>
+</html>
