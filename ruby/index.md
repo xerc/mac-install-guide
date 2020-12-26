@@ -1,26 +1,20 @@
-How to install Ruby on Rails on a Mac. With Rails 6.1 on macOS Big Sur or Catalina. Up-to-date and kitchen-tested instructions, with troubleshooting tips, from the author of the book, _[Learn Ruby on Rails](https://learn-rails.com/)_.
+How to install Ruby on a Mac. Installing Ruby on macOS Big Sur or Catalina. Up-to-date and kitchen-tested instructions, with troubleshooting tips, from the author of the book, _[Learn Ruby on Rails](https://learn-rails.com/)_.
 
-This article will help you set up a development environment for Ruby on Rails, whether you are an experienced developer setting up a new computer or only a Rails beginner. This guide can be used with either macOS Big Sur or Catalina (instructions are the same).
+This article will help you set up a development environment using Ruby on a Mac, whether you are an experienced developer setting up a new computer or only a beginner. This guide can be used with either macOS Big Sur or Catalina (instructions are the same).
 
-> This is the most complete guide to installing Ruby on Rails.
+> This is the most complete guide to installing Ruby on a Mac.
 
 This guide provides full details, how to:
 - update to macOS
 - install Xcode Command Line Tools
 - install Homebrew
 - configure Git
-
-> ![](/assets/images/home/learn-rails-book.jpg)
-
 - install a software version manager
-- install Node and Yarn
 - install Ruby 3.0
 - update gems
-- install Rails 6.1
-- create a new Rails application
 - tips and troubleshooting
 
-If you've haven't been coding before, see the final section, [First steps for beginners](/install-rails-mac/17.html), to learn about basic tools you'll need.
+If you've haven't been coding before, see the final section, [First steps for beginners](/ruby/17.html), to learn about basic tools you'll need.
 
 Continue to the next section to be sure you've prepared your computer for installing Ruby.
 
@@ -32,11 +26,11 @@ It's best to use the newest macOS version. The latest release is macOS Big Sur 1
 
 Check your macOS version. Under the Apple menu, check "About This Mac." It should show "Version 10.15.7” (for Catalina) or "Version 11.0.1” (for Big Sur) or newer.
 
-![](/assets/images/install-rails-mac/macos-big-sur.png)
+![](/assets/images/ruby/macos-big-sur.png)
 
 If you need to upgrade, see Apple's instructions [Upgrade to macOS Big Sur](https://www.apple.com/macos/how-to-upgrade/). From macOS Catalina 10.15 or Mojave 10.14, you can upgrade using Software Update in System Preferences. For earlier versions, you can upgrade to macOS Big Sur from the App Store. Allow plenty of time for the download and installation (it may take several hours, especially if you've owned your Mac for several years and haven't updated macOS).
 
-After you’ve upgraded, you’ll use the macOS Terminal application to continue with this guide. See the final section, [First steps for beginners](/install-rails-mac/17.html), if you need help finding the Terminal.
+After you’ve upgraded, you’ll use the macOS Terminal application to continue with this guide. See the final section, [First steps for beginners](/ruby/17.html), if you need help finding the Terminal.
 
 Next, let's check if your Terminal application is set up properly.
 
@@ -79,7 +73,7 @@ $ ls .zshrc
 
 Now, when needed, you can edit the file. You'll need to edit the `.zshrc` file when you set up the software version manager, so it's good to have it ready.
 
-![](/assets/images/install-rails-mac/macos-zsh.png)
+![](/assets/images/ruby/macos-zsh.png)
 
 ### Tip: macOS hidden files
 

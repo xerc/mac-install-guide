@@ -8,19 +8,19 @@
   "topic": "Ruby",
   "subtopic": "Installation",
   "pages": [
-    {"title": "Update macOS", "url": "/install-rails-mac/index.html"},
-    {"title": "Xcode Command Line Tools", "url": "/install-rails-mac/1.html"},
-    {"title": "Install Homebrew", "url": "/install-rails-mac/2.html"},
-    {"title": "Configure Git", "url": "/install-rails-mac/3.html"},
-    {"title": "Asdf Version Manager", "url": "/install-rails-mac/4.html"},
-    {"title": "Install Ruby", "url": "/install-rails-mac/5.html"},
-    {"title": "Update Gems", "url": "/install-rails-mac/6.html"},
-    {"title": "Tips: Deployment", "url": "/install-rails-mac/7.html"},
-    {"title": "Tips: Removing Ruby", "url": "/install-rails-mac/8.html"},
-    {"title": "Troubleshooting", "url": "/install-rails-mac/9.html"},
-    {"title": "Where to Get Help", "url": "/install-rails-mac/10.html"},
-    {"title": "Extra: First steps for beginners", "url": "/install-rails-mac/11.html"},
-    {"title": "Extra: Chruby Version Manager", "url": "/install-rails-mac/12.html"},
-    {"title": "Extra: Install Ruby with Homebrew", "url": "/install-rails-mac/13.html"}
+    {"title": "Update macOS", "url": "/ruby/index.html"},
+    {"title": "Xcode Command Line Tools", "url": "/ruby/1.html"},
+    {"title": "Install Homebrew", "url": "/ruby/2.html"},
+    {"title": "Configure Git", "url": "/ruby/3.html"},
+    {"title": "Asdf Version Manager", "url": "/ruby/4.html"},
+    {"title": "Install Ruby", "url": "/ruby/5.html"},
+    {"title": "Update Gems", "url": "/ruby/6.html"},
+    {"title": "Tips: Deployment", "url": "/ruby/7.html"},
+    {"title": "Tips: Removing Ruby", "url": "/ruby/8.html"},
+    {"title": "Troubleshooting", "url": "/ruby/9.html"},
+    {"title": "Where to Get Help", "url": "/ruby/10.html"},
+    {"title": "Extra: First steps for beginners", "url": "/ruby/11.html"},
+    {"title": "Extra: Chruby Version Manager", "url": "/ruby/12.html"},
+    {"title": "Extra: Install Ruby with Homebrew", "url": "/ruby/13.html"}
   ]
 }
