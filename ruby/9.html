@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Rails New · Generate a Minimal Rails Application</title>
+    <title>Troubleshooting Installation of Ruby on Rails</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <script>
@@ -10,12 +10,12 @@
       analytics.page();
       }}();
     </script>
-    <meta name="description" content="How to generate a minimal Rails application on a Mac. From the author of the book, Learn Ruby on Rails." />
-    <meta property="og:title" content="Rails New · Generate a Minimal Rails Application" />
-    <meta property="og:description" content="How to generate a minimal Rails application on a Mac. From the author of the book, Learn Ruby on Rails." />
-    <meta property="og:image" content="/images/icons/rails.png">
+    <meta name="description" content="Troubleshooting installation of Ruby on Rails. What to do when you have problems. From the author of the book, Learn Ruby on Rails." />
+    <meta property="og:title" content="Troubleshooting Installation of Ruby on Rails" />
+    <meta property="og:description" content="Troubleshooting installation of Ruby on Rails. What to do when you have problems. From the author of the book, Learn Ruby on Rails." />
+    <meta property="og:image" content="/images/icons/install-guide-logo.png">
     <meta name="twitter:card" content="summary">
-    <meta property="og:url" content="https://mac.install.guide/ruby/9.html" />
+    <meta property="og:url" content="https://mac.install.guide/ruby/15.html" />
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-okaidia.min.css">
     <link rel="stylesheet" href="/assets/styles/articles.css">
@@ -47,33 +47,65 @@
           <div class="column is-9">
 
             <div id="doc-content" class="content">
-<h2>Rails New</h2>
-<h3>Create a Workspace Folder</h3>
-<p>You'll need a convenient folder to store your Rails projects. You can give it any name, such as <code>code</code> or <code>projects</code>. For this tutorial, we'll call it <code>workspace</code>.</p>
-<p>Create a projects folder and move into the folder:</p>
-<pre><code class="language-bash">$ mkdir workspace
-$ cd workspace
+<h2>Troubleshooting</h2>
+<p>Here is help if you’ve encountered issues installing or running Ruby on Rails.</p>
+<h3>asdf &quot;No version set for command&quot;</h3>
+<p>If you see &quot;No version set for command&quot; like this:</p>
+<pre><code class="language-bash">$ node -v
+No version set for command node
+Consider adding one of the following versions in your config file at
+nodejs 15.4.0
 </code></pre>
-<p>This is where you'll create your Rails applications.</p>
-<h3>Rails new</h3>
-<p>Here's how to create a simple Rails application.</p>
-<pre><code class="language-bash">$ rails new --minimal myapp
+<p>You need to specify a default version of the language in your home <code>~/.tool-versions</code> file.</p>
+<p>You can set the <code>~/.tool-versions</code> file with a command:</p>
+<pre><code class="language-bash">$ asdf global nodejs 15.4.0
+$ asdf global ruby 2.7.2
 </code></pre>
-<p>The <code>rails new</code> command generates the default Rails starter app. The option <code>--minimal</code> speeds up creation of a  Rails app, leaving out many Rails &quot;extras&quot; that are not needed for a simple application.</p>
-<p>We'll name the new application <code>myapp</code>. You can give it another name you like.</p>
-<p><img src="/assets/images/install-rails-mac/rails-new.png" alt="" /></p>
-<p>You'll do all the work of developing your application inside the <code>myapp</code> folder, sometimes called the project root.</p>
-<p>For a &quot;smoke test&quot; to see if everything runs, move into the <code>myapp</code> folder and run <code>rails -T</code> to display a list of Rake tasks.</p>
-<pre><code class="language-bash">$ cd myapp
-$ rails -T
+<p>Your <code>~/.tool-versions</code> file will look like this:</p>
+<pre><code class="language-bash">nodejs 15.4.0
+ruby 2.7.2
 </code></pre>
-<p>Run the application with the Rails server command:</p>
-<pre><code class="language-bash">$ rails server
+<h3>Rails is not currently installed (Chruby)</h3>
+<p>If you try <code>rails new</code> and see the error:</p>
+<pre><code class="language-bash">$ rails new myapp
+Rails is not currently installed on this system...
 </code></pre>
-<p>Use your web browser to visit the application at <a href="http://localhost:3000/">http://localhost:3000/</a>.</p>
-<p><img src="/assets/images/install-rails-mac/rails-success.png" alt="" /></p>
-<p>Use Control-c to stop the server.</p>
-<p>This concludes the instructions for installing Ruby and Rails. Read on for additional advice and tips.</p>
+<p>You may be running the system Ruby in your terminal, instead of the version you installed. Try closing and reopening your terminal or switching Ruby versions with Chruby.</p>
+<pre><code class="language-bash">$ ruby -v
+ruby 2.6.3 ...
+$ chruby
+* ruby-2.7.2
+$ chruby ruby-2.7.2
+$ ruby -v
+ruby 2.7.2 ...
+</code></pre>
+<h3>Gem pristine warning</h3>
+<p>If you get a warning, <code>Ignoring ... because its extensions are not built. Try: gem pristine ...</code>:</p>
+<p><img src="/assets/images/install-rails-mac/gem-pristine-error.png" alt="" /></p>
+<p>Close and re-open the terminal window to start a new terminal session and try again.</p>
+<h3>Node or Yarn not installed</h3>
+<p>If you tried <code>rails new</code> and got the error:</p>
+<pre><code class="language-bash">$ rails new myapp
+sh: node: command not found
+sh: nodejs: command not found
+Node.js not installed. Please download and install Node.js https://nodejs.org/en/download/
+</code></pre>
+<p>or the error:</p>
+<pre><code class="language-bash">Yarn not installed.
+</code></pre>
+<p>See the section “Install Node and Yarn.”</p>
+<h3>Conflicting Bundler Versions</h3>
+<p>If you install a version of Bundler that is newer than the default installed with Ruby, you will get a message <code>Warning: the running version of Bundler (2.1.2) is older than the version that created the lockfile (2.1.4)</code> when you run a Rails command. You can avoid the warning by prepending <code>bundle exec</code>, for example <code>bundle exec rails -T</code>. It's not possible to remove a default gem with <code>gem uninstall bundler</code> so it's advisable not to install a newer version of Bundler unless absolutely necessary.</p>
+<h3>Problems with &quot;Gem::RemoteFetcher::FetchError: SSL_connect&quot;</h3>
+<p>Ruby and RubyGems (starting with Ruby 1.9.3p194 and RubyGems 1.8.23) require verification of server SSL certificates when Ruby makes an Internet connection via https. If you run <code>rails new</code> and get an error <code>Gem::RemoteFetcher::FetchError: SSL_connect returned=1 errno=0 state=SSLv3 read server certificate</code> see this article suggesting solutions: <a href="http://railsapps.github.io/openssl-certificate-verify-failed.html">OpenSSL errors and Rails</a>.</p>
+<h3>Problems with &quot;Certificate Verify Failed&quot;</h3>
+<p>Are you getting an error <code>OpenSSL certificate verify failed</code> when you try to generate a new Rails app from an application template? See this article suggesting solutions: <a href="http://railsapps.github.io/openssl-certificate-verify-failed.html">OpenSSL errors and Rails</a>.</p>
+<h3>Installing in a Second Account</h3>
+<p>If you've created a second user account on your Mac, and the first user has already installed Homebrew, the first user may have to change permissions for the <code>/usr/local/bin</code> and <code>/usr/local/Cellar</code> folders:</p>
+<pre><code class="language-bash">$ sudo chmod g+w /usr/local/bin
+$ sudo chmod g+w /usr/local/Cellar
+</code></pre>
+<p>The second user account should be given admin privileges using the System Preferences &quot;Users and Groups&quot; setting.</p>
             </div>
 
             <yax-tutorial-paginate></yax-tutorial-paginate>
