@@ -14,7 +14,7 @@ This guide provides full details, how to:
 - update gems
 - tips and troubleshooting
 
-If you've haven't been coding before, see the final section, [First steps for beginners](/ruby/17.html), to learn about basic tools you'll need.
+If you've haven't been coding before, see the extra section, [First steps for beginners](/ruby/11.html), to learn about basic tools you'll need.
 
 Continue to the next section to be sure you've prepared your computer for installing Ruby.
 
@@ -30,7 +30,7 @@ Check your macOS version. Under the Apple menu, check "About This Mac." It shoul
 
 If you need to upgrade, see Apple's instructions [Upgrade to macOS Big Sur](https://www.apple.com/macos/how-to-upgrade/). From macOS Catalina 10.15 or Mojave 10.14, you can upgrade using Software Update in System Preferences. For earlier versions, you can upgrade to macOS Big Sur from the App Store. Allow plenty of time for the download and installation (it may take several hours, especially if you've owned your Mac for several years and haven't updated macOS).
 
-After you’ve upgraded, you’ll use the macOS Terminal application to continue with this guide. See the final section, [First steps for beginners](/ruby/17.html), if you need help finding the Terminal.
+After you’ve upgraded, you’ll use the macOS Terminal application to continue with this guide. See the final section, [First steps for beginners](/ruby/11.html), if you need help finding the Terminal.
 
 Next, let's check if your Terminal application is set up properly.
 
