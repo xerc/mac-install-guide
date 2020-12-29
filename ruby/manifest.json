@@ -19,8 +19,8 @@
     {"title": "Tips: Removing Ruby", "url": "/ruby/8.html"},
     {"title": "Troubleshooting", "url": "/ruby/9.html"},
     {"title": "Where to Get Help", "url": "/ruby/10.html"},
-    {"title": "Extra: First steps for beginners", "url": "/ruby/11.html"},
-    {"title": "Extra: Chruby Version Manager", "url": "/ruby/12.html"},
-    {"title": "Extra: Install Ruby with Homebrew", "url": "/ruby/13.html"}
+    {"title": "Extra: Chruby Version Manager", "url": "/ruby/11.html"},
+    {"title": "Extra: Install Ruby with Homebrew", "url": "/ruby/12.html"},
+    {"title": "Extra: Finding and Using the Terminal", "url": "/ruby/13.html"}
   ]
 }
