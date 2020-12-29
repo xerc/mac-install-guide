@@ -2,6 +2,8 @@ How to install Ruby on a Mac. Installing Ruby 3.0 on macOS Big Sur or Catalina. 
 
 This article will help you set up a development environment using Ruby on a Mac, whether you are an experienced developer setting up a new computer or only a beginner.
 
+If you intend to develop web applications with Rails, switch to the guide [Install Ruby on Rails on macOS](https://learn-rails.com/install-rails-mac/index.html). It covers installation of Ruby, Node, Yarn, and Rails.
+
 > This is the most complete guide to installing Ruby on a Mac.
 
 This guide provides full details, how to:
