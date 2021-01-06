@@ -62,7 +62,39 @@
           <div class="column is-9">
 
             <div id="doc-content" class="content">
-              <yax-markdown theme="okaidia" mdsrc=""></yax-markdown>
+              <h2>Install Ruby with Homebrew</h2>
+              <p>If you are a casual user and won't be using Ruby frequently, you can use Homebrew to install Ruby.</p>
+              <p>Most developers should install a software version manager before installing Ruby. It will help you manage multiple versions of Ruby. You will need to install newer Ruby versions as they are released. And you will need a version manager if you maintain older Ruby applications. For a software version manager, I recommend <a href="https://asdf-vm.com/">asdf</a>. Asdf can manage versions of many languages, including Ruby and Node. Instructions for asdf are in the section, <a href="/ruby/4.html">Asdf Version Manager</a>.</p>
+              <p>Here are instructions for installing Ruby with Homebrew.</p>
+              <p>Complete the section, <a href="/ruby/2.html">Install Homebrew</a>, before you start.</p>
+              <h3>Mac system Ruby</h3>
+              <p>MacOS comes with a &quot;system Ruby&quot; pre-installed. MacOS Big Sur or Catalina includes Ruby 2.6.3 which is not the newest version. Do not use the system Ruby. You can see the system Ruby with <code>which ruby</code> and <code>ruby -v</code>.</p>
+              <p><img src="/assets/images/ruby/macos-system-ruby.png" alt="" /></p>
+              <p>Leave the system Ruby in place and install the newest Ruby version using Homebrew.</p>
+              <h2>Install Ruby</h2>
+              <p>Use Homebrew to install the newest Ruby version.</p>
+              <pre><code class="language-bash">$ brew install ruby
+              </code></pre>
+              <p>You’ll see diagnostic messages and progress updates.</p>
+              <h3>Configure the .zshrc file</h3>
+              <p>Edit the <code>.zshrc</code> file in your text editor. If you haven’t installed a text editor, use the macOS TextEdit application. Here’s a shortcut to open the file in TextEdit from the Terminal:</p>
+              <pre><code class="language-bash">$ open -e .zshrc
+              </code></pre>
+              <p>Set the PATH environment variable.</p>
+              <pre><code class="language-bash">### ~/.zshrc~
+              if [ -d &quot;/usr/local/opt/ruby/bin&quot; ]; then
+                export PATH=/usr/local/opt/ruby/bin:$PATH
+                export PATH=`gem environment gemdir`/bin:$PATH
+              fi
+              </code></pre>
+              <p>This sets the Homebrew-installed Ruby to a higher priority than the system Ruby and adds the directory used for Ruby gems.</p>
+              <p>Save the file.</p>
+              <p>🚩 Close and reopen the Terminal window for the changes to the <code>.zshrc</code> file to be recognized.</p>
+              <p>Verify that the newest version of Ruby is installed with <code>ruby -v</code>.</p>
+              <p><img src="/assets/images/ruby/verify-ruby-install.png" alt="" /></p>
+              <p>When this was written, Ruby 3.0.0 was the newest version (released on Dec 25, 2020).</p>
+              <p>If you see Ruby version 2.6.3, it is the system Ruby. Try closing and re-opening the terminal window.</p>
+              <p>Next, you can optimize the Ruby development environment by updating gems. See the <a href="/ruby/6.html">Update Gems</a> section.</p>
             </div>
 
             <yax-tutorial-paginate></yax-tutorial-paginate>
