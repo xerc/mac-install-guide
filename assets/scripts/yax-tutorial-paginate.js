@@ -1,4 +1,4 @@
-import { LitElement, html } from 'https://jspm.dev/lit-element@2';
+import { LitElement, html } from 'https://jspm.dev/lit-element@2.4.0';
 import { until } from 'https://jspm.dev/lit-html@1/directives/until.js';
 
 export class YaxTutorialPaginate extends LitElement {
