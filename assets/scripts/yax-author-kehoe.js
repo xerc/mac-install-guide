@@ -56,7 +56,7 @@ export class YaxAuthorKehoe extends LitElement {
       		<div class="header">
       			<div class="avatar">
       				<a href="https://danielkehoe.com/">
-      					<img src="https://assets.yax.com/images/danielkehoe-color-192px.png" loading="eager" alt="Daniel Kehoe" />
+      					<img src="/assets/images/danielkehoe-color-192px.png" loading="eager" alt="Daniel Kehoe" />
       				</a>
       			</div>
       		</div>
