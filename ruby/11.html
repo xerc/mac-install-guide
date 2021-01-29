@@ -57,64 +57,7 @@
           <div class="column is-9">
 
             <div id="doc-content" class="content">
-<h2>Install Ruby with the Chruby Version Manager</h2>
-<p>Most developers should install a software version manager before installing Ruby. It will help you manage multiple versions of Ruby. You will need to install newer Ruby versions as they are released. And you will need a version manager if you maintain older Rails applications. For a software version manager, I recommend <a href="https://asdf-vm.com/">asdf</a>. Asdf can manage versions of many languages, including Ruby and Node. Instructions for asdf are in the section, <a href="/ruby/4.html">Asdf Version Manager</a>.</p>
-<p>If you don't want to use asdf, or if you have problems with it, I recommend <a href="https://github.com/postmodern/chruby">Chruby</a>, as it is the smallest and most efficient Ruby version manager. <a href="https://rvm.io/">RVM</a> was popular in the past but its additional features (its gemsets) are no longer needed and it adds unnecessary complexity. Sam Stephenson's <a href="https://github.com/sstephenson/rbenv">rbenv</a> is also popular, but requires extra steps (the rehash command), extra files (“shims”), and modifies gems when you install them. Chruby is simplest. The Chruby version manager is added to your shell to intercept any calls to Ruby.</p>
-<p>If you are a casual user and won't be using Ruby frequently, you can use Homebrew to install Ruby. See the section, <a href="/ruby/12.html">Install Ruby with Homebrew</a>.</p>
-<p>Here are instructions for installing Chruby, ruby-install (a Ruby installer utility), and Ruby.</p>
-<h3>Mac system Ruby</h3>
-<p>MacOS comes with a &quot;system Ruby&quot; pre-installed. MacOS Big Sur or Catalina includes Ruby 2.6.3 which is not the newest version. Do not use the system Ruby. You can see the system Ruby with <code>which ruby</code> and <code>ruby -v</code>.</p>
-<p><img src="/assets/images/ruby/macos-system-ruby.png" alt="" /></p>
-<p>Leave the system Ruby in place and install the Chruby version manager and the newest Ruby version.</p>
-<h3>Ruby-install and Chruby</h3>
-<p>Use Homebrew to install the <a href="https://github.com/postmodern/ruby-install">ruby-install</a> utility and the <a href="https://github.com/postmodern/chruby">chruby</a> Ruby version manager.</p>
-<pre><code class="language-bash">$ brew install ruby-install chruby
-</code></pre>
-<p>You'll see beer mug emojis as Homebrew installs the utilities.</p>
-<p><img src="/assets/images/ruby/install-chruby.png" alt="" /></p>
-<p>Verify that ruby-install is available:</p>
-<pre><code class="language-bash">$ ruby-install -V
-ruby-install: 0.7.1
-</code></pre>
-<p>We must add Chruby to the system environment before we can use it to manage Ruby versions.</p>
-<h3>Add Chruby to the .zshrc file</h3>
-<p>Edit the <code>.zshrc</code> file in your text editor. If you haven’t installed a text editor, use the macOS TextEdit application. Here’s a shortcut to open the file in TextEdit from the Terminal:</p>
-<pre><code class="language-bash">$ open -e .zshrc
-</code></pre>
-<p><img src="/assets/images/ruby/add-chruby-to-zshrc.png" alt="" /></p>
-<p>Add configuration commands for Chruby:</p>
-<pre><code class="language-bash">### ~/.zshrc~
-# enable chruby
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
-chruby ruby-3.0.0
-</code></pre>
-<p>The first two lines (with the hash characters) are comments. The third line makes the chruby program available in the shell. The fourth line will automatically switch the current version of Ruby when you change directories if a hidden file indicates a specific Ruby version. The final line makes Ruby version 3.0.0 the default Ruby in the Terminal.</p>
-<p>Save the file.</p>
-<p>🚩 Close and reopen the Terminal window for the changes to the <code>.zshrc</code> file to be recognized.</p>
-<p>After closing and reopening the Terminal window, use <code>chruby -h</code> to check that Chruby was installed successfully.</p>
-<p><img src="/assets/images/ruby/verify-chruby-installation.png" alt="" /></p>
-<p>Next we'll install Ruby.</p>
-<h2>Install Ruby</h2>
-<p>If you've installed Chruby and the ruby-install utility, install the newest version of Ruby using ruby-install for use with the Ruby version manager.</p>
-<p>Use the ruby-install utility to check for the newest Ruby version.</p>
-<pre><code class="language-bash">$ ruby-install --latest
-</code></pre>
-<p>Or check online for the current <a href="http://www.ruby-lang.org/en/downloads/">recommended version of Ruby</a>.</p>
-<p>When this was written, Ruby 3.0.0 was the newest version (released on Dec 25, 2020).</p>
-<p>Use ruby-install to install the newest Ruby version.</p>
-<pre><code class="language-bash">$ ruby-install --latest ruby
-</code></pre>
-<p><img src="/assets/images/ruby/macos-ruby-install.png" alt="" /></p>
-<p>You’ll see diagnostic messages and progress updates. Installation may take thirty minutes or more.</p>
-<p><img src="/assets/images/ruby/ruby-install-complete.png" alt="" /></p>
-<p>🚩 After installation, close and re-open the terminal window.</p>
-<p>Verify that the newest version of Ruby is installed with <code>ruby -v</code>.</p>
-<p><img src="/assets/images/ruby/verify-ruby-install.png" alt="" /></p>
-<p>When this was written, Ruby 3.0.0 was the newest version (released on Dec 25, 2020).</p>
-<p>If you see Ruby version 2.6.3, it is the system Ruby and you likely forgot to close and re-open the terminal window.</p>
-<p>The <a href="/ruby/8.html">Tips: Removing Ruby</a> section explains where Ruby versions are installed and how to remove them.</p>
-<p>Next, you can optimize the Ruby development environment by updating gems. See the <a href="/ruby/6.html">Update Gems</a> section.</p>
+              <yax-markdown theme="okaidia" mdsrc=""></yax-markdown>
             </div>
 
             <yax-tutorial-paginate></yax-tutorial-paginate>

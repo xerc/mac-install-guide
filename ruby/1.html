@@ -57,54 +57,7 @@
           <div class="column is-9">
 
             <div id="doc-content" class="content">
-<h2>Xcode Command Line Tools</h2>
-<p>You need to install Apple's Xcode Command Line Tools to get the Unix tools needed to install Ruby and develop applications. Apple’s Xcode Command Line Tools provide a C language compiler. You'll need it to install Ruby. Also, for many Ruby projects, you will need the C language compiler to automatically install gems that use native extensions (some gems speed up Ruby by using code written in C).</p>
-<p>Xcode is Apple's software library for macOS developers. You don't need all of Xcode (it’s over 40GB!). You just need the Xcode Command Line Tools. Only install the full Xcode package if you plan on doing development of applications for the Apple operating systems (macOS or IOS apps). Here you’ll learn how to just install the Command Line Tools that give you common Unix utilities.</p>
-<p>It's easiest to install Command Line Tools as a part of installing Homebrew, the Unix utilities package manager. <strong>If you have a fresh install of macOS, skip ahead to the next section,</strong> <a href="/ruby/2.html">Install Homebrew</a>.</p>
-<p>If you updated your macOS from an earlier version, you may have an outdated version of Xcode. Read on to check if you have a troublesome out-of-date Command Line Tools.</p>
-<h3>Is Xcode already installed?</h3>
-<p>If you updated your macOS from an earlier version (sometimes called an &quot;over the top&quot; installation), and you previously installed a Ruby development environment, your earlier installation remains intact. You will need to install the new version of Xcode Command Line Tools to avoid headaches. First, check what you have.</p>
-<p>Check if you previously installed the full Xcode package:</p>
-<pre><code class="language-bash">$ xcode-select -p
-</code></pre>
-<h4>Scenario 1</h4>
-<p>If you see, <code>xcode-select: error: unable to get active developer directory...</code>, the Xcode package is not installed.</p>
-<p>Good! Jump to the section, <a href="/ruby/2.html">Install Homebrew</a>.</p>
-<p><img src="/assets/images/ruby/xcode-not-installed.png" alt="" />
-<em>The Xcode package is not installed</em></p>
-<h4>Scenario 2</h4>
-<p>If you see a file location that contains spaces in the path:</p>
-<pre><code class="language-bash">/Applications/Apple Dev Tools/Xcode.app/Contents/Developer
-</code></pre>
-<p>you will have problems installing Ruby. You should delete Xcode before continuing.</p>
-<h4>Scenario 3</h4>
-<p>If you see:</p>
-<pre><code class="language-bash">/Applications/Xcode.app/Contents/Developer
-</code></pre>
-<p>The full Xcode package is already installed. Perhaps you installed it previously. If Xcode is installed, you will need to update Xcode to the newest version (Xcode 12.2 or newer). Go to the App Store application and check &quot;Updates.&quot; After updating Xcode, be sure to launch the Xcode application and accept the Apple license terms.</p>
-<h4>Scenario 4</h4>
-<p>If you see:</p>
-<pre><code class="language-bash">/Library/Developer/CommandLineTools
-</code></pre>
-<p>The Xcode Command Line Tools may be installed or <em>an older version</em> is installed.</p>
-<p>Here's how to test:</p>
-<pre><code class="language-bash">$ /usr/sbin/pkgutil --packages | grep CL
-</code></pre>
-<p>You should see:</p>
-<pre><code class="language-bash">com.apple.pkg.CLTools_Executables
-</code></pre>
-<p>Also try:</p>
-<pre><code class="language-bash">/usr/sbin/pkgutil --pkg-info com.apple.pkg.CLTools_Executables
-</code></pre>
-<p>You should see:</p>
-<pre><code class="language-bash">package-id: com.apple.pkg.CLTools_Executables
-</code></pre>
-<p>If you get a response from the test, you're done. The Xcode Command Line Tools are installed and you can skip ahead to install Homebrew.</p>
-<p>If you get no response from the test, you have an older version of Xcode Command Line Tools and you must remove it.</p>
-<p>Remove the old version:</p>
-<pre><code class="language-bash">$ sudo rm -rf /Library/Developer/CommandLineTools
-</code></pre>
-<p>You are using sudo for admin access so you must enter the password you use to log in to your computer (you will not see the password after entering it). After removing the old version, continue to the section, &quot;Install Homebrew.&quot;</p>
+              <yax-markdown theme="okaidia" mdsrc=""></yax-markdown>
             </div>
 
             <yax-tutorial-paginate></yax-tutorial-paginate>

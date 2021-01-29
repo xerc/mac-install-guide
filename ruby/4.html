@@ -57,48 +57,7 @@
           <div class="column is-9">
 
           <div id="doc-content" class="content">
-<h2>Asdf Version Manager</h2>
-<p>Most developers should install a software version manager before installing Ruby. It will help you manage multiple versions of Ruby. You will need to install newer Ruby versions as they are released. And you will need a version manager if you maintain older Ruby applications.</p>
-<p>For a software version manager, I recommend <a href="https://asdf-vm.com/">asdf</a>. Asdf can manage versions of many languages, including Ruby and Node.</p>
-<p>In the past, I recommended <a href="https://github.com/postmodern/chruby">Chruby</a>, as it is the smallest and most efficient Ruby version manager. If you don't want to use asdf, or if you have problems with it, see instructions for installing Chruby in the section, <a href="/ruby/11.html">Install Ruby with the Chruby Version Manager</a>. Other alternatives are RVM and rbenv. <a href="https://rvm.io/">RVM</a> was popular in the past but its additional features (its gemsets) are no longer needed and it adds unnecessary complexity. Sam Stephenson's <a href="https://github.com/sstephenson/rbenv">rbenv</a> is also popular, but requires extra steps as you work (the rehash command), extra files (“shims”), and modifies gems when you install them.</p>
-<p>If you are a casual user and won't be using Ruby frequently, you can use Homebrew to install Ruby. See the section, <a href="/ruby/12.html">Install Ruby with Homebrew</a>.</p>
-<h3>Install dependencies</h3>
-<p>First, use Homebrew to install dependencies required by asdf.</p>
-<pre><code class="language-bash">$ brew install coreutils curl git
-</code></pre>
-<p>You'll also need the gnupg package if you need to install Node (if you need to develop with JavaScript in your local environment).</p>
-<pre><code class="language-bash">$ brew install gnupg
-</code></pre>
-<h3>Install asdf</h3>
-<p>You can install asdf using Homebrew.</p>
-<pre><code class="language-bash">$ brew install asdf
-</code></pre>
-<p>We must add asdf to the system environment before we can use it to manage Ruby versions.</p>
-<h3>Add asdf to the .zshrc file</h3>
-<p>Use a shortcut to configure your shell to use asdf:</p>
-<pre><code class="language-bash">$ echo -e &quot;\n. $(brew --prefix asdf)/asdf.sh&quot; &gt;&gt; ~/.zshrc
-</code></pre>
-<p>Check the <code>.zshrc</code> file.</p>
-<pre><code class="language-bash">$ cat ~/.zshrc
-</code></pre>
-<p>You should see configuration commands for asdf:</p>
-<pre><code class="language-bash">. /usr/local/opt/asdf/asdf.sh
-</code></pre>
-<p>Configuration for asdf should always be the last line in the <code>.zshrc</code> file, after setting any <code>$PATH</code> configuration.</p>
-<p>🚩 Close and reopen the Terminal window for the changes to the <code>.zshrc</code> file to be recognized.</p>
-<p>After closing and reopening the Terminal window, use <code>asdf --version</code> to check that asdf was installed successfully.</p>
-<pre><code class="language-bash">$ asdf --version
-v0.8.0
-</code></pre>
-<h3>Add the .asdfrc configuration file</h3>
-<p>Add a <code>.asdfrc</code> configuration file to your user home directory to enable asdf to read <code>.ruby-version</code> files. This is helpful with projects that use a <code>.ruby-version</code> file to specify a Ruby version.</p>
-<pre><code class="language-bash">$ echo &quot;legacy_version_file = yes&quot; &gt;&gt; ~/.asdfrc
-</code></pre>
-<p>Confirm the creation of the configuration file.</p>
-<pre><code class="language-bash">$ cat ~/.asdfrc
-legacy_version_file = yes
-</code></pre>
-<p>Now you can install the newest Ruby version.</p>
+            <yax-markdown theme="okaidia" mdsrc=""></yax-markdown>
           </div>
 
             <yax-tutorial-paginate></yax-tutorial-paginate>

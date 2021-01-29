@@ -57,32 +57,7 @@
           <div class="column is-9">
 
             <div id="doc-content" class="content">
-<h2>Tips: Removing Ruby</h2>
-<h3>Removing Ruby (asdf)</h3>
-<p>If you have installed Ruby using asdf, first list all installed versions.</p>
-<pre><code class="language-bash">$ asdf list ruby
-3.0.0
-</code></pre>
-<p>Then uninstall any version.</p>
-<pre><code class="language-bash">$ asdf uninstall ruby 3.0.0
-</code></pre>
-<h3>Removing Ruby (Chruby)</h3>
-<p>Chruby installs versions of Ruby in the <code>~/.rubies/</code> folder, so version 3.0.0 is in the <code>~/.rubies/ruby-3.0.0</code> folder. Gems for the version are in the <code>~/.gem/ruby/3.0.0/gems</code> folder.</p>
-<p>If you wish to remove a Ruby version, you can run:</p>
-<pre><code class="language-bash">$ rm -rf ~/.rubies/ruby-3.0.0
-$ rm -rf ~/.gem/ruby/ruby-3.0.0
-</code></pre>
-<h3>Removing Ruby (Homebrew)</h3>
-<p>If you have installed Ruby using Homebrew, you can uninstall with:</p>
-<pre><code class="language-bash">$ brew uninstall ruby
-</code></pre>
-<p>You can also remove the configuration from the  <code>.zshrc</code> file.</p>
-<pre><code class="language-bash">### ~/.zshrc~
-if [ -d &quot;/usr/local/opt/ruby/bin&quot; ]; then
-  export PATH=/usr/local/opt/ruby/bin:$PATH
-  export PATH=`gem environment gemdir`/bin:$PATH
-fi
-</code></pre>
+              <yax-markdown theme="okaidia" mdsrc=""></yax-markdown>
             </div>
             <yax-tutorial-paginate></yax-tutorial-paginate>
           </div>
