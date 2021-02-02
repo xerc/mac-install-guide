@@ -13,7 +13,7 @@
     {"title": "Install Homebrew", "url": "/ruby/2.html"},
     {"title": "Configure Git", "url": "/ruby/3.html"},
     {"title": "Asdf Version Manager", "url": "/ruby/4.html"},
-    {"title": "Install Ruby", "url": "/ruby/5.html"},
+    {"title": "Install Ruby with Asdf", "url": "/ruby/5.html"},
     {"title": "Update Gems", "url": "/ruby/6.html"},
     {"title": "Tips: Deployment", "url": "/ruby/7.html"},
     {"title": "Tips: Removing Ruby", "url": "/ruby/8.html"},

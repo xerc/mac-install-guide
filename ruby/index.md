@@ -1,8 +1,10 @@
-How to install Ruby on a Mac. Installing Ruby 3.0 on macOS Big Sur or Catalina. Up-to-date and kitchen-tested instructions, with troubleshooting tips, from the author of the book, _[Learn Ruby on Rails](https://learn-rails.com/)_.
+How to **install Ruby on a Mac**. Installing Ruby 3.0 on macOS Big Sur or Catalina. Up-to-date and kitchen-tested instructions, with troubleshooting tips, from the author of the book, _[Learn Ruby on Rails](https://learn-rails.com/)_.
 
 This article will help you set up a development environment using Ruby on a Mac, whether you are an experienced developer setting up a new computer or only a beginner.
 
-If you intend to develop web applications with Rails, switch to the guide [Install Ruby on Rails on macOS](https://learn-rails.com/install-rails-mac/index.html). It covers installation of Ruby, Node, Yarn, and Rails.
+If you intend to develop web applications with Rails, switch to the guide [Install Ruby on Rails on macOS](https://learn-rails.com/install-rails-mac/index.html). It provides more detail about installing Ruby, Node, Yarn, and Rails.
+
+If you've haven't been coding before, see the section, [Finding the Terminal on macOS](/ruby/13.html), to learn about basic tools you'll need (the Terminal application and text editor).
 
 > This is the most complete guide to installing Ruby on a Mac.
 
@@ -19,8 +21,6 @@ This guide provides full details, how to:
 - update gems
 - tips and troubleshooting
 
-If you've haven't been coding before, see the section, [Finding and Using the Terminal](/ruby/13.html), to learn about basic tools you'll need (the Terminal application and text editor).
-
 ## Installation choices
 
 You have several choices for installing and running Ruby on macOS:
@@ -33,7 +33,9 @@ You have several choices for installing and running Ruby on macOS:
 - [Homebrew](https://brew.sh/) (recommended)
 - system Ruby
 
-I'll explain which choice is best.
+Here's how to choose.
+
+Install with **Homebrew** if you’re building only one project with Ruby. If you’re a solo developer and you're juggling multiple projects that can't be updated all at once, use asdf or chruby or rbenv. Choose **asdf** if you're using multiple languages such as Ruby, Node, and Python; otherwise **chruby** or **rbenv** are fine for just managing Ruby versions. Finally, use **Docker** if you’re on a team with a complex project environment (for example, Ruby, Node, Redis, and PostgreSQL all in one project). See a [discussion](https://www.reddit.com/r/ruby/comments/ksyqau/ruby_30_asdf_chruby_or_docker/) for more advice; here are details.
 
 > asdf is a universal version manager
 
