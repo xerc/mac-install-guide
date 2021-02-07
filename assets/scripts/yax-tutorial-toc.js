@@ -25,7 +25,7 @@ export class YaxTutorialToc extends LitElement {
 				let heading = 'Contents/Pages';
 				let list_item = '';
 				if (pagination == 'onepage') {
-					heading = 'Collected Articles';
+					heading = 'Related Articles';
 				}
 				for (const [key, value] of Object.entries(pages)) {
 					list_item += '<li><a href="';
