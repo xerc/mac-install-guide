@@ -1,6 +1,6 @@
 ## How to check if Ruby is installed on a Mac
 
->> Question: Is Ruby installed on my Mac? Also, why it's bad to use the macOS system Ruby.
+>> Question: Is Ruby installed on my Mac? Does Ruby come installed on a Mac?
 
 To find out **is Ruby installed?**, just enter in your terminal application:
 
