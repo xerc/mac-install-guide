@@ -41,6 +41,7 @@ ruby 3.0.0p0
 MacOS comes with a "system Ruby" pre-installed. If you see:
 
 ```bash
+$ ruby -v
 ruby 2.6.3p62
 ```
 

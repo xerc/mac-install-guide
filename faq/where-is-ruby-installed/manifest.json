@@ -8,6 +8,8 @@
   "topic": "Ruby",
   "subtopic": "Installation",
   "pages": [
+    {"title": "Is Ruby installed", "url": "/faq/is-ruby-installed-mac/index.html"},
+    {"title": "Do not use the Mac system Ruby", "url": "/faq/do-not-use-mac-system-ruby/index.html"},
     {"title": "What Ruby version is installed", "url": "/faq/what-ruby-version-is-installed/index.html"},
     {"title": "Install Ruby on a Mac", "url": "/ruby/index.html"},
     {"title": "Install Ruby on Rails on a Mac", "url": "https://learn-rails.com/install-rails-mac/index.html"}
