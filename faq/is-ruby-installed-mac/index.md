@@ -38,20 +38,13 @@ $ ruby -v
 ruby 3.0.0p0
 ```
 
-MacOS comes with a "system Ruby" pre-installed. If you see:
-
-```bash
-$ ruby -v
-ruby 2.6.3p62
-```
-
-Use the `which` command to see where it is installed:
+MacOS comes with a "system Ruby" pre-installed. Use the `which` command to see if you are using the system Ruby:
 
 ```bash
 $ which ruby
 /usr/bin/ruby
 ```
 
-If you see `/usr/bin/ruby`, it is the pre-installed macOS system Ruby. It's a bad idea to use the Mac system Ruby because you'll need root access (sudo) to install gems (introducing a security risk). And you'll end up with a cluster of (sometimes incompatible) gems that can't be easily removed. That's why developers use a version manager such as asdf, chruby, rbenv, or rvm. A version manager can also help if you're juggling multiple projects that can't be updated all at once.
+If you see `/usr/bin/ruby`, it is the pre-installed macOS system Ruby. It's a bad idea to use the Mac system Ruby. See the article [Do not use the MacOS system Ruby](/faq/do-not-use-mac-system-ruby/index.html). That's why developers use a version manager such as asdf, chruby, rbenv, or rvm. A version manager can also help if you're juggling multiple projects that can't be updated all at once.
 
 For a guide that compares version managers and shows the best way to install Ruby, see [Install Ruby on a Mac](https://mac.install.guide/ruby/index.html).
