@@ -20,8 +20,8 @@ You can use the `which` command with flag `-a` to see if more than one Ruby exec
 
 ```bash
 $ which -a ruby
-ruby is /Users/daniel/.asdf/shims/ruby
-ruby is /usr/bin/ruby
+/Users/daniel/.asdf/shims/ruby
+/usr/bin/ruby
 ```
 
 The `which` or `which -a` commands may show the Ruby version number in the file path. To be certain what Ruby version you are using, use the `ruby -v` command. See the article [What Ruby Version is Installed?](/faq/what-ruby-version-is-installed/index.html) for more details.

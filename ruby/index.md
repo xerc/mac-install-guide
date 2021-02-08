@@ -17,6 +17,8 @@ This guide provides full details, how to:
 - update gems
 - tips and troubleshooting
 
+If you want to check if Ruby is already installed, see the article [Is Ruby Installed on my Mac?](/faq/is-ruby-installed-mac/index.html).
+
 ## Installation choices
 
 You have several choices for installing and running Ruby on macOS:

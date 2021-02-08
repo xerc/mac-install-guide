@@ -1,0 +1,15 @@
+{
+  "title": "What Ruby Version is Installed?",
+  "pubdate": "2021-02-07",
+  "pagination": "onepage",
+  "subscribers": "free",
+  "audience": "developer",
+  "level": "all",
+  "topic": "Ruby",
+  "subtopic": "Installation",
+  "pages": [
+    {"title": "Where is Ruby installed", "url": "/faq/where-is-ruby-installed/index.html"},
+    {"title": "Install Ruby on a Mac", "url": "/ruby/index.html"},
+    {"title": "Install Ruby on Rails on a Mac", "url": "https://learn-rails.com/install-rails-mac/index.html"}
+  ]
+}
