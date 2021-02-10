@@ -77,3 +77,7 @@ This was written in early 2021 when macOS Big Sur was the current version. [Appl
 If you've got something newer than macOS Big Sur, the system Ruby may already be gone. In that case, you'll need to install Ruby with Homebrew or use a version manager.
 
 See [Install Ruby on a Mac](https://mac.install.guide/ruby/index.html).
+
+## Comments?
+
+Advise or corrections? Comment on [Reddit](https://www.reddit.com/r/ruby/comments/lfxsgk/do_not_use_the_system_ruby_why/).
