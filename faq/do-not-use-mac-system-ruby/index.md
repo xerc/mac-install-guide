@@ -80,4 +80,4 @@ See [Install Ruby on a Mac](https://mac.install.guide/ruby/index.html).
 
 ## Comments?
 
-Advise or corrections? Comment on [Reddit](https://www.reddit.com/r/ruby/comments/lfxsgk/do_not_use_the_system_ruby_why/).
+Advise or corrections? Comment on [Reddit](https://www.reddit.com/r/ruby/comments/lfxsgk/do_not_use_the_system_ruby_why/) or [Stack Overflow](https://stackoverflow.com/questions/66116842/should-i-use-the-pre-installed-ruby-on-a-mac).
