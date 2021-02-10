@@ -13,19 +13,19 @@ $ which ruby
 
 If you see `/usr/bin/ruby`, it is the pre-installed macOS system Ruby.
 
-You should [Install Ruby with Homebrew](/ruby/12.html) or use a version manager such as asdf, chruby, rbenv, or rvm. A version manager can also help if you're juggling multiple projects that can't be updated all at once.
+For developing projects with Ruby, you should [Install Ruby with Homebrew](/ruby/12.html) or use a version manager such as asdf, chruby, rbenv, or rvm. A version manager can help if you're juggling multiple projects that can't be updated all at once. For a guide that compares version managers and shows the best way to install Ruby, see [Install Ruby on a Mac](https://mac.install.guide/ruby/index.html).
 
-For a guide that compares version managers and shows the best way to install Ruby, see [Install Ruby on a Mac](https://mac.install.guide/ruby/index.html).
+Some developers use the system Ruby for running sysadmin scripts. That's fine, as long as you don't alter the system Ruby by attempting to update or adding gems. Remember, the system Ruby is there for macOS, not for you.
 
-## Why the macOS system Ruby is bad
+## Why using the macOS system Ruby is bad
 
-Take a look at the reasons why it's a bad idea to use the Mac default Ruby.
+Take a look at the reasons why it's a bad idea to use the Mac default Ruby for development.
 
 ### Gem installation problems
 
 Ruby is a powerful and popular language because of thousands of RubyGems that provide ready-made software libraries to save development effort (you don't have to code everything from scratch). Most Ruby projects use a few gems (or sometimes dozens of gems).
 
-The default location for Ruby gems is the system Ruby directory `/Library/Ruby/Gems/2.6.0`. That directory is owned by `root`, the system superuser. Ordinary users are not allowed to write to it.
+The default location for Ruby gems is the system Ruby directory `/Library/Ruby/Gems/2.6.0`. That directory is owned by `root`, the system superuser. Ordinary users are not allowed to write to it (and you really shouldn't alter this folder).
 
 If you try to install a gem, for example, `gem install rails`, you'll get a permissions error:
 
@@ -42,19 +42,21 @@ You can install gems as a superuser to override the permissions restriction. But
 $ sudo gem install rails
 ```
 
-A gem might contain malicious code that tampers with your computer.
+A gem might contain malicious code that tampers with your computer. Any time you have to run `sudo`, you should ask yourself why. In this case, you need `sudo` because you're altering system files that are managed by the OS.
 
 ### Gem management
 
 Even if you are willing to take a risk with your system security, you'll end up with a folder of (sometimes incompatible) gems that can be confusing to manage. Imagine if you've got projects that use different versions of a gem (maybe there was a new gem release between your projects). Or maybe two different gems in your project rely on different versions of a dependent gem? Which gem version is installed in your system gems folder? Which does your project need to use?
 
-The Ruby [Bundler](https://bundler.io/) tool is essential to managing gems, both for installing gems and their dependencies, and for enforcing which gem version is used on a particular project. The Gemfile in a project directory keeps track of the gems used in any project. You can [install Bundler](https://bundler.io/doc/troubleshooting.html) with a command that uses your home directory for gems `gem install bundler --user-install` but this requires modifying your `~/.zshrc` file to update the `$PATH` variable. It's easier to install Ruby with Homebrew or use a version manager and use the Bundler that comes installed, which will use your home directory for gems. Bundler will keep versions of gems for different Ruby versions in separate folders. Bundler will then install multiple versions of gems and use a project Gemfile to load the gems that are needed. Bundler sandboxes each project so that its gem dependencies don't conflict with other projects.
+The Ruby [Bundler](https://bundler.io/) tool is essential to managing gems, both for installing gems and their dependencies, and for enforcing which gem version is used on a particular project. The Gemfile in a project directory keeps track of the gems used in any project. You can work around the systems permission problem by [installing Bundler](https://bundler.io/doc/troubleshooting.html) with a command that uses your home directory for gems. It's easier to install Ruby with Homebrew or use a version manager and use the Bundler that comes installed, which will use your home directory for gems.
+
+Bundler will keep versions of gems for different Ruby versions in separate folders. Bundler will then install multiple versions of gems and use a project Gemfile to load the gems that are needed. Bundler sandboxes each project so that its gem dependencies don't conflict with other projects.
 
 ### An old Ruby
 
 You should start projects with the newest version of Ruby. And you should try to update older projects to the newest Ruby, if you can (a version manager helps if you can't update all projects at once).
 
-At this time, Ruby 3.0 is the newest Ruby and the macOS system Ruby is an old 2.6.3. You can't easily replace the system Ruby, which is another reason you should install Ruby with Homebrew or use a version manager.
+At this time, the macOS system Ruby is an old 2.6.3 version and Ruby 3.0 is the newest Ruby. You shouldn't replace the system Ruby, which is another reason you should install Ruby with Homebrew or use a version manager.
 
 ## Leave the system Ruby in place
 
