@@ -81,7 +81,7 @@ This was written in early 2021 when macOS Big Sur was the current version. [Appl
 
 "Scripting language runtimes such as Python, Ruby, and Perl are included in macOS for compatibility with legacy software. Future versions of macOS won’t include scripting language runtimes by default, and might require you to install additional packages."
 
-If you've got something newer than macOS Big Sur, the system Ruby may already be gone. In that case, you'll need to install Ruby with Homebrew or use a version manager.
+If you've got something newer than macOS Big Sur, the system Ruby may already be gone (or hidden from you). In that case, you'll need to install Ruby with Homebrew or use a version manager.
 
 ## Enjoy Ruby
 
