@@ -1,6 +1,8 @@
-## Do not use the Mac system Ruby
-
 >> Question: Why is it bad to use the macOS system Ruby? Why not use the Mac default Ruby?
+
+You may have heard, "Don't use the Mac system Ruby." It's good advice, but why?
+
+## Which Ruby?
 
 MacOS comes with a "system Ruby" pre-installed.
 
@@ -13,19 +15,20 @@ $ which ruby
 
 If you see `/usr/bin/ruby`, it is the pre-installed macOS system Ruby.
 
-For developing projects with Ruby, you should [Install Ruby with Homebrew](/ruby/12.html) or use a version manager such as asdf, chruby, rbenv, or rvm. A version manager can help if you're juggling multiple projects that can't be updated all at once. For a guide that compares version managers and shows the best way to install Ruby, see [Install Ruby on a Mac](https://mac.install.guide/ruby/index.html).
 
-Some developers use the system Ruby for running sysadmin scripts. That's fine, as long as you don't alter the system Ruby by attempting to update or adding gems. Remember, the system Ruby is there for macOS, not for you.
+Some developers use the system Ruby for running sysadmin scripts. That's fine, as long as you don't alter the system Ruby by attempting to update or add gems.
+
+For developing projects with Ruby, you should [Install Ruby with Homebrew](/ruby/12.html) or use a version manager such as asdf, chruby, rbenv, or rvm. A version manager helps if you're juggling multiple projects and can't update all at once. For a guide that compares version managers and shows the best way to install Ruby, see [Install Ruby on a Mac](https://mac.install.guide/ruby/index.html).
 
 ## Why using the macOS system Ruby is bad
 
-Take a look at the reasons why it's a bad idea to use the Mac default Ruby for development.
+Let's take a look at the reasons why it's a bad idea to use the Mac default Ruby for development.
 
 ### Gem installation problems
 
-Ruby is a powerful and popular language because of thousands of RubyGems that provide ready-made software libraries to save development effort (you don't have to code everything from scratch). Most Ruby projects use a few gems (or sometimes dozens of gems).
+RubyGems are the ready-made software libraries that make development easy and fun in Ruby. Most Ruby projects use at least a few gems.
 
-The default location for Ruby gems is the system Ruby directory `/Library/Ruby/Gems/2.6.0`. That directory is owned by `root`, the system superuser. Ordinary users are not allowed to write to it (and you really shouldn't alter this folder).
+If you use the Mac system Ruby, running `gem install` will try to save gems to the system Ruby directory `/Library/Ruby/Gems/2.6.0`. That directory is owned by `root`, the system superuser. Ordinary users are not allowed to write to it (and you really shouldn't alter this folder).
 
 If you try to install a gem, for example, `gem install rails`, you'll get a permissions error:
 
@@ -34,29 +37,33 @@ ERROR: While executing gem ... (Gem::FilePermissionError)
 You don't have write permissions for the /Library/Ruby/Gems/2.6.0 directory
 ```
 
-### System security issues
+### Don't violate system security
 
-You can install gems as a superuser to override the permissions restriction. But don't do this!
+Unix-based systems are powerful, so there's a workaround. You can install gems as a superuser to override the permissions restriction. But don't do this!
 
 ```bash
 $ sudo gem install rails
 ```
 
-A gem might contain malicious code that tampers with your computer. Any time you have to run `sudo`, you should ask yourself why. In this case, you need `sudo` because you're altering system files that are managed by the OS.
+Any time you are about to run `sudo`, you should stop and ask if you're about to shoot yourself in the foot.
+
+In this case, you need `sudo` because you're altering system files that are managed by the OS. Don't do it! You may leave the system in a broken or compromised state. Even worse, a gem might contain malicious code that tampers with your computer.
 
 ### Gem management
 
 Even if you are willing to take a risk with your system security, you'll end up with a folder of (sometimes incompatible) gems that can be confusing to manage. Imagine if you've got projects that use different versions of a gem (maybe there was a new gem release between your projects). Or maybe two different gems in your project rely on different versions of a dependent gem? Which gem version is installed in your system gems folder? Which does your project need to use?
 
-The Ruby [Bundler](https://bundler.io/) tool is essential to managing gems, both for installing gems and their dependencies, and for enforcing which gem version is used on a particular project. The Gemfile in a project directory keeps track of the gems used in any project. You can work around the systems permission problem by [installing Bundler](https://bundler.io/doc/troubleshooting.html) with a command that uses your home directory for gems. It's easier to install Ruby with Homebrew or use a version manager and use the Bundler that comes installed, which will use your home directory for gems.
+Experienced developers use [Bundler](https://bundler.io/) to install gems and manage their dependencies.
+
+Bundler installs gems and their dependencies. It also manages which gem version is used on a particular project. The Gemfile in a project directory keeps track of the gems used in any project. You can work around the systems permission problem by [installing Bundler](https://bundler.io/doc/troubleshooting.html) with a command that uses your home directory for gems. But it's easier to install Ruby with Homebrew or use a version manager and use the Bundler that comes installed, which will correctly set up your local development environment.
 
 Bundler will keep versions of gems for different Ruby versions in separate folders. Bundler will then install multiple versions of gems and use a project Gemfile to load the gems that are needed. Bundler sandboxes each project so that its gem dependencies don't conflict with other projects.
 
-### An old Ruby
+### The Mac's old Ruby
 
-You should start projects with the newest version of Ruby. And you should try to update older projects to the newest Ruby, if you can (a version manager helps if you can't update all projects at once).
+When you start a project, use the newest Ruby release (it's 3.0 at the time this was written).
 
-At this time, the macOS system Ruby is an old 2.6.3 version and Ruby 3.0 is the newest Ruby. You shouldn't replace the system Ruby, which is another reason you should install Ruby with Homebrew or use a version manager.
+The system Ruby in macOS Catalina or Big Sur is Ruby 2.6.3, which is old. If you're just starting with Ruby, install with Homebrew and work on a project with Ruby 3.0. When you start building another project, it may be time to install a version manager so you can juggle projects with different Ruby versions.
 
 ## Leave the system Ruby in place
 
@@ -76,7 +83,11 @@ This was written in early 2021 when macOS Big Sur was the current version. [Appl
 
 If you've got something newer than macOS Big Sur, the system Ruby may already be gone. In that case, you'll need to install Ruby with Homebrew or use a version manager.
 
-See [Install Ruby on a Mac](https://mac.install.guide/ruby/index.html).
+## Enjoy Ruby
+
+For developers planning to build web applications with Rails, I've written a guide, [Install Rails on a Mac](https://learn-rails.com/install-rails-mac/index.html), which goes beyond [Install Ruby on a Mac](https://mac.install.guide/ruby/index.html) to show how to pick a version manager that will work with Node as well as Ruby.
+
+Enjoy the pleasure of coding in Ruby! After all, it is known as a language dedicated to programmer happiness. But remember, the system Ruby is there for macOS, not for you.
 
 ## Comments?
 
