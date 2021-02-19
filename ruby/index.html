@@ -22,73 +22,54 @@
     <script type="module" src="/assets/scripts/tags.js"></script>
     <script type="application/ld+json">
       {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Install Ruby 3.0 · Mac · Complete Guide",
-        "image": [
-          "https://learn-rails.com/images/icons/rails.png"
-         ],
+        "@context": "http://schema.org",
+        "@type": "HowTo",
+        "name": "Install Ruby 3.0 · Mac · Complete Guide",
+        "description": "How to install Ruby 3.0 on macOS Big Sur or Catalina. Up-to-date instructions from the author of the book, Learn Ruby on Rails.",
         "datePublished": "2021-01-06T08:00:00+08:00",
-        "dateModified": "2021-02-05T08:00:00+08:00"
+        "dateModified": "2021-02-19T08:00:00+08:00"
+        "totalTime": "PT1H",
+        "step":[
+          {
+            "@type": "HowToStep",
+            "name": "Install Xcode CLT",
+            "text": "Install Apple's Xcode Command Line Tools. Here's how.",
+            "image": "https://mac.install.guide/assets/images/ruby/how-to/xcode.svg",
+            "url": "https://mac.install.guide/ruby/1.html"
+          }, {
+            "@type": "HowToStep",
+            "name": "Install Homebrew",
+            "text": "Get the Homebrew utility. What it is and why you need it.",
+            "image": "https://mac.install.guide/assets/images/ruby/how-to/homebrew.svg",
+            "url": "https://mac.install.guide/ruby/2.html"
+          }, {
+            "@type": "HowToStep",
+            "name": "Configure Git",
+            "text": "Configure Git. Step by step instructions.",
+            "image": "https://mac.install.guide/assets/images/ruby/how-to/git.svg",
+            "url": "https://mac.install.guide/ruby/3.html"
+          }, {
+            "@type": "HowToStep",
+            "name": "Install a version manager",
+            "text": "Install a version manager to manage multiple versions of Ruby.",
+            "image": "https://mac.install.guide/assets/images/ruby/how-to/version-manager.svg",
+            "url": "https://mac.install.guide/ruby/4.html"
+          }, {
+            "@type": "HowToStep",
+            "name": "Install Ruby",
+            "text": "Install Ruby.",
+            "image": "https://mac.install.guide/assets/images/ruby/how-to/ruby.svg",
+            "url": "https://mac.install.guide/ruby/5.html"
+          }, {
+            "@type": "HowToStep",
+            "name": "Update RubyGems",
+            "text": "Update RubyGems.",
+            "image": "https://mac.install.guide/assets/images/ruby/how-to/rubygems.svg",
+            "url": "https://mac.install.guide/ruby/6.html"
+          }
+        ]
       }
       </script>
-      <script type="application/ld+json">
-        {
-          "@context": "http://schema.org",
-          "@type": "HowTo",
-          "name": "How to install Ruby on a Mac",
-          "description": "How to install Ruby 3.0 on macOS Big Sur or Catalina. Up-to-date instructions from the author of the book, Learn Ruby on Rails.",
-          "totalTime": "PT1H",
-          "tool": [
-            {
-              "@type": "HowToTool",
-              "name": "Terminal application"
-            }, {
-              "@type": "HowToTool",
-              "name": "Text editor"
-            }
-          ],
-          "step":[
-            {
-              "@type": "HowToStep",
-              "name": "Xcode Command Line Tools",
-              "text": "Apple's Xcode Command Line Tools give you the Unix tools needed to install Ruby. It's easiest to install Command Line Tools as a part of installing Homebrew.",
-              "image": "https://mac.install.guide/assets/images/ruby/how-to/xcode.svg",
-              "url": "https://mac.install.guide/ruby/1.html"
-            }, {
-              "@type": "HowToStep",
-              "name": "Install Homebrew",
-              "text": "Use the Homebrew utility to install essential Unix software packages.",
-              "image": "https://mac.install.guide/assets/images/ruby/how-to/homebrew.svg",
-              "url": "https://mac.install.guide/ruby/2.html"
-            }, {
-              "@type": "HowToStep",
-              "name": "Configure Git",
-              "text": "Git is essential software for save-as-you-go control of the code you write.",
-              "image": "https://mac.install.guide/assets/images/ruby/how-to/git.svg",
-              "url": "https://mac.install.guide/ruby/3.html"
-            }, {
-              "@type": "HowToStep",
-              "name": "Install a version manager",
-              "text": "A software version manager helps you manage multiple versions of Ruby.",
-              "image": "https://mac.install.guide/assets/images/ruby/how-to/version-manager.svg",
-              "url": "https://mac.install.guide/ruby/4.html"
-            }, {
-              "@type": "HowToStep",
-              "name": "Install Ruby",
-              "text": "If you are using a software version manager, use it to install Ruby. Otherwise, install Ruby with Homebrew.",
-              "image": "https://mac.install.guide/assets/images/ruby/how-to/ruby.svg",
-              "url": "https://mac.install.guide/ruby/5.html"
-            }, {
-              "@type": "HowToStep",
-              "name": "Update gems",
-              "text": "Update RubyGems to keep your development environment up to date.",
-              "image": "https://mac.install.guide/assets/images/ruby/how-to/rubygems.svg",
-              "url": "https://mac.install.guide/ruby/6.html"
-            }
-          ]
-        }
-        </script>
   </head>
 
   <body>
@@ -109,7 +90,7 @@
           </div>
 
           <div class="column is-9">
-            <p class="has-text-right is-size-7"><em>Last updated February 5, 2021</em></p>
+            <p class="has-text-right is-size-7"><em>Last updated February 19, 2021</em></p>
 
             <div id="doc-content" class="content">
               <yax-markdown theme="okaidia" mdsrc=""></yax-markdown>
