@@ -30,7 +30,7 @@ export class YaxMarkdown extends LitElement {
    */
   constructor() {
     super();
-    this.safe = true;
+    this.safe = false;
     this.mdsrc = '';
     this.markdown = '';
     this.theme = '';
@@ -164,6 +164,9 @@ export class YaxMarkdown extends LitElement {
       blockquote p {
         display: inline;
       }
+    }
+    h2 {
+      display: inline;
     }
     </style>`;
   }
