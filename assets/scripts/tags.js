@@ -2,6 +2,7 @@ import { InstallguideAd } from './installguide-ad.js';
 import { InstallguideFooter } from './installguide-footer.js';
 import { InstallguideNavbar } from './installguide-navbar.js';
 import { YaxAuthorKehoe } from './yax-author-kehoe.js';
+import { YaxFaq} from './yax-faq.js';
 import { YaxMarkdown } from './yax-markdown.js';
 import { YaxTutorialHero } from './yax-tutorial-hero.js';
 import { YaxTutorialPaginate } from './yax-tutorial-paginate.js';
@@ -11,6 +12,7 @@ const YaxTags = {
   InstallguideFooter,
   InstallguideNavbar,
   YaxAuthorKehoe,
+  YaxFaq,
   YaxMarkdown,
   YaxTutorialHero,
   YaxTutorialPaginate,
