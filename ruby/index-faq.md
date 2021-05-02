@@ -1,3 +1,5 @@
+<h2>FAQ</h2>
+
 <details>
 <summary><h2>What is Ruby on Mac?</h2></summary>
 <p>
