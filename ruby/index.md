@@ -21,9 +21,9 @@ This installation guide provides complete details with explanations of how and w
 
 ## Installation steps
 
-Here are steps to install Ruby.
+Here are steps to install Ruby (details in this complete guide).
 - prepare your Mac
-- install Homebrew or a software version manager _(see below to choose)_
+- install Homebrew or a software version manager
 - install Ruby
 - update `$PATH` settings in the `.zshrc` file if necessary
 
