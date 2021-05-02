@@ -17,14 +17,14 @@ Every Mac comes with a pre-installed Terminal application. Use it to run softwar
 <details>
 <summary><h2>What is the current stable Ruby version?</h2></summary>
 <p>
-Ruby 3.0 is the Ruby latest version (released Dec 25, 2020). Visit the <a href="https://www.ruby-lang.org/en/downloads/releases/">Ruby releases page</a> at the official Ruby website to check for a newer version. Each release has a link to a release notes page which details changes and security fixes. Note that MacOS users seldom download Ruby to build from source. Instead, Mac users <a href="/ruby/13.html">install the latest Ruby with Homebrew</a> or get the latest Ruby version with the installation utilities that accompany a version manager such as asdf, chruby, rbenv, or rvm.
+Ruby 3.0.1 is the Ruby latest version (3.0 was released Dec 25, 2020). Visit the <a href="https://www.ruby-lang.org/en/downloads/releases/">Ruby releases page</a> at the official Ruby website to check for a newer version. Each release has a link to a release notes page which details changes and security fixes. Note that MacOS users seldom download Ruby to build from source. Instead, Mac users <a href="/ruby/13.html">install the latest Ruby with Homebrew</a> or get the latest Ruby version with the installation utilities that accompany a version manager such as asdf, chruby, rbenv, or rvm.
 </p>
 </details>
 
 <details>
 <summary><h2>What version of Ruby should I use?</h2></summary>
 <p>
-Use the latest version of Ruby for software development (except of course if you are maintaining software built with an older Ruby version, in which case you should try to upgrade the software). For running scripts, you can use the <a href="/faq/do-not-use-mac-system-ruby/index.html">"system" Ruby</a> comes pre-installed on macOS. Ruby 3.0 is the Ruby latest version (released Dec 25, 2020). Visit the <a href="https://www.ruby-lang.org/en/downloads/releases/">Ruby releases page</a> at the official Ruby website to check for a newer version. Mac users <a href="/ruby/13.html">install the latest Ruby with Homebrew</a> or get the latest Ruby version with the installation utilities that accompany a version manager such as asdf, chruby, rbenv, or rvm.
+Use the latest version of Ruby for software development (except of course if you are maintaining software built with an older Ruby version, in which case you should try to upgrade the software). For running scripts, you can use the <a href="/faq/do-not-use-mac-system-ruby/index.html">"system" Ruby</a> comes pre-installed on macOS. Ruby 3.0.1 is the Ruby latest version (3.0 was released Dec 25, 2020). Visit the <a href="https://www.ruby-lang.org/en/downloads/releases/">Ruby releases page</a> at the official Ruby website to check for a newer version. Mac users <a href="/ruby/13.html">install the latest Ruby with Homebrew</a> or get the latest Ruby version with the installation utilities that accompany a version manager such as asdf, chruby, rbenv, or rvm.
 </p>
 </details>
 
@@ -38,14 +38,14 @@ Where can I download Ruby for Mac? The official Ruby organization maintains a <a
 <details>
 <summary><h2>Is Ruby Installed on a Mac?</h2></summary>
 <p>
-A <a href="/faq/do-not-use-mac-system-ruby/index.html">"system" Ruby</a> comes pre-installed on macOS to support scripting and casual utility programming. MacOS Big Sur and Catalina include an older Ruby 2.6.3 (Ruby 3.0 is the newest version). To check if Ruby is installed and see its version, enter `ruby -v` in the terminal application. For details, see the article <a href="/faq/is-ruby-installed-mac/index.html">Is Ruby Installed on my Mac?</a> Most developers use a software version manager to install a newer Ruby version for developing software on a Mac.
+A <a href="/faq/do-not-use-mac-system-ruby/index.html">"system" Ruby</a> comes pre-installed on macOS to support scripting and casual utility programming. MacOS Big Sur and Catalina include an older Ruby 2.6.3 (Ruby 3.0.1 is the newest version). To check if Ruby is installed and see its version, enter `ruby -v` in the terminal application. For details, see the article <a href="/faq/is-ruby-installed-mac/index.html">Is Ruby Installed on my Mac?</a> Most developers use a software version manager to install a newer Ruby version for developing software on a Mac.
 </p>
 </details>
 
 <details>
 <summary><h2>How to check the Ruby version on Mac?</h2></summary>
 <p>
-On macOS Big Sur and Catalina you likely have the older Ruby 2.6.3 version available as the pre-installed "system" Ruby (Ruby 3.0 is the newest version). Enter `ruby -v` in the terminal application to see the version number. Entering the command `which -a ruby` will show you if more than one Ruby executable is installed. If Ruby is installed, the `gem env` command gives you a full picture of your local Ruby environment, including the Ruby version. See the article <a href="/faq/what-ruby-version-is-installed/index.html">What Ruby Version is Installed?</a> for details.
+On macOS Big Sur and Catalina you likely have the older Ruby 2.6.3 version available as the pre-installed "system" Ruby (Ruby 3.0.1 is the newest version). Enter `ruby -v` in the terminal application to see the version number. Entering the command `which -a ruby` will show you if more than one Ruby executable is installed. If Ruby is installed, the `gem env` command gives you a full picture of your local Ruby environment, including the Ruby version. See the article <a href="/faq/what-ruby-version-is-installed/index.html">What Ruby Version is Installed?</a> for details.
 </p>
 </details>
 
@@ -73,7 +73,7 @@ MacOS comes with a "system Ruby" pre-installed. It's fine to use the system Ruby
 <details>
 <summary><h2>How to update the Ruby version on Mac?</h2></summary>
 <p>
-MacOS comes with a "system Ruby" pre-installed (it is Ruby 2.6.3 version on Big Sur and Catalina). If you need a newer Ruby version (the latest is Ruby 3.0), don't upgrade the system Ruby. Leave it alone (see <a href="/faq/do-not-use-mac-system-ruby/index.html">Do Not Use the MacOS System Ruby</a> for why; basically, the system Ruby is there for macOS, not for you). Instead, <a href="/ruby/13.html">Install Ruby with Homebrew</a> or use a software version manager such as asdf (see <a href="/ruby/6.html">Install Ruby with asdf</a>).
+MacOS comes with a "system Ruby" pre-installed (it is Ruby 2.6.3 version on Big Sur and Catalina). If you need a newer Ruby version (the latest is Ruby 3.0.1), don't upgrade the system Ruby. Leave it alone (see <a href="/faq/do-not-use-mac-system-ruby/index.html">Do Not Use the MacOS System Ruby</a> for why; basically, the system Ruby is there for macOS, not for you). Instead, <a href="/ruby/13.html">Install Ruby with Homebrew</a> or use a software version manager such as asdf (see <a href="/ruby/6.html">Install Ruby with asdf</a>).
 </p>
 </details>
 
@@ -108,7 +108,7 @@ You can install Ruby on Mac from the command line using the Terminal application
 <details>
 <summary><h2>Can you install Ruby on Mac M1 (Apple Silicon)?</h2></summary>
 <p>
-Ruby 3.0 (the latest version) runs great on macOS with the M1 chip (Apple Silicon). As of Feb 5, 2021, Homebrew 3.0.0 supports Apple Silicon natively and you can <a href="/ruby/13.html">Install Ruby with Homebrew</a>. Or use a software version manager such as asdf (see <a href="/ruby/6.html">Install Ruby with asdf</a>). There is no need to download the Ruby source code and compile as Homebrew or software version managers install Ruby for you.
+Ruby 3.0.1 (the latest version) runs great on macOS with the M1 chip (Apple Silicon). As of Feb 5, 2021, Homebrew 3.0.0 supports Apple Silicon natively and you can <a href="/ruby/13.html">Install Ruby with Homebrew</a>. Or use a software version manager such as asdf (see <a href="/ruby/6.html">Install Ruby with asdf</a>). There is no need to download the Ruby source code and compile as Homebrew or software version managers install Ruby for you.
 </p>
 </details>
 
