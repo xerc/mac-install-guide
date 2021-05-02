@@ -1,6 +1,6 @@
 {
-  "title": "Do Not Use the MacOS System Ruby",
-  "pubdate": "2021-02-08",
+  "title": "How to downgrade Ruby on macOS",
+  "pubdate": "2021-05-02",
   "pagination": "onepage",
   "subscribers": "free",
   "audience": "developer",
@@ -9,9 +9,8 @@
   "subtopic": "Installation",
   "pages": [
     {"title": "Is Ruby installed", "url": "/faq/is-ruby-installed-mac/index.html"},
+    {"title": "Do not use the Mac system Ruby", "url": "/faq/do-not-use-mac-system-ruby/index.html"},
     {"title": "What Ruby version is installed", "url": "/faq/what-ruby-version-is-installed/index.html"},
-    {"title": "Where is Ruby installed", "url": "/faq/where-is-ruby-installed/index.html"},
-    {"title": "Downgrade Ruby on Mac", "url": "/faq/downgrade-ruby/index.html"},
     {"title": "Install Ruby on a Mac", "url": "/ruby/index.html"},
     {"title": "Install Ruby on Rails on a Mac", "url": "https://learn-rails.com/install-rails-mac/index.html"}
   ]
