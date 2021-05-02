@@ -239,9 +239,9 @@ Changing the Ruby version on macOS depends on how it was installed. See the arti
 </details>
 
 <details>
-<summary><h2>How to downgrade the Ruby version on Mac?</h2></summary>
+<summary><h2>How to downgrade Ruby on Mac?</h2></summary>
 <p>
-Downgrading the Ruby version on macOS requires <a href="/ruby/9.html">Uninstalling Ruby</a> and re-installing. Don't uninstall the <a href="/faq/do-not-use-mac-system-ruby/index.html">"system" Ruby</a> as it is there for macOS, not you. It's best to install a software version manager if you expect to switch among Ruby versions. Asdf is good for managing multiple languages. <a href="/ruby/6.html">Install Ruby with asdf</a> if you are developing Rails web applications (which require Ruby, Node, and Yarn) or if you are using multiple languages such as Ruby, Node, and Python. <a href="/ruby/12.html">Install Ruby with chruby</a> or rbenv if you need to manage only Ruby versions (chruby is simpler than rbenv).
+Downgrading the Ruby version on macOS depends on how you installed Ruby. Did you use Homebrew or a version manager like asdf chruby, rbenv, or rvm? See <a href="/ruby/9.html">Uninstalling Ruby</a> to learn how to check. If you're using the <a href="/faq/do-not-use-mac-system-ruby/index.html">"system" Ruby</a> don't uninstall it as it is there for macOS, not you. If you installed Ruby with a version manager, you can switch among versions. If you installed Ruby with Homebrew, it's best to install a software version manager so you can switch among Ruby versions. Asdf is good for managing multiple languages. <a href="/ruby/6.html">Install Ruby with asdf</a> if you are developing Rails web applications (which require Ruby, Node, and Yarn) or if you are using multiple languages such as Ruby, Node, and Python. <a href="/ruby/12.html">Install Ruby with chruby</a> or rbenv if you need to manage only Ruby versions (chruby is simpler than rbenv).
 </p>
 </details>
 
