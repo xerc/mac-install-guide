@@ -45,14 +45,14 @@ A <a href="/faq/do-not-use-mac-system-ruby/index.html">"system" Ruby</a> comes p
 <details>
 <summary><h2>How to check the Ruby version on Mac?</h2></summary>
 <p>
-On macOS Big Sur and Catalina you likely have the older Ruby 2.6.3 version available as the pre-installed "system" Ruby (Ruby 3.0.1 is the newest version). Enter `ruby -v` in the terminal application to see the version number. Entering the command `which -a ruby` will show you if more than one Ruby executable is installed. If Ruby is installed, the `gem env` command gives you a full picture of your local Ruby environment, including the Ruby version. See the article <a href="/faq/what-ruby-version-is-installed/index.html">What Ruby Version is Installed?</a> for details.
+Enter `ruby -v` in the terminal application to see the Ruby version on macOS. Entering the command `which -a ruby` will show you if more than one Ruby executable is installed. If Ruby is installed, the `gem env` command gives you a full picture of your local Ruby environment, including the Ruby version. See the article <a href="/faq/check-ruby-version/index.html">Check Ruby version on Mac</a> for details.
 </p>
 </details>
 
 <details>
 <summary><h2>How to test if Ruby is installed on Mac?</h2></summary>
 <p>
-If Ruby is installed on a Mac, entering `ruby -v` in the terminal will show the version. Entering the command `which -a ruby` will show if more than one Ruby version is installed. See the article <a href="/faq/what-ruby-version-is-installed/index.html">What Ruby Version is Installed?</a> for details.
+If Ruby is installed on a Mac, entering `ruby -v` in the terminal will show the version. Entering the command `which -a ruby` will show if more than one Ruby version is installed. See the article <a href="/faq/check-ruby-version/index.html">Check Ruby version on Mac</a> for details.
 </p>
 </details>
 
@@ -192,7 +192,7 @@ Any version of Ruby installed with asdf can be uninstalled with `asdf uninstall 
 <details>
 <summary><h2>Should you install Ruby with rvm on a Mac?</h2></summary>
 <p>
-The Ruby Version Manager (rvm) has been a popular utility for installing and switching among Ruby versions for many years. It is still reliable and maintained. However, one of its most important features, the ability to create and switch among gemsets, is no longer needed since Bundler now ships with Ruby. For that reason, many Ruby developers now use chruby as a version manager in conjunction with the `ruby-install` utility (chruby is simpler than rvm and rbenv, the other popular Ruby version manager). If you are just switching among Ruby versions, try chruby. See <a href="/ruby/12.html">Install Ruby with chruby</a>. If you want to switch among versions of multiple languages, try asdf. See instructions to <a href="/ruby/5.html">install asdf with Mac Homebrew</a> and <a href="/ruby/6.html">install Ruby with asdf</a>. Asdf is popular among Rails developers (who must use Ruby, Node, and Yarn).
+The Ruby version Manager (rvm) has been a popular utility for installing and switching among Ruby versions for many years. It is still reliable and maintained. However, one of its most important features, the ability to create and switch among gemsets, is no longer needed since Bundler now ships with Ruby. For that reason, many Ruby developers now use chruby as a version manager in conjunction with the `ruby-install` utility (chruby is simpler than rvm and rbenv, the other popular Ruby version manager). If you are just switching among Ruby versions, try chruby. See <a href="/ruby/12.html">Install Ruby with chruby</a>. If you want to switch among versions of multiple languages, try asdf. See instructions to <a href="/ruby/5.html">install asdf with Mac Homebrew</a> and <a href="/ruby/6.html">install Ruby with asdf</a>. Asdf is popular among Rails developers (who must use Ruby, Node, and Yarn).
 </p>
 </details>
 
@@ -234,14 +234,14 @@ Entering the command `which -a ruby` will show you if more than one Ruby executa
 <details>
 <summary><h2>How to change the Ruby version on Mac?</h2></summary>
 <p>
-Changing the Ruby version on macOS depends on how it was installed. See the article <a href="/faq/what-ruby-version-is-installed/index.html">What Ruby Version is Installed?</a> to find how it was installed. Don't try to change the <a href="/faq/do-not-use-mac-system-ruby/index.html">"system" Ruby</a> as it is there for macOS, not you. It's best to install a software version manager if you plan to switch among Ruby versions. Or you can use Homebrew to install the latest Ruby version if you don't plan to switch regularly.
+Changing the Ruby version on macOS depends on how it was installed. See the article <a href="/faq/check-ruby-version/index.html">Check Ruby version on Mac</a> to find how it was installed. Don't try to change the <a href="/faq/do-not-use-mac-system-ruby/index.html">"system" Ruby</a> as it is there for macOS, not you. It's best to install a software version manager if you plan to switch among Ruby versions. Or you can use Homebrew to install the latest Ruby version if you don't plan to switch regularly.
 </p>
 </details>
 
 <details>
 <summary><h2>How to downgrade Ruby on Mac?</h2></summary>
 <p>
-Downgrading the Ruby version on macOS depends on how you installed Ruby. Did you use Homebrew or a version manager like asdf chruby, rbenv, or rvm? See <a href="/faq/what-ruby-version-is-installed/index.html">What Ruby Version is Installed?</a> to check. If you're using the <a href="/faq/do-not-use-mac-system-ruby/index.html">"system" Ruby</a> don't uninstall it as it is there for macOS, not you. If you installed Ruby with Homebrew, it's best to install a software version manager so you can switch among Ruby versions. Asdf is good for managing multiple languages. <a href="/ruby/6.html">Install Ruby with asdf</a> if you are developing Rails web applications (which require Ruby, Node, and Yarn) or if you are using multiple languages such as Ruby, Node, and Python. <a href="/ruby/12.html">Install Ruby with chruby</a>, rbenv, or rvm if you need to manage only Ruby versions (chruby is simpler than rbenv or rvm). If you installed Ruby with a version manager, you can switch among versions. See <a href="/faq/downgrade-ruby/index.html">Downgrade Ruby on Mac</a> for details.
+Downgrading the Ruby version on macOS depends on how you installed Ruby. Did you use Homebrew or a version manager like asdf chruby, rbenv, or rvm? See <a href="/faq/check-ruby-version/index.html">Check Ruby version on Mac</a> to check. If you're using the <a href="/faq/do-not-use-mac-system-ruby/index.html">"system" Ruby</a> don't uninstall it as it is there for macOS, not you. If you installed Ruby with Homebrew, it's best to install a software version manager so you can switch among Ruby versions. Asdf is good for managing multiple languages. <a href="/ruby/6.html">Install Ruby with asdf</a> if you are developing Rails web applications (which require Ruby, Node, and Yarn) or if you are using multiple languages such as Ruby, Node, and Python. <a href="/ruby/12.html">Install Ruby with chruby</a>, rbenv, or rvm if you need to manage only Ruby versions (chruby is simpler than rbenv or rvm). If you installed Ruby with a version manager, you can switch among versions. See <a href="/faq/downgrade-ruby/index.html">Downgrade Ruby on Mac</a> for details.
 </p>
 </details>
 

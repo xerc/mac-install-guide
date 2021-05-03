@@ -1,6 +1,6 @@
 ## Downgrading Ruby on Mac
 
-Downgrading the Ruby version on macOS depends on how you installed Ruby. Did you use Homebrew or a version manager like asdf chruby, rbenv, or rvm? See <a href="/faq/what-ruby-version-is-installed/index.html">What Ruby Version is Installed?</a> to check. If you're using the <a href="/faq/do-not-use-mac-system-ruby/index.html">"system" Ruby</a> don't uninstall it as it is there for macOS, not you. If you installed Ruby with Homebrew, it's best to install a software version manager so you can switch among Ruby versions. Asdf is good for managing multiple languages. <a href="/ruby/6.html">Install Ruby with asdf</a> if you are developing Rails web applications (which require Ruby, Node, and Yarn) or if you are using multiple languages such as Ruby, Node, and Python. <a href="/ruby/12.html">Install Ruby with chruby</a>, rbenv, or rvm if you need to manage only Ruby versions (chruby is simpler than rbenv or rvm). If you installed Ruby with a version manager, you can switch among versions.
+Downgrading the Ruby version on macOS depends on how you installed Ruby. Did you use Homebrew or a version manager like asdf chruby, rbenv, or rvm? See <a href="/faq/check-ruby-version/index.html">Check Ruby version on Mac</a> to check. If you're using the <a href="/faq/do-not-use-mac-system-ruby/index.html">"system" Ruby</a> don't uninstall it as it is there for macOS, not you. If you installed Ruby with Homebrew, it's best to install a software version manager so you can switch among Ruby versions. Asdf is good for managing multiple languages. <a href="/ruby/6.html">Install Ruby with asdf</a> if you are developing Rails web applications (which require Ruby, Node, and Yarn) or if you are using multiple languages such as Ruby, Node, and Python. <a href="/ruby/12.html">Install Ruby with chruby</a>, rbenv, or rvm if you need to manage only Ruby versions (chruby is simpler than rbenv or rvm). If you installed Ruby with a version manager, you can switch among versions.
 
 ## Steps
 
@@ -29,7 +29,7 @@ $ which -a ruby
 /usr/bin/ruby
 ```
 
-The `which` or `which -a` commands may show the Ruby version number in the file path. To be certain what Ruby version you are using, use the `ruby -v` command. See the article [What Ruby Version is Installed?](/faq/what-ruby-version-is-installed/index.html) for more details.
+The `which` or `which -a` commands may show the Ruby version number in the file path. To be certain what Ruby version you are using, use the `ruby -v` command. See the article [Check Ruby version on Mac](/faq/check-ruby-version/index.html) for more details.
 
 ## Pre-installed macOS system Ruby
 

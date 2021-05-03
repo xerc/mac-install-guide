@@ -24,7 +24,7 @@ $ which -a ruby
 /usr/bin/ruby
 ```
 
-The `which` or `which -a` commands may show the Ruby version number in the file path. To be certain what Ruby version you are using, use the `ruby -v` command. See the article [What Ruby Version is Installed?](/faq/what-ruby-version-is-installed/index.html) for more details.
+The `which` or `which -a` commands may show the Ruby version number in the file path. To be certain what Ruby version you are using, use the `ruby -v` command. See the article [Check Ruby version on Mac](/faq/check-ruby-version/index.html) for more details.
 
 MacOS comes with a "system Ruby" pre-installed. Use the `which` command to see if you are using the system Ruby:
 
