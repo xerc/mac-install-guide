@@ -150,7 +150,11 @@ ruby            3.0.0           /Users/daniel/.tool-versions
 
 The last column shows the file where the default version is set.
 
-## Use the gem env command
+## Change Ruby version
+
+After you've found the Ruby version and learned how it was installed, you may want to [Change Ruby version on Mac](/faq/change-ruby-version/index.html).
+
+## Tip: the gem env command
 
 The `gem env` command gives you a full picture of your local Ruby environment, including the Ruby version and where it is installed:
 

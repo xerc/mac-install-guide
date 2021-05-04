@@ -11,6 +11,8 @@
     {"title": "Is Ruby installed", "url": "/faq/is-ruby-installed-mac/index.html"},
     {"title": "Do not use the Mac system Ruby", "url": "/faq/do-not-use-mac-system-ruby/index.html"},
     {"title": "Check Ruby version on Mac", "url": "/faq/check-ruby-version/index.html"},
+    {"title": "Where is Ruby installed", "url": "/faq/where-is-ruby-installed/index.html"},
+    {"title": "Change Ruby version on Mac", "url": "/faq/change-ruby-version/index.html"},
     {"title": "Install Ruby on a Mac", "url": "/ruby/index.html"},
     {"title": "Install Ruby on Rails on a Mac", "url": "https://learn-rails.com/install-rails-mac/index.html"}
   ]
