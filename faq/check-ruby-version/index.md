@@ -1,8 +1,14 @@
+Here's how to **check your Ruby version on Mac** if you need to know **what Ruby version is installed on macOS**?
+
+## Steps
+
+Here are steps to check the Ruby version on Mac (more details here).
+- use `ruby -v` to check the version number
+- use `which -a` to see if other Ruby versions are installed
+
 ## How to check Ruby version on Mac
 
->> How to check your Ruby version on Mac. What Ruby version is installed on macOS?
-
-To find out **what version of Ruby is installed on macOS**, just enter in your terminal application:
+To find out what version of Ruby is installed on macOS, just enter in your terminal application:
 
 ```bash
 $ ruby -v
