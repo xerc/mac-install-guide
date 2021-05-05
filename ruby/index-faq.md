@@ -234,7 +234,7 @@ Entering the command `which -a ruby` will show you if more than one Ruby executa
 <details>
 <summary><h2>How to change the Ruby version on Mac?</h2></summary>
 <p>
-Changing the Ruby version on macOS depends on how it was installed. See the article <a href="/faq/check-ruby-version/index.html">Check Ruby version on Mac</a> to find how it was installed. Don't try to change the <a href="/faq/do-not-use-mac-system-ruby/index.html">"system" Ruby</a> as it is there for macOS, not you. It's best to install a software version manager if you plan to switch among Ruby versions. Or you can use Homebrew to install the latest Ruby version if you don't plan to switch regularly.
+Changing the Ruby version on macOS depends on how it was installed. First, find how it was installed (see <a href="/faq/check-ruby-version/index.html">Check Ruby version on Mac</a>). Is it the pre-installed Mac system Ruby? Was it installed with Homebrew or a version manager? Don't try to change the <a href="/faq/do-not-use-mac-system-ruby/index.html">"system" Ruby</a> as it is there for macOS, not you. It's best to install a software version manager if you plan to switch among Ruby versions. Each version manager has a command to list and set Ruby versions. See the article <a href="/faq/change-ruby-version/index.html">Change Ruby version Mac</a>.
 </p>
 </details>
 
