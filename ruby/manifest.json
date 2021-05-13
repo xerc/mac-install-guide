@@ -13,7 +13,7 @@
     {"title": "Xcode Command Line Tools", "url": "/ruby/2.html"},
     {"title": "Install Homebrew", "url": "/ruby/3.html"},
     {"title": "Configure Git", "url": "/ruby/4.html"},
-    {"title": "Asdf Version Manager", "url": "/ruby/5.html"},
+    {"title": "Install Asdf Version Manager", "url": "/ruby/5.html"},
     {"title": "Install Ruby with Asdf", "url": "/ruby/6.html"},
     {"title": "Update Gems", "url": "/ruby/7.html"},
     {"title": "Tips: Deploy Ruby", "url": "/ruby/8.html"},
