@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Install Ruby 3.0 · Mac · Complete Guide with FAQ</title>
+    <title>Install Ruby 3.0 · Mac · Complete Guide · 2021</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="canonical" href="https://mac.install.guide/ruby/index.html" />
@@ -12,7 +12,7 @@
       }}();
     </script>
     <meta name="description" content="Install Ruby Mac. How to install Ruby 3.0 on macOS Big Sur or Catalina. A complete guide with FAQ from the author of the book, Learn Ruby on Rails." />
-    <meta property="og:title" content="Install Ruby 3.0 · Mac · Complete Guide with FAQ" />
+    <meta property="og:title" content="Install Ruby 3.0 · Mac · Complete Guide · 2021" />
     <meta property="og:description" content="Install Ruby Mac. How to install Ruby 3.0 on macOS Big Sur or Catalina. A complete guide with FAQ from the author of the book, Learn Ruby on Rails." />
     <meta property="og:image" content="/images/icons/install-guide-logo.png">
     <meta name="twitter:card" content="summary">
@@ -25,15 +25,50 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Install Ruby 3.0 · Mac · Complete Guide with FAQ",
+        "@type": "FAQPage",
+        "headline": "Install Ruby 3.0 · Mac · Complete Guide · 2021",
         "image": [
           "/assets/images/ruby/how-to/ruby.svg"
          ],
         "datePublished": "2021-01-06T08:00:00+08:00",
-        "dateModified": "2021-0502:00:00+08:00"
+        "dateModified": "2021-05-14T08:00:00+08:00",
+        "mainEntity": [{
+          "@type": "Question",
+          "name": "What is the best Ruby version manager on Mac?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most Ruby developers set up their development environment with a version manager such as asdf, chruby, rbenv, or rvm. Asdf is good for managing multiple languages. <a href='/ruby/6.html'>Install Ruby with asdf</a> if you are developing Rails web applications (which require Ruby, Node, and Yarn) or if you are using multiple languages such as Ruby, Node, and Python. <a href='/ruby/12.html'>Install Ruby with chruby</a> or rbenv if you are just managing Ruby versions (chruby is simpler than rbenv). Some developers use rvm, but rvm has complexity and features that are superfluous with the latest versions of Ruby."
+          }
+        }, {
+          "@type": "Question",
+          "name": "Can I use the Mac system Ruby?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MacOS comes with a system Ruby pre-installed. It's fine to use the system Ruby for running Ruby applications such as sysadmin scripts but you should not use it when you are developing projects in Ruby. Instead, you should <a href='/ruby/13.html'>Install Ruby with Homebrew</a> or use a version manager such as asdf, chruby, rbenv, or rvm (see a discussion above for the best version manager for Ruby). See the article <a href='/faq/do-not-use-mac-system-ruby/index.html'>Do Not Use the MacOS System Ruby</a> for reasons. Basically, the system Ruby is there for macOS, not for you."
+          }
+        }, {
+          "@type": "Question",
+          "name": "How long does it take to install Ruby on Mac?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "MacOS Big Sur and Catalina already have the older Ruby 2.6.3 version available as the pre-installed system Ruby (Ruby 3.0 is the newest version) so there is no need to install. Enter `ruby -v` in the terminal application to see the version number. Installing a newer Ruby version takes less than fifteen minutes with either Homebrew or a software version manager such as asdf or chruby. Preparing your computer may take longer but in any case, reading this installation guide (so you know what you are doing) may take longer than the preparation or actual installation."
+          }
+        }, {
+          "@type": "Question",
+          "name": "How to check the Ruby version on Mac?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Enter `ruby -v` in the terminal application to see the Ruby version on macOS. Entering the command `which -a ruby` will show you if more than one Ruby executable is installed. If Ruby is installed, the `gem env` command gives you a full picture of your local Ruby environment, including the Ruby version. See the article <a href='/faq/check-ruby-version/index.html'>Check Ruby version on Mac</a> for details."
+          }
+        }, {
+          "@type": "Question",
+          "name": "Where is Ruby installed on Mac?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":"To find out where Ruby is installed on macOS, use the `which ruby` command in the terminal.  Entering the command `which -a ruby` will show you if more than one Ruby version is installed. If Ruby is not installed, the `which ruby` command will show you Ruby is not found. See the article <a href='/faq/where-is-ruby-installed/index.html'>Where is Ruby Installed?</a> for details."}
+          }]
       }
-      </script>
+    </script>
   </head>
 
   <body>
