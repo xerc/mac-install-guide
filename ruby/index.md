@@ -22,16 +22,16 @@ This installation guide provides complete details with explanations for each ste
 ## Installation steps
 
 Here are steps to install Ruby (details in this complete guide).
-- prepare your Mac
-- install Homebrew or a software version manager
-- install Ruby
-- update `$PATH` settings in the `.zshrc` file if necessary
+- Prepare your Mac.
+- Install Homebrew or a software version manager.
+- Install Ruby.
+- Update `$PATH` settings in the `.zshrc` file if necessary.
 
 Setting up your development environment includes checking that macOS is up to date, installing the Xcode Command Line Tools (to add needed Unix utilities), configuring Git (an important tool for save-as-you-go file storage), installing the Homebrew package manager (to add more software packages), and choosing a software version manager for Ruby.
 
 ## Installation choices
 
-Before you install Ruby, you should choose Homebrew or a software version manager. You have several choices for version managers. Plus Homebrew and Docker. Here's what I recommend:
+Before you install Ruby, you should choose a software version manager. You have several choices for version managers. Plus Homebrew and Docker. Here's what I recommend:
 
 - [asdf](https://asdf-vm.com/) (recommended)
 - [chruby](https://github.com/postmodern/chruby) (recommended)
