@@ -5,7 +5,7 @@ With this article, you'll set up a development environment with Ruby on a Mac. T
 This installation guide provides complete details with explanations for each step:
 
 > This is the most complete guide to installing Ruby on a Mac.
-- [find and open the macOS terminal](/ruby/14.html)
+- [find and open the macOS terminal](/ruby/15.html)
 - [update macOS for Ruby](/ruby/1.html)
 - [install Xcode Command Line Tools](/ruby/2.html)
 - [install Homebrew](/ruby/3.html)

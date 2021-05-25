@@ -1,6 +1,6 @@
 {
   "title": "Install Ruby 3.0 · macOS Big Sur or Catalina",
-  "pubdate": "2020-12-26",
+  "pubdate": "2021-05-25",
   "pagination": "multipage",
   "subscribers": "free",
   "audience": "developer",
@@ -22,6 +22,7 @@
     {"title": "Where to Get Help", "url": "/ruby/11.html"},
     {"title": "Install Ruby with Chruby", "url": "/ruby/12.html"},
     {"title": "Install Ruby with Homebrew", "url": "/ruby/13.html"},
-    {"title": "Finding and Using the Mac Terminal", "url": "/ruby/14.html"}
+    {"title": "Install Ruby with Frum", "url": "/ruby/14.html"},
+    {"title": "Finding and Using the Mac Terminal", "url": "/ruby/15.html"}
   ]
 }
