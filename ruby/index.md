@@ -28,9 +28,9 @@ Here are steps to install Ruby (details in this complete guide).
 
 Setting up your development environment includes checking that macOS is up to date, installing the Xcode Command Line Tools (to add needed Unix utilities), configuring Git (an important tool for save-as-you-go file storage), installing the Homebrew package manager (to add more software packages), and choosing a software version manager for Ruby.
 
-## Installation choices
+## Choosing the best Ruby version manager for macOS
 
-Before you install Ruby, you should choose a software version manager. You have several choices for version managers (plus Homebrew and Docker):
+Before you install Ruby, you should choose a software version manager. Here's a comparison of Ruby version managers (plus Homebrew and Docker):
 
 - [asdf](https://asdf-vm.com/) (recommended for multiple languages)
 - [frum](https://github.com/TaKO8Ki/frum) (recommended if you just need Ruby)
