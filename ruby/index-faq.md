@@ -15,7 +15,7 @@ Every Mac comes with a pre-installed Terminal application. Use it to run softwar
 </details>
 
 <details>
-<summary><h2>What is the current stable Ruby version?</h2></summary>
+<summary><h2>What is the latest Ruby version?</h2></summary>
 <p>
 Ruby 3.0.1 is the Ruby latest version (3.0 was released Dec 25, 2020). Visit the <a href="https://www.ruby-lang.org/en/downloads/releases/">Ruby releases page</a> at the official Ruby website to check for a newer version. Each release has a link to a release notes page which details changes and security fixes. Note that MacOS users seldom download Ruby to build from source. Instead, Mac users <a href="/ruby/13.html">install the latest Ruby with Homebrew</a> or get the latest Ruby version with the installation utilities that accompany a version manager such as asdf, chruby, rbenv, or rvm.
 </p>
