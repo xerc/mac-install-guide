@@ -43,6 +43,13 @@ A <a href="/faq/do-not-use-mac-system-ruby/index.html">"system" Ruby</a> comes p
 </details>
 
 <details>
+<summary><h2>What is the macOS Big Sur Ruby version?</h2></summary>
+<p>
+Ruby version 2.6.3 is on macOS Big Sur as the <a href="/faq/do-not-use-mac-system-ruby/index.html">"system" Ruby</a>. The pre-installed Ruby 2.6.3 is an older Ruby version. Ruby 3.0.1 is the newest Ruby version. Most developers use a software version manager to install a newer Ruby version for developing software on a Mac.
+</p>
+</details>
+
+<details>
 <summary><h2>How to check the Ruby version on Mac?</h2></summary>
 <p>
 Enter `ruby -v` in the terminal application to see the Ruby version on macOS. Entering the command `which -a ruby` will show you if more than one Ruby executable is installed. If Ruby is installed, the `gem env` command gives you a full picture of your local Ruby environment, including the Ruby version. See the article <a href="/faq/check-ruby-version/index.html">Check Ruby version on Mac</a> for details.
