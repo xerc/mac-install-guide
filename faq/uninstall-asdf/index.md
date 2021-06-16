@@ -1,6 +1,6 @@
 ## Uninstall asdf
 
-Here's how to **uninstall asdf** on a Mac when it was installed with Homebrew.
+Here's how to **uninstall asdf** on a Mac when it was installed with Homebrew. For a guide that compares version managers for Ruby, see [Install Ruby on a Mac](https://mac.install.guide/ruby/index.html). See [Install Asdf](https://mac.install.guide/ruby/5.html) for instructions to install asdf.
 
 You may need to uninstall asdf if:
 - You want to use a different version manager (switching from asdf to another).
