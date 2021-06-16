@@ -136,6 +136,7 @@ $ brew list
 ==> Formulae
 $ brew deps --tree --installed
 $ brew list asdf
+Error: No such keg: /opt/homebrew/Cellar/asdf
 ```
 
 ### Remove asdf artifacts
