@@ -27,7 +27,7 @@
   </url>
   <url>
     <loc>https://mac.install.guide/ruby/5.html</loc>
-    <lastmod>2021-05-25</lastmod>
+    <lastmod>2021-06-16</lastmod>
   </url>
   <url>
     <loc>https://mac.install.guide/ruby/6.html</loc>
@@ -43,7 +43,7 @@
   </url>
   <url>
     <loc>https://mac.install.guide/ruby/9.html</loc>
-    <lastmod>2021-06-12</lastmod>
+    <lastmod>2021-06-16</lastmod>
   </url>
   <url>
     <loc>https://mac.install.guide/ruby/10.html</loc>
@@ -93,5 +93,9 @@
   <url>
     <loc>https://mac.install.guide/faq/where-is-ruby-installed/index.html</loc>
     <lastmod>2021-05-25</lastmod>
+  </url>
+  <url>
+    <loc>https://mac.install.guide/faq/uninstall-asdf/index.html</loc>
+    <lastmod>2021-06-16</lastmod>
   </url>
 </urlset>
