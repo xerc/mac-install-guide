@@ -2,6 +2,11 @@
 
 Here's how to **uninstall asdf** on a Mac when it was installed with Homebrew.
 
+You may need to uninstall asdf if:
+- You want to use a different version manager (switching from asdf to another).
+- Asdf isn't behaving as you expect and you want to install it from scratch.
+- You are no longer using asdf and you want to free storage space.
+
 ### What is asdf?
 
 [Asdf](https://asdf-vm.com/) is a version manager. Developers use it to install programming languages and switch among language versions as needed. Asdf is popular because it can manage versions of many languages, for example, Ruby, Python, and Node.
