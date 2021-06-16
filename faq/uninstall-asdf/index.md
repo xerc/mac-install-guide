@@ -127,6 +127,12 @@ Here's how to uninstall asdf from Homebrew:
 $ brew uninstall --force asdf
 ```
 
+Remove the unused asdf dependencies.
+
+```bash
+$ brew autoremove
+```
+
 ### Run diagnostics after removing asdf
 
 Run the diagnostics to confirm you've uninstalled asdf from Homebrew.
