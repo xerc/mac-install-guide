@@ -8,7 +8,7 @@ Here's how to uninstall asdf on a Mac when it was installed with Homebrew.
 
 ### Steps
 
-Here are the steps to remove asdf (details in this guide).
+Here are the steps to remove asdf (see details in this guide).
 - Run diagnostics before removing asdf.
 - Uninstall asdf using Homebrew.
 - Run diagnostics after removing asdf.
