@@ -49,6 +49,7 @@ You can also display a list of packages with their dependencies.
 ```bash
 $ brew deps --tree --installed
 asdf
+asdf
 ├── autoconf
 │   └── m4
 ├── automake
@@ -63,6 +64,30 @@ asdf
 └── unixodbc
     └── libtool
         └── m4
+
+autoconf
+└── m4
+
+automake
+└── autoconf
+    └── m4
+
+coreutils
+
+libtool
+└── m4
+
+libyaml
+
+m4
+
+openssl@1.1
+
+readline
+
+unixodbc
+└── libtool
+    └── m4
 ```
 
 Finally, you can see a list of asdf files installed with Homebrew. This example is from Homebrew on Apple silicon, where Homebrew files are installed in `/opt/homebrew`.
