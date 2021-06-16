@@ -1,6 +1,6 @@
 ## Uninstall asdf
 
-Here's how to uninstall asdf on a Mac when it was installed with Homebrew.
+Here's how to **uninstall asdf** on a Mac when it was installed with Homebrew.
 
 ### What is asdf?
 
@@ -16,7 +16,7 @@ Here are the steps to remove asdf (see details in this guide).
 
 ### Remove a language version
 
-Are you sure you need to remove asdf? Perhaps you just need to uninstall a language version. In this example, you'll see how to remove Ruby.
+Are you sure you need to remove asdf? Perhaps you just need to _uninstall a language version_. In this example, you'll see how to remove Ruby.
 
 First list all Ruby installed versions.
 
@@ -33,7 +33,7 @@ $ asdf uninstall ruby 3.0.0
 
 If you don't remove a language version, the files will remain on your disk after you have removed asdf.
 
-### Run diagnostics before removing asdf
+### Before removing asdf, run diagnostics
 
 Run a diagnostic to list all the packages you've installed with Homebrew. You should see asdf and its dependencies.
 
@@ -133,7 +133,7 @@ Remove the unused asdf dependencies.
 $ brew autoremove
 ```
 
-### Run diagnostics after removing asdf
+### After removing asdf, run diagnostics
 
 Run the diagnostics to confirm you've uninstalled asdf from Homebrew.
 
