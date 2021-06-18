@@ -1,0 +1,169 @@
+## Install Homebrew
+
+Developers use the [Homebrew](https://brew.sh/) utility to install various Unix software packages. If you haven't already installed Xcode Command Line Tools, Homebrew will install it.
+
+Tip: If you did not use a password to log in to your Mac (that is, if your password is blank), you cannot install Homebrew.
+
+Check if Homebrew is installed:
+
+```bash
+$ brew
+```
+
+Homebrew is not installed if you see:
+
+```bash
+zsh: command not found: brew
+```
+
+If Homebrew is not installed, there should be no Homebrew files in  `/usr/local` (for macOS Intel) or `/opt/homebrew` (for Apple Silicon).
+
+Homebrew provides an installation script (check that it hasn't changed at the [Homebrew site](https://brew.sh/)).
+
+```bash
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+The Homebrew installation script will ask you to enter your Mac user password.
+
+```bash
+Password:
+```
+
+You won't see the characters as you type. Press enter when you are done.
+
+![](/assets/images/ruby/homebrew-enter-password.png)
+
+You'll see a list of files and folders that Homebrew will install. If you haven't already installed XCode CommandLine Tools, you'll see a message that "The XCode Command Line Tools will be installed." Press return to continue when prompted by the Homebrew installation script. It takes five to ten minutes to download and install the Command Line Tools.
+
+![](/assets/images/ruby/install-homebrew.png)
+
+Homebrew installation takes many minutes (you’ll see diagnostic and progress messages).
+
+![](/assets/images/ruby/homebrew-complete.png)
+
+On Mac Intel machines, that's all you need to do; Homebrew is ready to use. On Mac Intel, Homebrew installs itself into the `/usr/local/bin` directory, which is already configured for access by the shell with the macOS default `$PATH` environment variable (the default is set by the `/usr/libexec/path_helper` command).
+
+On Apple Silicon machines, there's one more step. Homebrew files are installed into the `/opt/homebrew` folder. But the folder is not part of the default `$PATH`. Follow Homebrew's advice and create a `~/.zprofile` file which contains a command which sets up Homebrew. Homebrew shows instructions at the end of the installation process:
+
+```bash
+- Add Homebrew to your PATH in /Users/daniel/.zprofile:
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/daniel/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
+Copy and paste from the Homebrew instructions because they include your own user directory name (the example above contains my user directory name).
+
+After you've installed Homebrew, check that Homebrew is installed properly.
+
+```bash
+$ brew doctor
+```
+
+You should see:
+
+```bash
+Your system is ready to brew.
+```
+
+![](/assets/images/ruby/brew-doctor.png)
+
+On Apple Silicon, if you see `zsh: command not found: brew`, check that you've created a `~/.zprofile` file as described above and restarted your terminal application.
+
+If Homebrew is successfully installed, there will be Homebrew files in  `/usr/local` (for macOS Intel) or `/opt/homebrew` (for Apple Silicon).
+
+As you use Homebrew, it is helpful to see a list of all the packages you've installed, or packages and dependencies.
+
+```bash
+$ brew list
+$ brew deps --tree --installed
+```
+
+Right now, immediately after installation, these commands show nothing is installed.
+
+Next we'll configure Git, an essential tool for any developer. But first, be aware that you may have to reinstall Command Line Tools after a macOS upgrade.
+
+### After a macOS Upgrade
+
+After a macOS upgrade (for example, from macOS 11.2.2 to 11.2.3), the upgrade process may remove the Command Line Tools. This can be annoying if you install an upgrade and then find you can't use commands such as `git`. You may encounter an error like:
+
+```bash
+xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools),
+missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+```
+
+Checking for the Command Line Tools folder may show that the folder is there:
+
+```bash
+$ xcode-select -p
+/Library/Developer/CommandLineTools
+```
+
+But look closely and the Command Line Tools folder may be missing essential folders and files after a macOS upgrade. It should look like this:
+
+```bash
+$ ls -l /Library/Developer/CommandLineTools
+total 0
+drwxr-xr-x  5 root  wheel  160 Jan  9 07:43 Library
+drwxr-xr-x  5 root  wheel  160 Apr 24 16:19 SDKs
+drwxr-xr-x  7 root  wheel  224 Apr 24 16:19 usr
+```
+
+It may look like this after an upgrade:
+
+```bash
+$ ls -l /Library/Developer/CommandLineTools
+total 0
+drwxr-xr-x  7 root  wheel  224 Apr 24 16:19 usr
+```
+
+Homebrew is installed but `brew doctor` will show problems:
+
+```bash
+% brew doctor
+
+Warning: Git could not be found in your PATH.
+Homebrew uses Git for several internal functions, and some formulae use Git
+checkouts instead of stable tarballs. You may want to install Git:
+  brew install git
+
+Warning: No developer tools installed.
+Install the Command Line Tools:
+  xcode-select --install
+```
+
+You've already installed Homebrew and allowed Homebrew to install Xcode Command Line Tools. Now you must re-install Xcode Command Line Tools from the command line:
+
+```bash
+$ xcode-select --install
+```
+
+A message will pop up on the screen. Confirm that you want to install the tools.
+
+![](/assets/images/ruby/install-Xcode-CLT.png)
+
+You'll see a progress indicator as the software downloads.
+
+![](/assets/images/ruby/install-Xcode-CLT-progress.png)
+
+Finally you'll see a confirmation that the software was installed.
+
+![](/assets/images/ruby/install-Xcode-CLT-progress.png)
+
+Verify that you've successfully installed Xcode Command Line Tools.
+
+```bash
+$ xcode-select -p
+/Library/Developer/CommandLineTools
+```
+
+Check that you can run `git`:
+
+```bash
+git --version
+git version 2.30.1 (Apple Git-130)
+```
+
+You've seen how to reinstall Command Line Tools after a macOS upgrade.
+
+Next, if you haven't already done so, we'll configure Git, an essential tool for any developer.

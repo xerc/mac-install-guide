@@ -1,0 +1,13 @@
+{
+  "title": "Install Xcode Command Line Tools",
+  "pubdate": "2021-06-18",
+  "pagination": "multipage",
+  "subscribers": "free",
+  "audience": "developer",
+  "level": "all",
+  "topic": "Xcode Command Line Tools",
+  "subtopic": "Installation",
+  "pages": [
+    {"title": "Getting Started", "url": "/ruby/index.html"},
+  ]
+}
