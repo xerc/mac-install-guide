@@ -1,169 +1,41 @@
-## Install Homebrew
+## Install Brew Mac
 
-Developers use the [Homebrew](https://brew.sh/) utility to install various Unix software packages. If you haven't already installed Xcode Command Line Tools, Homebrew will install it.
+How to **install Homebrew** on Mac M1 or Mac Intel. Installing Homebrew on macOS Big Sur. Up-to-date and kitchen-tested instructions, with troubleshooting tips, from the author of the book, _[Learn Ruby on Rails](https://learn-rails.com/)_.
 
-Tip: If you did not use a password to log in to your Mac (that is, if your password is blank), you cannot install Homebrew.
-
-Check if Homebrew is installed:
-
-```bash
-$ brew
-```
-
-Homebrew is not installed if you see:
-
-```bash
-zsh: command not found: brew
-```
-
-If Homebrew is not installed, there should be no Homebrew files in  `/usr/local` (for macOS Intel) or `/opt/homebrew` (for Apple Silicon).
-
-Homebrew provides an installation script (check that it hasn't changed at the [Homebrew site](https://brew.sh/)).
+Here you'll set up Homebrew on a Mac. This complete Homebrew usage guide is for beginners as well as experienced developers. If you just need the install command, here it is (don't type the `$` as it is just an indicator that this is a command to enter in the terminal).
 
 ```bash
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-The Homebrew installation script will ask you to enter your Mac user password.
+This guide gives the background and details that are missing from the [official Homebrew site](https://brew.sh/). Plus, it is easier to read than [Homebrew's documentation](https://docs.brew.sh/).
 
-```bash
-Password:
-```
+## Steps
 
-You won't see the characters as you type. Press enter when you are done.
+Here are steps to install Homebrew (details in this complete guide).
+- Prepare your Mac.
+- Install Homebrew.
+- Update the shell configuration (Mac M1 only).
+- Install packages.
 
-![](/assets/images/ruby/homebrew-enter-password.png)
+Setting up Homebrew requires bringing macOS up to date, installing the Xcode Command Line Tools (to get basic Unix utilities), installing Homebrew, and installing packages. Jump ahead to the command you need; otherwise, read on for background and explanation.
 
-You'll see a list of files and folders that Homebrew will install. If you haven't already installed XCode CommandLine Tools, you'll see a message that "The XCode Command Line Tools will be installed." Press return to continue when prompted by the Homebrew installation script. It takes five to ten minutes to download and install the Command Line Tools.
+## Mac M1 (Apple silicon)
 
-![](/assets/images/ruby/install-homebrew.png)
+Homebrew supports the Mac M1 chip (Apple silicon) since the release of Homebrew 3.0.0 in February 2021. On Apple silicon, Homebrew installs files into the `/opt/homebrew/` folder, which is not part of the default shell `$PATH`. You'll need to configure your shell environment so Homebrew packages are found and take priority over pre-installed tools.
 
-Homebrew installation takes many minutes (you’ll see diagnostic and progress messages).
+If you have an older Intel Mac, Homebrew installs files into the `/usr/local/` folder, which is already configured for access by the shell with the macOS default `$PATH` environment variable. Homebrew installation is easier because there's no need to configure your shell environment. Homebrew packages are found automatically. However, the Homebrew team was criticized for using the `/usr/local/` folder because other programs might install software into the `/usr/local/` folder, overwriting Homebrew packages. With the release of version 3.0.0 for Apple silicon, the Homebrew team made the change, adding an installation step that requires a change to the shell environment. It will be inconvenient for inexperienced users but experts argue that configuring the shell environment is basic knowledge that every developer should learn as a foundation for using command line programs.
 
-![](/assets/images/ruby/homebrew-complete.png)
+## What is Homebrew
 
-On Mac Intel machines, that's all you need to do; Homebrew is ready to use. On Mac Intel, Homebrew installs itself into the `/usr/local/bin` directory, which is already configured for access by the shell with the macOS default `$PATH` environment variable (the default is set by the `/usr/libexec/path_helper` command).
+[Homebrew](https://brew.sh/) is a package manager for macOS (and Linux). Developers use Homebrew to install (and remove) software programs for the terminal, or command line. It's like an app store for command line programs (but everything is free). Though macOS includes some pre-installed programming languages and command line utilities, most programming requires newer versions of languages and tools that Apple won't provide. Before Homebrew, developers downloaded source code from various websites and compiled the programs they needed, with various degrees of difficulty, errors, and security worries. Homebrew collects almost every useful open source program in one place, with a single tool to install and manage each "package." Homebrew is one of the first tools you'll use to set up a local development environment for programming on a Mac.
 
-On Apple Silicon machines, there's one more step. Homebrew files are installed into the `/opt/homebrew` folder. But the folder is not part of the default `$PATH`. Follow Homebrew's advice and create a `~/.zprofile` file which contains a command which sets up Homebrew. Homebrew shows instructions at the end of the installation process:
+## Alternatives to Homebrew
 
-```bash
-- Add Homebrew to your PATH in /Users/daniel/.zprofile:
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/daniel/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
-```
+[MacPorts](https://www.macports.org/), [Fink](https://www.finkproject.org/), [pkgin](https://pkgin.net/), and [Nix](https://nixos.org/) are alternatives to Homebrew on macOS. On Linux, developers use [apt-get](https://en.wikipedia.org/wiki/APT_(software)) or Homebrew. On Windows, developers use [Chocolatey](https://chocolatey.org/) to install programs from the [NuGet](https://www.nuget.org/) package library (they also use apt-get under WSL, the Windows Subsystem for Linux).
 
-Copy and paste from the Homebrew instructions because they include your own user directory name (the example above contains my user directory name).
+On the Mac, _MacPorts_ requires more technical skill and requires `sudo` or root access (Homebrew aims to be friendlier and more secure for non-expert users). MacPorts is more independent of macOS, ignoring many of the system libraries and software that are already available in macOS, avoiding dependence on Apple's update schedule (Homebrew relies on macOS system libraries for faster set up). MacPorts is a better choice for a multi-user Mac, should more than one developer be using the same Mac. _Fink_ is the oldest of the Mac package managers and modifies the Linux apt-get package library (as of June 2021, Fink is not yet available for macOS Big Sur). _Pkgin_ installs binaries from the NetBSD (Unix) [pkgsrc](https://www.pkgsrc.org/) repository and requires `sudo` or root access, making it more suitable to a skilled Unix user. Some developers on large teams use the _Nix_ package manager. Nix is very complex but creates fully isolated, reproducible development environments.
 
-After you've installed Homebrew, check that Homebrew is installed properly.
+## First Steps
 
-```bash
-$ brew doctor
-```
-
-You should see:
-
-```bash
-Your system is ready to brew.
-```
-
-![](/assets/images/ruby/brew-doctor.png)
-
-On Apple Silicon, if you see `zsh: command not found: brew`, check that you've created a `~/.zprofile` file as described above and restarted your terminal application.
-
-If Homebrew is successfully installed, there will be Homebrew files in  `/usr/local` (for macOS Intel) or `/opt/homebrew` (for Apple Silicon).
-
-As you use Homebrew, it is helpful to see a list of all the packages you've installed, or packages and dependencies.
-
-```bash
-$ brew list
-$ brew deps --tree --installed
-```
-
-Right now, immediately after installation, these commands show nothing is installed.
-
-Next we'll configure Git, an essential tool for any developer. But first, be aware that you may have to reinstall Command Line Tools after a macOS upgrade.
-
-### After a macOS Upgrade
-
-After a macOS upgrade (for example, from macOS 11.2.2 to 11.2.3), the upgrade process may remove the Command Line Tools. This can be annoying if you install an upgrade and then find you can't use commands such as `git`. You may encounter an error like:
-
-```bash
-xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools),
-missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
-```
-
-Checking for the Command Line Tools folder may show that the folder is there:
-
-```bash
-$ xcode-select -p
-/Library/Developer/CommandLineTools
-```
-
-But look closely and the Command Line Tools folder may be missing essential folders and files after a macOS upgrade. It should look like this:
-
-```bash
-$ ls -l /Library/Developer/CommandLineTools
-total 0
-drwxr-xr-x  5 root  wheel  160 Jan  9 07:43 Library
-drwxr-xr-x  5 root  wheel  160 Apr 24 16:19 SDKs
-drwxr-xr-x  7 root  wheel  224 Apr 24 16:19 usr
-```
-
-It may look like this after an upgrade:
-
-```bash
-$ ls -l /Library/Developer/CommandLineTools
-total 0
-drwxr-xr-x  7 root  wheel  224 Apr 24 16:19 usr
-```
-
-Homebrew is installed but `brew doctor` will show problems:
-
-```bash
-% brew doctor
-
-Warning: Git could not be found in your PATH.
-Homebrew uses Git for several internal functions, and some formulae use Git
-checkouts instead of stable tarballs. You may want to install Git:
-  brew install git
-
-Warning: No developer tools installed.
-Install the Command Line Tools:
-  xcode-select --install
-```
-
-You've already installed Homebrew and allowed Homebrew to install Xcode Command Line Tools. Now you must re-install Xcode Command Line Tools from the command line:
-
-```bash
-$ xcode-select --install
-```
-
-A message will pop up on the screen. Confirm that you want to install the tools.
-
-![](/assets/images/ruby/install-Xcode-CLT.png)
-
-You'll see a progress indicator as the software downloads.
-
-![](/assets/images/ruby/install-Xcode-CLT-progress.png)
-
-Finally you'll see a confirmation that the software was installed.
-
-![](/assets/images/ruby/install-Xcode-CLT-progress.png)
-
-Verify that you've successfully installed Xcode Command Line Tools.
-
-```bash
-$ xcode-select -p
-/Library/Developer/CommandLineTools
-```
-
-Check that you can run `git`:
-
-```bash
-git --version
-git version 2.30.1 (Apple Git-130)
-```
-
-You've seen how to reinstall Command Line Tools after a macOS upgrade.
-
-Next, if you haven't already done so, we'll configure Git, an essential tool for any developer.
+Setting up Homebrew requires bringing macOS up to date and installing the [Xcode Command Line Tools](/homebrew/2.html) before [installing Homebrew](/homebrew/3.html). Take a look at [preparing your Mac](/homebrew/1.html) first, or jump ahead to the other sections.

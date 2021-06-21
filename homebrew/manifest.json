@@ -8,9 +8,9 @@
   "topic": "Homebrew",
   "subtopic": "Installation",
   "pages": [
-    {"title": "Getting Started", "url": "/ruby/index.html"},
-    {"title": "Update macOS", "url": "/ruby/1.html"},
-    {"title": "Xcode Command Line Tools", "url": "/ruby/2.html"},
-    {"title": "Install Homebrew", "url": "/ruby/3.html"},
+    {"title": "Getting Started", "url": "/homebrew/index.html"},
+    {"title": "Update macOS", "url": "/homebrew/1.html"},
+    {"title": "Xcode Command Line Tools", "url": "/homebrew/2.html"},
+    {"title": "Install Homebrew", "url": "/homebrew/3.html"},
   ]
 }
