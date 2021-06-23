@@ -16,7 +16,7 @@ Here are steps to install Homebrew (details in this complete guide).
 - Update the shell configuration (Mac M1 only).
 - Install packages.
 
-Setting up Homebrew requires bringing macOS up to date, installing the Xcode Command Line Tools (to get basic Unix utilities), installing Homebrew, and installing packages. Jump ahead to the command you need; otherwise, read on for background and explanation. [Prepare your Mac](/homebrew/1.html), install the [Xcode Command Line Tools](/homebrew/2.html), and then [install Homebrew](/homebrew/3.html).
+Jump ahead to the section you need: [Prepare your Mac](/homebrew/1.html), install the [Xcode Command Line Tools](/homebrew/2.html), and then [install Homebrew](/homebrew/3.html). Otherwise, read on for background and explanation.
 
 ## Mac M1 (Apple silicon)
 
@@ -26,7 +26,7 @@ If you have an older Intel Mac, Homebrew installs files into the `/usr/local/` f
 
 ## What is Homebrew
 
-[Homebrew](https://brew.sh/) is a package manager for macOS (and Linux, too). Developers use Homebrew to install (and remove) software programs for the terminal, or command line. It's like an app store for command line programs (but everything is free). Though macOS includes some pre-installed programming languages and command line utilities, most programming requires newer versions of languages and tools that Apple won't provide. Before Homebrew, developers downloaded source code from various websites and compiled the programs they needed, with various degrees of difficulty, errors, and security worries. Homebrew collects almost every useful open source program in one place, with a single tool to install and manage each "package." Homebrew is one of the first tools you'll use to set up a local development environment for programming on a Mac. Its biggest drawback? A cute and confusing terminology of kegs, casks, bottles, and more, explained below.
+[Homebrew](https://brew.sh/) is a package manager for macOS (and Linux, too). Developers use Homebrew to install (and remove) software programs for the terminal, or command line. It's like an app store for command line programs (but everything is free). Though macOS includes some pre-installed programming languages and command line utilities, most programming requires newer versions of languages and tools that Apple won't provide. Before Homebrew, developers downloaded source code from various websites and compiled the programs they needed, with various degrees of difficulty, errors, and security worries. Homebrew collects almost every useful open source program in one place, with a single tool to install and manage each "package." Homebrew is one of the first tools you'll use to set up a local development environment for programming on a Mac. Its biggest drawback? A cute and confusing terminology of kegs, casks, bottles, and other beer-themed terms, explained below.
 
 ## Alternatives to Homebrew
 
@@ -42,16 +42,57 @@ First time users will ask, how long does it take to install Homebrew? On a 2021 
 It's significantly slower on Mac Intel over a slow Internet connection. However, it should not take more than ten minutes to run the Homebrew installation script. Installing packages can take a few minutes, especially if a pre-built binary is not available and the software package must be compiled during the installation process.
 
 ## Homebrew terminology
-- formula
-- bottles
-- keg
-- cask
-- cellar
-- tap
-- who is mxcl
+
+You'll either love or hate Homebrew's cute beer-brewing theme. Part of using Homebrew is understanding its beer-themed terminology.
+
+<details>
+<summary><h2>formulae</h2></summary>
+<p>
+A Homebrew <em>formula</em> is a Ruby script that controls the installation of a package. Formulae are contributed by people who maintain software packages. You don't need to know how to write a formula to use Homebrew; you just enter the command <code>brew install &lt;formula&gt;</code>. The <a href="https://github.com/Homebrew/homebrew-core">homebrew-core</a> repository contains over 4000 packages. Each formula lists the location of the package's source archive and includes directives to build the software from the archive.
+</p>
+</details>
+
+<details>
+<summary><h2>tap</h2></summary>
+<p>
+A Homebrew <em>tap</em> is a repository that contains Homebrew formulae used to install packages. The default Tap is on GitHub as <a href="https://github.com/Homebrew/homebrew-core">homebrew-core</a>. The <code>brew tap</code> command allows a developer to use formulae from their own repository without submitting anything for approval by Homebrew.
+</p>
+</details>
+
+<details>
+<summary><h2>keg</h2></summary>
+<p>
+A Homebrew <em>keg</em> is the folder that contains a specific version of a package that has been installed by Homebrew. The path to the keg contains both the package name and version number, for example <code>/opt/homebrew/Cellar/tree/1.8.0</code>. For most packages, Homebrew creates a <a href="https://en.wikipedia.org/wiki/Symbolic_link">symbolic link</a> ("alias" or symlink) from the keg to the <code>/opt/homebrew/bin/</code> directory so entering the package name as a command will run the installed version from the keg. A few packages are installed "keg-only" which means no symlink is created because the package may conflict with a pre-installed package from Apple. Keg-only packages are usually dependencies needed to install or run other Homebrew packages, avoiding conflicts with macOS system software.
+</p>
+</details>
+
+<details>
+<summary><h2>bottle</h2></summary>
+<p>
+A Homebrew <em>bottle</em> is a pre-compiled package, sometimes called a "binary." Installation is faster with a pre-compiled package.
+</p>
+</details>
+
+<details>
+<summary><h2>cellar</h2></summary>
+<p>
+The Homebrew <em>cellar</em> is the directory where Homebrew stores packages. It is the folder <code>/opt/homebrew/</code> on Apple silicon machines and <code>/usr/local/</code> on Mac Intel.
+</p>
+</details>
+
+<details>
+<summary><h2>cask</h2></summary>
+<p>
+A Homebrew <em>cask</em> is like a keg, but contains macOS GUI applications installed from the command line. Casks are not very popular but provide a mechanism to automate the installation of GUI applications from a script or the command line.
+</p>
+</details>
 
 
+<details>
+<summary><h2>mxcl</h2></summary>
+<p>
+Homebrew's mxcl is <a href="https://twitter.com/mxcl">Max Howell</a>, the creator of Homebrew. Not really a term, but good to know.
+</p>
+</details>
 
-## First Steps
 
-Setting up Homebrew requires bringing macOS up to date. Then install the [Xcode Command Line Tools](/homebrew/2.html) before [installing Homebrew](/homebrew/3.html). Take a look at [preparing your Mac](/homebrew/1.html) first, or jump ahead to the other sections.

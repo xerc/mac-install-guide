@@ -1,4 +1,4 @@
-<h2>FAQ</h2>
+<h2>Homebrew FAQ</h2>
 
 <details>
 <summary><h2>What is Homebrew?</h2></summary>
