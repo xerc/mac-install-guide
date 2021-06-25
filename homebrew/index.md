@@ -1,6 +1,6 @@
 ## Install Brew Mac
 
-How to **install Homebrew** for Mac M1 or Mac Intel. Covers installing Homebrew on macOS Big Sur. Up-to-date and kitchen-tested instructions, with troubleshooting tips, from the author of the book, _[Learn Ruby on Rails](https://learn-rails.com/)_, for setting up Homebrew on a Mac.
+How to **install Homebrew** for Mac M1 or Mac Intel. Covers installing Homebrew on macOS Big Sur. Up-to-date and kitchen-tested instructions, with explanations, from the author of the book, _[Learn Ruby on Rails](https://learn-rails.com/)_, for setting up Homebrew on a Mac.
 
 This guide is for beginners as well as experienced developers.  Read on for background and details that are missing from the [official Homebrew site](https://brew.sh/). Plus, it is easier to read than [Homebrew's documentation](https://docs.brew.sh/). But if you're only looking for the install command, here it is (don't type the `$` as it is just a cue to enter a command in the terminal).
 
