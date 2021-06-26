@@ -11,6 +11,8 @@
     {"title": "Getting Started", "url": "/homebrew/index.html"},
     {"title": "Update macOS", "url": "/homebrew/1.html"},
     {"title": "Xcode Command Line Tools", "url": "/homebrew/2.html"},
-    {"title": "Install Homebrew", "url": "/homebrew/3.html"}
+    {"title": "Install Homebrew", "url": "/homebrew/3.html"},
+    {"title": "Update Homebrew", "url": "/homebrew/4.html"},
+    {"title": "Uninstall Homebrew", "url": "/homebrew/5.html"}
   ]
 }
