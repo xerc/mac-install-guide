@@ -13,6 +13,7 @@
     {"title": "Xcode Command Line Tools", "url": "/homebrew/2.html"},
     {"title": "Install Homebrew", "url": "/homebrew/3.html"},
     {"title": "Maintain and Update Homebrew", "url": "/homebrew/4.html"},
-    {"title": "Uninstall Homebrew", "url": "/homebrew/5.html"}
+    {"title": "Uninstall Homebrew", "url": "/homebrew/5.html"},
+    {"title": "Install a Homebrew package", "url": "/homebrew/6.html"}
   ]
 }
