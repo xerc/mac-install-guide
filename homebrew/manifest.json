@@ -16,6 +16,7 @@
     {"title": "Uninstall Homebrew", "url": "/homebrew/5.html"},
     {"title": "Install a Homebrew package", "url": "/homebrew/6.html"},
     {"title": "Uninstall a Homebrew package", "url": "/homebrew/7.html"},
-    {"title": "Housekeeping for Homebrew", "url": "/homebrew/8.html"}
+    {"title": "Housekeeping for Homebrew", "url": "/homebrew/8.html"},
+    {"title": "Top Homebrew packages", "url": "/homebrew/9.html"}
   ]
 }
