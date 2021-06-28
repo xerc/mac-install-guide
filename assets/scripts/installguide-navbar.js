@@ -64,8 +64,10 @@ export class InstallguideNavbar extends LitElement {
       <div id="navMenu" class="navbar-menu has-background-info">
         <div class="navbar-end">
           <div class="navbar-item has-text-weight-bold">
+          <a itemprop="url" class="navbar-item has-text-white" href="/homebrew/index.html">
+            <span itemprop="name">Homebrew</span></a>
           <a itemprop="url" class="navbar-item has-text-white" href="/ruby/index.html">
-            <span itemprop="name">Install Ruby</span></a>
+            <span itemprop="name">Ruby</span></a>
         </div>
         </div>
       </div>
