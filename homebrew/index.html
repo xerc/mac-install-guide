@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Install Homebrew · Mac M1 · 2021</title>
+    <title>Install Homebrew · Mac M1 · Complete Guide · 2021</title>
     <link rel="canonical" href="https://mac.install.guide/homebrew/index.html" />
     <script>
       !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.13.1";
@@ -11,9 +11,9 @@
       analytics.page();
       }}();
     </script>
-    <meta name="description" content="Install Brew Mac. How to install Homebrew on a Mac M1. From the author of the book, Learn Ruby on Rails." />
-    <meta property="og:title" content="Install Homebrew · Mac Install Guide" />
-    <meta property="og:description" content="How to install Homebrew on a Mac M1. From the author of the book, Learn Ruby on Rails." />
+    <meta name="description" content="Install Brew Mac. How to install Homebrew on a Mac M1. A complete guide with FAQ from the author of the book, Learn Ruby on Rails." />
+    <meta property="og:title" content="Install Homebrew · Mac M1 · Complete Guide · 2021" />
+    <meta property="og:description" content="How to install Homebrew on a Mac M1. A complete guide with FAQ from the author of the book, Learn Ruby on Rails. />
     <meta property="og:image" content="/assets/images/ruby/how-to/homebrew.svg">
     <meta name="twitter:card" content="summary">
     <meta property="og:url" content="https://mac.install.guide/homebrew/index.html" />
@@ -25,15 +25,36 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Install Homebrew · Mac Install Guide",
+        "@type": "FAQPage",
+        "headline": "Install Homebrew · Mac M1 · Complete Guide · 2021",
         "image": [
           "/assets/images/ruby/how-to/homebrew.svg"
          ],
-        "datePublished": "2021-06-18T08:00:00+08:00",
-        "dateModified": "2021-06-18T08:00:00+08:00"
+        "datePublished": "2021-06-29T08:00:00+08:00",
+        "dateModified": "2021-06-29T08:00:00+08:00",
+        "mainEntity": [{
+          "@type": "Question",
+          "name": "What is Homebrew?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Homebrew is a package manager for macOS (and Linux, too). It is one of the first tools you'll need to set up a local development environment for programming on a Mac. Use it to install (and remove) software programs for the terminal, or command line. It is like an app store for programming tools (but everything is free). MacOS includes some pre-installed programming languages and command line utilities but most work requires newer versions of languages and tools not provided by Apple. Get what you need with Homebrew. Almost every useful open source program (or 'package') is available through Homebrew, with a single tool to install and manage each one. Homebrew's biggest drawback? A cute terminology of kegs, casks, bottles, and other beer-themed terms, explained here."
+          }
+        }, {
+          "@type": "Question",
+          "name": "Brew update: How to upgrade Homebrew and its packages.",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Keep Homebrew up to date with 'brew update'. Homebrew core packages are updated as often as every day, so it is likely you will see updates. The commands 'brew update' and 'brew upgrade' are different. Update is for Homebrew itself. Upgrade is for individual software packages. As you use Homebrew, it is helpful to see a list of all the packages you've installed with the command 'brew list'. Then use 'brew update' to freshen Homebrew and 'brew upgrade' to install newer packages."
+          }
+        }, {
+          "@type": "Question",
+          "name": "Brew uninstall: How to completely remove Homebrew.",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you just need to remove or delete a Homebrew package use `brew uninstall <package'. But there may be times you need to completely remove Homebrew on a Mac, if 1) Homebrew isn't behaving as you expect and you want to install it from scratch; 2) you are no longer using Homebrew and you want to free storage space; or, 3) you want to use a different package manager. Homebrew provides an official uninstall script that can be run remotely (shown here). On the Mac M1 (Apple silicon) you'll also need to remove the Homebrew shell configuration from the  ~/.zprofile file. Complete details are here."
+          }]
       }
-      </script>
+    </script>
   </head>
 
   <body>
