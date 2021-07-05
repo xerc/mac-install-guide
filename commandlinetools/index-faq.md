@@ -3,14 +3,19 @@
 <details>
 <summary><h2>What are Xcode Command Line Tools?</h2></summary>
 <p>
-
+Xcode Command Line Tools are tools for software developers that run on the command line, in the Terminal application. Since before Apple's beginnings, this assortment of Unix-based tools have been the foundation of almost all software development. Out of the box, a Mac doesn't contain all of the software and tools needed for programming. Instead, Apple provides a complete development environment named Xcode, available separately for download and installation. Xcode is huge (over 40GB) because it builds software for all Apple operating systems (macOS, iOS, tvOS, and watchOS). Software developers who aren't building software for Apple devices still need the Unix-like tools and utilities installed with the Xcode package. Fortunately, Apple provides a separate and much smaller download, the Xcode Command Line Tools, that installs the most-needed utilities for software development. You can install this smaller package from the Terminal application or as part of installing Homebrew, the popular Mac package manager.
 </p>
 </details>
 
 <details>
-<summary><h2>What (and where) is the macOS Terminal?</h2></summary>
+<summary><h2>How to install Xcode Command Line Tools?</h2></summary>
 <p>
-Every Mac comes with a pre-installed Terminal application. Use it to run software (or software commands) without a graphical interface, using the <em>command line interface</em>. The Terminal application or <em>console</em> gives us access to the Unix command line, or <em>shell</em>. Look in the `Applications/Utilities/` folder for the Terminal application or click the Spotlight icon in the menu bar and type "terminal." If you see "terminal," double-click the search result to launch the terminal. See <a href="/ruby/15.html">Finding and Using the macOS Terminal</a>.
+You have three options to install Xcode Command Line Tools (Xcode CLT): <a href="/commandlinetools/2.html">install Xcode Command Line Tools with Homebrew</a>, <a href="/commandlinetools/3.html">install Xcode Command Line Tools directly from the terminal</a>, <a href="/commandlinetools/4.html">install the full Xcode package</a>. Homebrew is our recommended choice because most developers need additional programming languages and utilities that aren't pre-installed on macOS or included in the Xcode Command Line Tools package. You might as well let Homebrew install Xcode Command Line Tools for you. Use the direct command line installation if you need to reinstall Xcode Command Line Tools (for example, after a macOS upgrade). If you intend to develop software for  macOS, iOS, tvOS, or watchOS, <a href="/commandlinetools/4.html">install the full Xcode package</a> that includes the command line tools.
 </p>
 </details>
 
+<details>
+<summary><h2>What is the Xcode Command Line Tools latest version?</h2></summary>
+<p>
+On macOS 11.3 (Big Sur), the latest version of Xcode Command Line Tools is version 2384. You can check by running `xcode-select --version` in the terminal application. If you've <a href="/commandlinetools/2.html">installed Xcode Command Line Tools with Homebrew</a>, you can run `brew config` to see the CLT version (12.5.0.22.9). Note that xcode-select and brew config provide different version numbers.
+</p>

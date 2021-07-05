@@ -8,6 +8,13 @@
   "topic": "Xcode Command Line Tools",
   "subtopic": "Installation",
   "pages": [
-    {"title": "Getting Started", "url": "/commandlinetools/index.html"}
+    {"title": "Getting Started", "url": "/commandlinetools/index.html"},
+    {"title": "Check macOS version", "url": "/commandlinetools/1.html"},
+    {"title": "Install Xcode Command Line Tools with Homebrew", "url": "/commandlinetools/2.html"},
+    {"title": "Install Xcode Command Line Tools from the terminal", "url": "/commandlinetools/3.html"},
+    {"title": "Install the full Xcode package", "url": "/commandlinetools/4.html"},
+    {"title": "Reinstall Xcode Command Line Tools", "url": "/commandlinetools/5.html"},
+    {"title": "Uninstall Xcode Command Line Tools", "url": "/commandlinetools/6.html"},
+    {"title": "A List of Xcode Command Line Tools", "url": "/commandlinetools/7.html"}
   ]
 }
