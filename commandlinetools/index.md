@@ -18,11 +18,11 @@ After you've installed Xcode Command Line Tools, set up a development environmen
 
 These are tools for software developers that run on the command line, that is, in the Terminal application (also called the console). These tools have been used for programming on Unix operating systems since before Apple's beginnings, serving as the foundation of almost all software development.
 
-Out of the box, a Mac doesn't contain all of the software and tools needed for programming. Instead, Apple provides a complete development environment named Xcode, available separately for download and installation. Xcode is huge, requiring over 40GB of disk space, and supports development for all Apple operating systems, including macOS, iOS, tvOS, and watchOS. Many software developers, particularly web application developers, are using Macs but aren't developing software for Apple devices. They still need the Unix-like tools and utilities installed with the Xcode package. Fortunately, Apple provides a separate and much smaller download, the Xcode Command Line Tools, that installs the most-needed utilities for software development. You can install this smaller package from the Terminal application or as part of installing Homebrew, the popular Mac package manager.
+Out of the box, a Mac doesn't contain all of the software and tools needed for programming. Instead, Apple provides a complete development environment for programmers named Xcode, available separately for download and installation. Xcode is huge, requiring over 40GB of disk space, and supports development for all Apple operating systems. Many software developers, particularly web application developers, are using Macs but aren't developing software for Apple devices. They still need the Unix-like tools and utilities installed with the Xcode package. Fortunately, Apple provides a separate and much smaller download, the Xcode Command Line Tools, that installs the most-needed utilities for software development. You can install this smaller package from the Terminal application or as part of installing Homebrew, the popular Mac package manager.
 
 ### What is included in Xcode Command Line Tools
 
-Many useful tools are included, such as the Apple LLVM compiler, linker, and Make. Also Git. See [A List of Xcode Command Line Tools](/commandlinetools/7.html).
+Many useful tools are included, such as the Apple LLVM compiler, linker, and Make for compiling executable software from source code. Also Git for save-as-you-go version control. See [A List of Xcode Command Line Tools](/commandlinetools/7.html).
 
 ### How to get Command Line Tools for Xcode
 

@@ -17,5 +17,5 @@ You have three options to install Xcode Command Line Tools (Xcode CLT): <a href=
 <details>
 <summary><h2>What is the Xcode Command Line Tools latest version?</h2></summary>
 <p>
-On macOS 11.3 (Big Sur), the latest version of Xcode Command Line Tools is version 2384. You can check by running `xcode-select --version` in the terminal application. If you've <a href="/commandlinetools/2.html">installed Xcode Command Line Tools with Homebrew</a>, you can run `brew config` to see the CLT version (12.5.0.22.9). Note that xcode-select and brew config provide different version numbers.
+There is no easy way to check the version number of Xcode Command Line Tools installed on your machine. Instead, check the version of clang by running `clang --version` in the terminal application. The Wikipedia page for <a href="https://en.wikipedia.org/wiki/Xcode">Xcode</a> shows the version number of the latest Xcode release and the corresponding clang version. If you've <a href="/commandlinetools/2.html">installed Xcode Command Line Tools with Homebrew</a>, you can run `brew config`. It will display 'CLT' but actually it is the clang version. As of July 2021, the Xcode latest version is 12.5.1 containing clang version 1205.0.22.11.
 </p>
