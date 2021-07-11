@@ -5,6 +5,43 @@
     <loc>https://mac.install.guide/index.html</loc>
     <lastmod>2021-06-28</lastmod>
   </url>
+<!-- Xcode CLT Guide -->
+<url>
+  <loc>https://mac.install.guide/commandlinetools/index.html</loc>
+  <lastmod>2021-07-11</lastmod>
+</url>
+<url>
+  <loc>https://mac.install.guide/commandlinetools/1.html</loc>
+  <lastmod>2021-07-11</lastmod>
+</url>
+<url>
+  <loc>https://mac.install.guide/commandlinetools/2.html</loc>
+  <lastmod>2021-07-11</lastmod>
+</url>
+<url>
+  <loc>https://mac.install.guide/commandlinetools/3.html</loc>
+  <lastmod>2021-07-11</lastmod>
+</url>
+<url>
+  <loc>https://mac.install.guide/commandlinetools/4.html</loc>
+  <lastmod>2021-07-11</lastmod>
+</url>
+<url>
+  <loc>https://mac.install.guide/commandlinetools/5.html</loc>
+  <lastmod>2021-07-11</lastmod>
+</url>
+<url>
+  <loc>https://mac.install.guide/commandlinetools/6.html</loc>
+  <lastmod>2021-07-11</lastmod>
+</url>
+<url>
+  <loc>https://mac.install.guide/commandlinetools/7.html</loc>
+  <lastmod>2021-07-11</lastmod>
+</url>
+<url>
+  <loc>https://mac.install.guide/commandlinetools/8.html</loc>
+  <lastmod>2021-07-11</lastmod>
+</url>
 <!-- Homebrew Guide -->
   <url>
     <loc>https://mac.install.guide/homebrew/index.html</loc>
