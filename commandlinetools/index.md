@@ -44,7 +44,7 @@ If you intend to develop software for  macOS, iOS, tvOS, or watchOS, [Install th
 
 ### After installation
 
-After a macOS upgrade, you may need to [Reinstall Xcode Command Line Tools](/commandlinetools/6.html) from the command line. Finally, if you have problems or want to free disk space, this guide will show you how to completely remove and [Uninstall Xcode Command Line Tools](/commandlinetools/7.html).
+After a macOS upgrade, you may need to [Reinstall Xcode Command Line Tools](/commandlinetools/7.html) from the command line. Finally, if you have problems or want to free disk space, this guide will show you how to completely remove and [Uninstall Xcode Command Line Tools](/commandlinetools/6.html).
 
 ### Next steps
 
