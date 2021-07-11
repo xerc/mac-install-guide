@@ -5,12 +5,11 @@ How to **install Xcode Command Line Tools**. Installing Command Line Tools witho
 ### Installation steps
 
  This is the most complete guide to installing Xcode Command Line Tools on a Mac.
-- [Check macOS version](/commandlinetools/1.html).
-- [Install Xcode Command Line Tools with Homebrew](/commandlinetools/2.html) (recommended).
-- [Install Xcode Command Line Tools from the terminal](/commandlinetools/3.html) (an alternative).
-- [Install the full Xcode package](/commandlinetools/4.html) (an alternative).
-- [Reinstall Xcode Command Line Tools](/commandlinetools/5.html).
-- [Uninstall Xcode Command Line Tools](/commandlinetools/6.html).
+- [Check and Update macOS Version](/commandlinetools/1.html).
+- [Are Xcode Command Line Tools Already Installed?](/commandlinetools/2.html).
+- [Install Xcode Command Line Tools with Homebrew](/commandlinetools/3.html) (recommended).
+- [Install Xcode Command Line Tools Directly](/commandlinetools/4.html) (an alternative).
+- [Install the Full Xcode Package](/commandlinetools/5.html) (an alternative).
 
 After you've installed Xcode Command Line Tools, set up a development environment with one or more programming languages, a software version manager, and any tools or utilities you need. This site also provides guides to [Install Homebrew](/homebrew/index.html) (for programming languages and more tools) and [Install Asdf](/asdf/index.html), the software version manager.
 
