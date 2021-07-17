@@ -41,9 +41,9 @@ On the Mac, _MacPorts_ requires more technical skill and requires `sudo` or root
 ## How long does Homebrew take to install
 
 First time users will ask, how long does it take to install Homebrew? On a 2021 Mac M1 Mini, with a 100Mbps Internet connection:
-- Homebrew installation takes 1.5 minutes.
+- Homebrew installation takes 2 to 15 minutes.
 
-It's significantly slower on Mac Intel over a slow Internet connection. However, it should not take more than ten minutes to run the Homebrew installation script. Installing packages can take a few minutes, especially if a pre-built binary is not available and the software package must be compiled during the installation process.
+It's significantly slower on Mac Intel over a slow Internet connection. Installing packages can take a few minutes, especially if a pre-built binary is not available and the software package must be compiled during the installation process.
 
 ## Homebrew terminology
 
