@@ -5,6 +5,11 @@
     <loc>https://mac.install.guide/index.html</loc>
     <lastmod>2021-06-28</lastmod>
   </url>
+<!-- Terminal -->
+<url>
+  <loc>https://mac.install.guide/terminal/index.html</loc>
+  <lastmod>2021-07-18</lastmod>
+</url>
 <!-- Xcode CLT Guide -->
 <url>
   <loc>https://mac.install.guide/commandlinetools/index.html</loc>
