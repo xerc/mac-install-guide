@@ -1,0 +1,15 @@
+{
+  "title": "How to Open Terminal on Mac",
+  "pubdate": "2021-07-18",
+  "pagination": "multipage",
+  "subscribers": "free",
+  "audience": "developer",
+  "level": "all",
+  "topic": "Terminal",
+  "subtopic": "Use",
+  "pages": [
+    {"title": "How to Open Terminal on Mac", "url": "/terminal/index.html"},
+    {"title": "Install Xcode Command Line Tools", "url": "/commandlinetools/index.html"},
+    {"title": "Install Homebrew", "url": "/homebrew/index.html"}
+  ]
+}
