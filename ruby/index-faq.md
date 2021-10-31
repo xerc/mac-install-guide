@@ -38,14 +38,14 @@ Where can I download Ruby for Mac? The official Ruby organization maintains a <a
 <details>
 <summary><h2>Is Ruby Installed on a Mac?</h2></summary>
 <p>
-A <a href="/faq/do-not-use-mac-system-ruby/index.html">"system" Ruby</a> comes pre-installed on macOS to support scripting and casual utility programming. MacOS Big Sur and Catalina include an older Ruby 2.6.3 (Ruby 3.0.1 is the newest version). To check if Ruby is installed and see its version, enter `ruby -v` in the terminal application. For details, see the article <a href="/faq/is-ruby-installed-mac/index.html">Is Ruby Installed on my Mac?</a> Most developers use a software version manager to install a newer Ruby version for developing software on a Mac.
+A <a href="/faq/do-not-use-mac-system-ruby/index.html">"system" Ruby</a> comes pre-installed on macOS to support scripting and casual utility programming. MacOS Monterey includes an older Ruby 2.6.8 (Ruby 3.0.1 is the newest version). To check if Ruby is installed and see its version, enter `ruby -v` in the terminal application. For details, see the article <a href="/faq/is-ruby-installed-mac/index.html">Is Ruby Installed on my Mac?</a> Most developers use a software version manager to install a newer Ruby version for developing software on a Mac.
 </p>
 </details>
 
 <details>
-<summary><h2>What is the macOS Big Sur Ruby version?</h2></summary>
+<summary><h2>What is the macOS Monterey Ruby version?</h2></summary>
 <p>
-Ruby version 2.6.3 is on macOS Big Sur as the <a href="/faq/do-not-use-mac-system-ruby/index.html">"system" Ruby</a>. The pre-installed Ruby 2.6.3 is an older Ruby version. Ruby 3.0.1 is the newest Ruby version. Most developers use a software version manager to install a newer Ruby version for developing software on a Mac.
+Ruby version 2.6.8 is on macOS Monterey as the <a href="/faq/do-not-use-mac-system-ruby/index.html">"system" Ruby</a>. The pre-installed Ruby 2.6.8 is an older Ruby version. Ruby 3.0.1 is the newest Ruby version. Most developers use a software version manager to install a newer Ruby version for developing software on a Mac.
 </p>
 </details>
 
@@ -80,28 +80,28 @@ MacOS comes with a "system Ruby" pre-installed. It's fine to use the system Ruby
 <details>
 <summary><h2>How to update the Ruby version on Mac?</h2></summary>
 <p>
-MacOS comes with a "system Ruby" pre-installed (it is Ruby 2.6.3 version on Big Sur and Catalina). If you need a newer Ruby version (the latest is Ruby 3.0.1), don't upgrade the system Ruby. Leave it alone (see <a href="/faq/do-not-use-mac-system-ruby/index.html">Do Not Use the MacOS System Ruby</a> for why; basically, the system Ruby is there for macOS, not for you). Instead, <a href="/ruby/13.html">Install Ruby with Homebrew</a> or use a software version manager such as asdf (see <a href="/ruby/6.html">Install Ruby with asdf</a>).
+MacOS comes with a "system Ruby" pre-installed (it is the Ruby 2.6.8 version on Monterey). If you need a newer Ruby version (the latest is Ruby 3.0.1), don't upgrade the system Ruby. Leave it alone (see <a href="/faq/do-not-use-mac-system-ruby/index.html">Do Not Use the MacOS System Ruby</a> for why; basically, the system Ruby is there for macOS, not for you). Instead, <a href="/ruby/13.html">Install Ruby with Homebrew</a> or use a software version manager such as asdf (see <a href="/ruby/6.html">Install Ruby with asdf</a>).
 </p>
 </details>
 
 <details>
 <summary><h2>How long does it take to install Ruby on Mac?</h2></summary>
 <p>
-MacOS Big Sur and Catalina already have the older Ruby 2.6.3 version available as the pre-installed "system" Ruby (Ruby 3.0 is the newest version) so there is no need to install. Enter `ruby -v` in the terminal application to see the version number. Installing a newer Ruby version takes less than fifteen minutes with either Homebrew or a software version manager such as asdf or chruby. Preparing your computer may take longer but in any case, reading this installation guide (so you know what you are doing) may take longer than the preparation or actual installation.
-</p>
-</details>
-
-<details>
-<summary><h2>How do I install Ruby on macOS Catalina?</h2></summary>
-<p>
-Installing Ruby on macOS Big Sur (the latest macOS) or Catalina (the previous macOS) is the same. You will install Ruby using the Terminal application. There's no need to download and compile from source. Instead, prepare your computer, install Homebrew, install an (optional) version manager, and install Ruby.
+MacOS Monterey already has the older Ruby 2.6.8 version available as the pre-installed "system" Ruby (Ruby 3.0 is the newest version) so there is no need to install. Enter `ruby -v` in the terminal application to see the version number. Installing a newer Ruby version takes less than fifteen minutes with either Homebrew or a software version manager such as asdf or chruby. Preparing your computer may take longer but in any case, reading this installation guide (so you know what you are doing) may take longer than the preparation or actual installation.
 </p>
 </details>
 
 <details>
 <summary><h2>How do I install Ruby on macOS Big Sur?</h2></summary>
 <p>
-Installing Ruby on macOS Big Sur (the latest macOS) or Catalina (the previous macOS) is the same. You will install Ruby using the Terminal application. There's no need to download and compile from source. Instead, prepare your computer, install Homebrew, install an (optional) version manager, and install Ruby.
+Installing Ruby on macOS Monterey (the latest macOS) or Big Sur (the previous macOS) is the same. You will install Ruby using the Terminal application. There's no need to download and compile from source. Instead, prepare your computer, install Homebrew, install an (optional) version manager, and install Ruby.
+</p>
+</details>
+
+<details>
+<summary><h2>How do I install Ruby on macOS Catalina?</h2></summary>
+<p>
+Installing Ruby on macOS Monterey (the latest macOS) or Catalina (an earlier macOS) is the same. You will install Ruby using the Terminal application. There's no need to download and compile from source. Instead, prepare your computer, install Homebrew, install an (optional) version manager, and install Ruby.
 </p>
 </details>
 

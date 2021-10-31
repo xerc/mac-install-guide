@@ -63,7 +63,7 @@ Bundler will keep versions of gems for different Ruby versions in separate folde
 
 When you start a project, use the newest Ruby release (it's 3.0 at the time this was written).
 
-The system Ruby in macOS Catalina or Big Sur is Ruby 2.6.3, which is old. If you're just starting with Ruby, install with Homebrew and work on a project with Ruby 3.0. When you start building another project, it may be time to install a version manager so you can juggle projects with different Ruby versions.
+The system Ruby in macOS Monterey is Ruby 2.6.8, which is old. If you're just starting with Ruby, install with Homebrew and work on a project with Ruby 3.0. When you start building another project, it may be time to install a version manager so you can juggle projects with different Ruby versions.
 
 ## Leave the system Ruby in place
 
@@ -77,11 +77,11 @@ The instructions for installing Homebrew or any version manager will explain how
 
 ## Future versions of macOS
 
-This was written in early 2021 when macOS Big Sur was the current version. [Apple says](https://developer.apple.com/documentation/macos-release-notes/macos-catalina-10_15-release-notes):
+This was written in late 2021 when macOS Monterey was the current version. [Apple says](https://developer.apple.com/documentation/macos-release-notes/macos-catalina-10_15-release-notes):
 
 "Scripting language runtimes such as Python, Ruby, and Perl are included in macOS for compatibility with legacy software. Future versions of macOS won’t include scripting language runtimes by default, and might require you to install additional packages."
 
-If you've got something newer than macOS Big Sur, the system Ruby may already be gone (or hidden from you). In that case, you'll need to install Ruby with Homebrew or use a version manager.
+If you've got something newer than macOS Monterey, the system Ruby may already be gone (or hidden from you). In that case, you'll need to install Ruby with Homebrew or use a version manager.
 
 ## Enjoy Ruby
 
