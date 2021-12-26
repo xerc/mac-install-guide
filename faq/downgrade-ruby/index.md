@@ -66,11 +66,11 @@ After you've installed and configured a version manager, you can switch among Ru
 
 ### Switch Ruby version with asdf
 
-You can switch Ruby versions from the command line with `asdf shell ruby 3.0.0` (for the current shell session only).
+You can switch Ruby versions from the command line with `asdf shell Ruby 3.1.0` (for the current shell session only).
 
 ### Switch Ruby version with chruby
 
-To switch to a Ruby version with chruby, run `chruby 3.0.0` on the command line. This version will be the default until it is changed.
+To switch to a Ruby version with chruby, run `chRuby 3.1.0` on the command line. This version will be the default until it is changed.
 
 ### Switch Ruby version with rbenv
 
@@ -90,7 +90,7 @@ Chruby, rbenv, and rvm all recognize a `.ruby-version` file in any directory. Ea
 
 ### Set Ruby version with asdf on Mac
 
-With asdf, you can specify a default version of Ruby in your home directory. Create a file `~/.tool-versions` with a text editor or set the `~/.tool-versions` file with a command `asdf global ruby 3.0.0` (for example). You can also create a `.tool-versions` file within any project directory with the command `asdf local ruby 3.0.0`. Changing into the directory will automatically switch Ruby and any other languages you specify.
+With asdf, you can specify a default version of Ruby in your home directory. Create a file `~/.tool-versions` with a text editor or set the `~/.tool-versions` file with a command `asdf global Ruby 3.1.0` (for example). You can also create a `.tool-versions` file within any project directory with the command `asdf local Ruby 3.1.0`. Changing into the directory will automatically switch Ruby and any other languages you specify.
 
 ### Set Ruby version with chruby on Mac
 
@@ -103,7 +103,7 @@ source /usr/local/share/chruby/auto.sh
 
 With chruby auto-switching enabled, you can create a `.ruby-version` file within any project directory. Use a text editor to create a `.ruby-version` file and simply specify a version number, for example: `3.0.0` on a single line. Changing into the directory will automatically switch Ruby. You also can specify a default version of Ruby in your home `~/.ruby-version` file.
 
-Changing a Ruby version with chruby on the command line (for example `chruby 3.0.0`) makes that version the default for future sessions.
+Changing a Ruby version with chruby on the command line (for example `chRuby 3.1.0`) makes that version the default for future sessions.
 
 Chruby supports all versions of Ruby, including non-standard Rubies such as JRuby. It allows `.ruby-version` to contain sub-strings of the fully qualified Ruby name, for example, `jruby` or `ruby-3.0`.
 

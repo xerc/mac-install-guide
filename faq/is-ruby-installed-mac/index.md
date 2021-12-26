@@ -35,7 +35,7 @@ If Ruby is installed, the `ruby -v` command will show a response like:
 
 ```bash
 $ ruby -v
-ruby 3.0.0p0
+Ruby 3.1.0p0
 ```
 
 MacOS comes with a "system Ruby" pre-installed. Use the `which` command to see if you are using the system Ruby:

@@ -33,7 +33,7 @@ $ asdf list ruby
 Then uninstall any version.
 
 ```bash
-$ asdf uninstall ruby 3.0.0
+$ asdf uninstall Ruby 3.1.0
 ```
 
 If you don't remove a language version, the files will remain on your disk after you have removed asdf.

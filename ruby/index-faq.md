@@ -17,14 +17,14 @@ Every Mac comes with a pre-installed Terminal application. Use it to run softwar
 <details>
 <summary><h2>What is the latest Ruby version?</h2></summary>
 <p>
-Ruby 3.0.2 is the Ruby latest version (3.0 was released Dec 25, 2020). Visit the <a href="https://www.ruby-lang.org/en/downloads/releases/">Ruby releases page</a> at the official Ruby website to check for a newer version. Each release has a link to a release notes page which details changes and security fixes. Note that MacOS users seldom download Ruby to build from source. Instead, Mac users <a href="/ruby/13.html">install the latest Ruby with Homebrew</a> or get the latest Ruby version with the installation utilities that accompany a version manager such as asdf, chruby, rbenv, or rvm.
+Ruby 3.1.0 is the Ruby latest version (3.1.0 was released Dec 25, 2021). Visit the <a href="https://www.ruby-lang.org/en/downloads/releases/">Ruby releases page</a> at the official Ruby website to check for a newer version. Each release has a link to a release notes page which details changes and security fixes. Note that MacOS users seldom download Ruby to build from source. Instead, Mac users <a href="/ruby/13.html">install the latest Ruby with Homebrew</a> or get the latest Ruby version with the installation utilities that accompany a version manager such as asdf, chruby, rbenv, or rvm.
 </p>
 </details>
 
 <details>
 <summary><h2>What version of Ruby should I use?</h2></summary>
 <p>
-Use the latest version of Ruby for software development (except of course if you are maintaining software built with an older Ruby version, in which case you should try to upgrade the software). For running scripts, you can use the <a href="/faq/do-not-use-mac-system-ruby/index.html">"system" Ruby</a> comes pre-installed on macOS. Ruby 3.0.2 is the Ruby latest version (3.0 was released Dec 25, 2020). Visit the <a href="https://www.ruby-lang.org/en/downloads/releases/">Ruby releases page</a> at the official Ruby website to check for a newer version. Mac users <a href="/ruby/13.html">install the latest Ruby with Homebrew</a> or get the latest Ruby version with the installation utilities that accompany a version manager such as asdf, chruby, rbenv, or rvm.
+Use the latest version of Ruby for software development (except of course if you are maintaining software built with an older Ruby version, in which case you should try to upgrade the software). For running scripts, you can use the <a href="/faq/do-not-use-mac-system-ruby/index.html">"system" Ruby</a> comes pre-installed on macOS. Ruby 3.1.0 is the Ruby latest version (3.1.0 was released Dec 25, 2021). Visit the <a href="https://www.ruby-lang.org/en/downloads/releases/">Ruby releases page</a> at the official Ruby website to check for a newer version. Mac users <a href="/ruby/13.html">install the latest Ruby with Homebrew</a> or get the latest Ruby version with the installation utilities that accompany a version manager such as asdf, chruby, rbenv, or rvm.
 </p>
 </details>
 
@@ -38,14 +38,14 @@ Where can I download Ruby for Mac? The official Ruby organization maintains a <a
 <details>
 <summary><h2>Is Ruby Installed on a Mac?</h2></summary>
 <p>
-A <a href="/faq/do-not-use-mac-system-ruby/index.html">"system" Ruby</a> comes pre-installed on macOS to support scripting and casual utility programming. MacOS Monterey includes an older Ruby 2.6.8 (Ruby 3.0.2 is the newest version). To check if Ruby is installed and see its version, enter `ruby -v` in the terminal application. For details, see the article <a href="/faq/is-ruby-installed-mac/index.html">Is Ruby Installed on my Mac?</a> Most developers use a software version manager to install a newer Ruby version for developing software on a Mac.
+A <a href="/faq/do-not-use-mac-system-ruby/index.html">"system" Ruby</a> comes pre-installed on macOS to support scripting and casual utility programming. MacOS Monterey includes an older Ruby 2.6.8 (Ruby 3.1.0 is the newest version). To check if Ruby is installed and see its version, enter `ruby -v` in the terminal application. For details, see the article <a href="/faq/is-ruby-installed-mac/index.html">Is Ruby Installed on my Mac?</a> Most developers use a software version manager to install a newer Ruby version for developing software on a Mac.
 </p>
 </details>
 
 <details>
 <summary><h2>What is the macOS Monterey Ruby version?</h2></summary>
 <p>
-Ruby version 2.6.8 is on macOS Monterey as the <a href="/faq/do-not-use-mac-system-ruby/index.html">"system" Ruby</a>. The pre-installed Ruby 2.6.8 is an older Ruby version. Ruby 3.0.2 is the newest Ruby version. Most developers use a software version manager to install a newer Ruby version for developing software on a Mac.
+Ruby version 2.6.8 is on macOS Monterey as the <a href="/faq/do-not-use-mac-system-ruby/index.html">"system" Ruby</a>. The pre-installed Ruby 2.6.8 is an older Ruby version. Ruby 3.1.0 is the newest Ruby version. Most developers use a software version manager to install a newer Ruby version for developing software on a Mac.
 </p>
 </details>
 
@@ -80,7 +80,7 @@ MacOS comes with a "system Ruby" pre-installed. It's fine to use the system Ruby
 <details>
 <summary><h2>How to update the Ruby version on Mac?</h2></summary>
 <p>
-MacOS comes with a "system Ruby" pre-installed (it is the Ruby 2.6.8 version on Monterey). If you need a newer Ruby version (the latest is Ruby 3.0.2), don't upgrade the system Ruby. Leave it alone (see <a href="/faq/do-not-use-mac-system-ruby/index.html">Do Not Use the MacOS System Ruby</a> for why; basically, the system Ruby is there for macOS, not for you). Instead, <a href="/ruby/13.html">Install Ruby with Homebrew</a> or use a software version manager such as asdf (see <a href="/ruby/6.html">Install Ruby with asdf</a>).
+MacOS comes with a "system Ruby" pre-installed (it is the Ruby 2.6.8 version on Monterey). If you need a newer Ruby version (the latest is Ruby 3.1.0), don't upgrade the system Ruby. Leave it alone (see <a href="/faq/do-not-use-mac-system-ruby/index.html">Do Not Use the MacOS System Ruby</a> for why; basically, the system Ruby is there for macOS, not for you). Instead, <a href="/ruby/13.html">Install Ruby with Homebrew</a> or use a software version manager such as asdf (see <a href="/ruby/6.html">Install Ruby with asdf</a>).
 </p>
 </details>
 
@@ -115,7 +115,7 @@ You can install Ruby on Mac from the command line using the Terminal application
 <details>
 <summary><h2>Can you install Ruby on Mac M1 (Apple Silicon)?</h2></summary>
 <p>
-Ruby 3.0.2 (the latest version) runs great on macOS with the M1 chip (Apple Silicon). As of Feb 5, 2021, Homebrew 3.0.0 supports Apple Silicon natively and you can <a href="/ruby/13.html">Install Ruby with Homebrew</a>. Or use a software version manager such as asdf (see <a href="/ruby/6.html">Install Ruby with asdf</a>). There is no need to download the Ruby source code and compile as Homebrew or software version managers install Ruby for you.
+Ruby 3.1.0 (the latest version) runs great on macOS with the M1 chip (Apple Silicon). As of Feb 5, 2021, Homebrew 3.0.0 supports Apple Silicon natively and you can <a href="/ruby/13.html">Install Ruby with Homebrew</a>. Or use a software version manager such as asdf (see <a href="/ruby/6.html">Install Ruby with asdf</a>). There is no need to download the Ruby source code and compile as Homebrew or software version managers install Ruby for you.
 </p>
 </details>
 
@@ -171,14 +171,14 @@ Use asdf to install and switch among versions of multiple languages, including R
 <details>
 <summary><h2>How to install Ruby with asdf on Mac?</h2></summary>
 <p>
-See complete instructions to <a href="/ruby/5.html">install asdf with Mac Homebrew</a>. Then follow instructions to <a href="/ruby/6.html">install Ruby with asdf</a>. You will need to install the asdf plugin for Ruby, `asdf plugin add ruby`. Then install the latest version of Ruby, `asdf install ruby latest`. Set the default version of Ruby in your home `~/.tool-versions` file, for example with the command `asdf global ruby 3.0.0`.
+See complete instructions to <a href="/ruby/5.html">install asdf with Mac Homebrew</a>. Then follow instructions to <a href="/ruby/6.html">install Ruby with asdf</a>. You will need to install the asdf plugin for Ruby, `asdf plugin add ruby`. Then install the latest version of Ruby, `asdf install ruby latest`. Set the default version of Ruby in your home `~/.tool-versions` file, for example with the command `asdf global Ruby 3.1.0`.
 </p>
 </details>
 
 <details>
 <summary><h2>How to switch Ruby version using asdf on Mac?</h2></summary>
 <p>
-Asdf is a useful version manager for Ruby (it supports multiple languages, including Python and Node as well as Ruby). See instructions to <a href="/ruby/5.html">install asdf with Mac Homebrew</a> and <a href="/ruby/6.html">install Ruby with asdf</a>. Be sure to install the asdf plugin for Ruby, `asdf plugin add ruby`. You can see all the versions of Ruby that are available with `asdf list all ruby` and install the versions you need. Specify a default version of Ruby in your home `~/.tool-versions` file. You can set the `~/.tool-versions` file with a command `asdf global ruby 3.0.0` (for example). You can also create a `.tool-versions` file within any project directory with the command `asdf local ruby 3.0.0`. Changing into the directory will automatically switch Ruby and any other languages you specify. Finally, you can switch Ruby versions from the command line with `asdf shell ruby 3.0.0` for the current shell session only.
+Asdf is a useful version manager for Ruby (it supports multiple languages, including Python and Node as well as Ruby). See instructions to <a href="/ruby/5.html">install asdf with Mac Homebrew</a> and <a href="/ruby/6.html">install Ruby with asdf</a>. Be sure to install the asdf plugin for Ruby, `asdf plugin add ruby`. You can see all the versions of Ruby that are available with `asdf list all ruby` and install the versions you need. Specify a default version of Ruby in your home `~/.tool-versions` file. You can set the `~/.tool-versions` file with a command `asdf global Ruby 3.1.0` (for example). You can also create a `.tool-versions` file within any project directory with the command `asdf local Ruby 3.1.0`. Changing into the directory will automatically switch Ruby and any other languages you specify. Finally, you can switch Ruby versions from the command line with `asdf shell Ruby 3.1.0` for the current shell session only.
 </p>
 </details>
 
@@ -192,7 +192,7 @@ The `.asdfrc` file in your home directory configures asdf. Adding `legacy_versio
 <details>
 <summary><h2>How to uninstall Ruby with asdf on Mac?</h2></summary>
 <p>
-Any version of Ruby installed with asdf can be uninstalled with `asdf uninstall ruby 3.0.0` (for example). See <a href="/ruby/9.html">Uninstall Ruby</a>.
+Any version of Ruby installed with asdf can be uninstalled with `asdf uninstall Ruby 3.1.0` (for example). See <a href="/ruby/9.html">Uninstall Ruby</a>.
 </p>
 </details>
 
