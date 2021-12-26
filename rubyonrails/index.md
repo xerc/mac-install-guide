@@ -9,9 +9,9 @@ This guide provides full details, how to:
 - configure Git
 - install a software version manager
 - install Node and Yarn
-- install Ruby 3.0
+- install Ruby 3.1
 - update gems
-- install Rails 6.1
+- install Rails 7
 - create a new Rails application
 - tips and troubleshooting
 

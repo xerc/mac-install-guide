@@ -87,7 +87,7 @@ MacOS comes with a "system Ruby" pre-installed (it is the Ruby 2.6.8 version on 
 <details>
 <summary><h2>How long does it take to install Ruby on Mac?</h2></summary>
 <p>
-MacOS Monterey already has the older Ruby 2.6.8 version available as the pre-installed "system" Ruby (Ruby 3.0 is the newest version) so there is no need to install. Enter `ruby -v` in the terminal application to see the version number. Installing a newer Ruby version takes less than fifteen minutes with either Homebrew or a software version manager such as asdf or chruby. Preparing your computer may take longer but in any case, reading this installation guide (so you know what you are doing) may take longer than the preparation or actual installation.
+MacOS Monterey already has the older Ruby 2.6.8 version available as the pre-installed "system" Ruby (Ruby 3.1 is the newest version) so there is no need to install. Enter `ruby -v` in the terminal application to see the version number. Installing a newer Ruby version takes less than fifteen minutes with either Homebrew or a software version manager such as asdf or chruby. Preparing your computer may take longer but in any case, reading this installation guide (so you know what you are doing) may take longer than the preparation or actual installation.
 </p>
 </details>
 
