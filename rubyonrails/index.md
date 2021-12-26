@@ -54,7 +54,7 @@ Install with **Homebrew** if you’re building only one project with Ruby (for e
 
 If you don't need a version manager, install Ruby using the [Homebrew](https://brew.sh/) package manager. Use this approach if you are only building a casual project that you will not maintain, or if you are just trying out Ruby to learn the language. You can easily remove Ruby after installing with Homebrew (and re-install a newer version when you need it). Don't install Ruby with Homebrew if you need to switch among Ruby versions (use asdf or chruby in this case).
 
-Finally, you should know that macOS comes with a **system Ruby** pre-installed. MacOS Big Sur or Catalina includes Ruby 2.6.3 which is not the newest version. If you use the system Ruby you'll need root access (sudo) to install gems (introducing a security risk). And you'll end up with a cluster of (sometimes incompatible) gems that can't be easily removed to restore your system to a clean state. Please use either asdf, chruby, or Homebrew.
+Finally, you should know that macOS comes with a **system Ruby** pre-installed. MacOS Monterey includes Ruby 2.6.8 which is not the newest version. If you use the system Ruby you'll need root access (sudo) to install gems (introducing a security risk). And you'll end up with a cluster of (sometimes incompatible) gems that can't be easily removed to restore your system to a clean state. Please use either asdf, chruby, or Homebrew.
 
 You'll find instructions here for installing Ruby using asdf, chruby, or Homebrew.
 
