@@ -1,0 +1,33 @@
+{
+  "title": "Install Ruby on Rails 7 · macOS Big Sur or Catalina",
+  "pubdate": "2021-12-26",
+  "pagination": "multipage",
+  "subscribers": "free",
+  "audience": "developer",
+  "level": "all",
+  "topic": "Ruby on Rails",
+  "subtopic": "Installation",
+  "pages": [
+    {"title": "Getting Started", "url": "/rubyonrails/index.html"},
+    {"title": "Update macOS", "url": "/rubyonrails/1.html"},
+    {"title": "Xcode Command Line Tools", "url": "/rubyonrails/2.html"},
+    {"title": "Install Homebrew", "url": "/rubyonrails/3.html"},
+    {"title": "Configure Git", "url": "/rubyonrails/4.html"},
+    {"title": "Install Asdf Version Manager", "url": "/rubyonrails/5.html"},
+    {"title": "Install Node and Yarn", "url": "/rubyonrails/6.html"},
+    {"title": "Install Ruby with Asdf", "url": "/rubyonrails/7.html"},
+    {"title": "Update Gems", "url": "/rubyonrails/8.html"},
+    {"title": "Install Rails", "url": "/rubyonrails/9.html"},
+    {"title": "Rails New", "url": "/rubyonrails/10.html"},
+    {"title": "Minimal Rails", "url": "/rubyonrails/11.html"},
+    {"title": "Databases", "url": "/rubyonrails/12.html"},
+    {"title": "Deployment", "url": "/rubyonrails/13.html"},
+    {"title": "Security", "url": "/rubyonrails/14.html"},
+    {"title": "Uninstall Ruby", "url": "/rubyonrails/15.html"},
+    {"title": "Troubleshooting", "url": "/rubyonrails/16.html"},
+    {"title": "Where to Get Help", "url": "/rubyonrails/17.html"},
+    {"title": "Finding and Using the Mac Terminal", "url": "/rubyonrails/18.html"},
+    {"title": "Install Ruby with Chruby", "url": "/rubyonrails/19.html"},
+    {"title": "Install Ruby with Homebrew", "url": "/rubyonrails/20.html"}
+  ]
+}
