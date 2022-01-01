@@ -255,6 +255,6 @@ Downgrading the Ruby version on macOS depends on how you installed Ruby. Did you
 <details>
 <summary><h2>Where is the Ruby on Rails installation guide?</h2></summary>
 <p>
-If you intend to develop Rails web applications, you should see the complete guide to <a href="https://learn-rails.com/install-rails-mac/index.html">Install Rails on Mac</a>. Rails requires installing Node and Yarn as well as Ruby so the guide will show how to <a href="/ruby/6.html">Install Ruby with asdf</a> so you can keep current with multiple language versions.
+If you intend to develop Rails web applications, you should see the complete guide to <a href="/rubyonrails/index.html">Install Rails on Mac</a>. Rails requires installing Node and Yarn as well as Ruby so the guide will show how to <a href="/ruby/6.html">Install Ruby with asdf</a> so you can keep current with multiple language versions.
 </p>
 </details>

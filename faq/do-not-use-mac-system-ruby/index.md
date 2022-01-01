@@ -85,7 +85,7 @@ If you've got something newer than macOS Monterey, the system Ruby may already b
 
 ## Enjoy Ruby
 
-For developers planning to build web applications with Rails, I've written a guide, [Install Rails on a Mac](https://learn-rails.com/install-rails-mac/index.html), which goes beyond [Install Ruby on a Mac](https://mac.install.guide/ruby/index.html) to show how to pick a version manager that will work with Node as well as Ruby.
+For developers planning to build web applications with Rails, I've written a guide, [Install Rails on a Mac](/rubyonrails/index.html), which goes beyond [Install Ruby on a Mac](https://mac.install.guide/ruby/index.html) to show how to pick a version manager that will work with Node as well as Ruby.
 
 Enjoy the pleasure of coding in Ruby! After all, it is known as a language dedicated to programmer happiness. But remember, the system Ruby is there for macOS, not for you.
 

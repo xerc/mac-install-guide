@@ -14,6 +14,6 @@
     {"title": "Check Ruby version on Mac", "url": "/faq/check-ruby-version/index.html"},
     {"title": "Downgrade Ruby on Mac", "url": "/faq/downgrade-ruby/index.html"},
     {"title": "Install Ruby on a Mac", "url": "/ruby/index.html"},
-    {"title": "Install Ruby on Rails on a Mac", "url": "https://learn-rails.com/install-rails-mac/index.html"}
+    {"title": "Install Ruby on Rails on a Mac", "url": "/rubyonrails/index.html"}
   ]
 }
