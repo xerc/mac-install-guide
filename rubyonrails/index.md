@@ -63,7 +63,7 @@ Have you decided whether you'll install Ruby with asdf, chruby, or Homebrew? In 
 - [check your macOS version](/rubyonrails/1.html)
 - [install Xcode Command Line Tools](/rubyonrails/2.html)
 - [install Homebrew](/rubyonrails/3.html)
-- either directly [install Ruby with Homebrew](/rubyonrails/20.html) or [install a software version manager](/rubyonrails/5.html)
+- either directly [install Ruby with Homebrew](/ruby/13.html) or [install a software version manager](/rubyonrails/5.html)
 - and finally [install Ruby with asdf](/rubyonrails/7.html) or [chruby](/rubyonrails/19.html).
 
 Continue to the next section to check your computer before installing Ruby.
