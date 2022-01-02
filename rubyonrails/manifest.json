@@ -14,6 +14,7 @@
     {"title": "Install Homebrew", "url": "/rubyonrails/3.html"},
     {"title": "Configure Git", "url": "/rubyonrails/4.html"},
     {"title": "Install Asdf Version Manager", "url": "/rubyonrails/5.html"},
+    {"title": "Install Node and Yarn", "url": "/rubyonrails/6.html"},
     {"title": "Install Ruby with Asdf", "url": "/rubyonrails/7.html"},
     {"title": "Update Gems", "url": "/rubyonrails/8.html"},
     {"title": "Install Rails", "url": "/rubyonrails/9.html"},
@@ -24,6 +25,10 @@
     {"title": "Security", "url": "/rubyonrails/14.html"},
     {"title": "Uninstall Ruby", "url": "/rubyonrails/15.html"},
     {"title": "Troubleshooting", "url": "/rubyonrails/16.html"},
-    {"title": "Where to Get Help", "url": "/rubyonrails/17.html"}
+    {"title": "Where to Get Help", "url": "/rubyonrails/17.html"},
+    {"title": "Finding and Using the Mac Terminal", "url": "/ruby/15.html"},
+    {"title": "Install Ruby with Frum", "url": "/ruby/14.html"},
+    {"title": "Install Ruby with Chruby", "url": "/ruby/12.html"},
+    {"title": "Install Ruby with Homebrew", "url": "/ruby/13.html"}
   ]
 }
