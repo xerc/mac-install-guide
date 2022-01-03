@@ -1,5 +1,7 @@
 How to **install Ruby on Rails on a Mac**. With Ruby 3.1 and Rails 7 on macOS Monterey. Up-to-date and kitchen-tested instructions, with troubleshooting tips, from the author of the book, _[Learn Ruby on Rails](https://learn-rails.com/)_.
 
+If you are planning to install Rails: As of January 2, 2022, when this was written, Rails 7.0.0 requires Ruby 3.0.3 and cannot be used with Ruby 3.1 (check [Rails crashes with Ruby 3.1.0 release](https://github.com/rails/rails/issues/43998)). Use your version manager to install Ruby 3.0.3 until Rails 7.0.1 (or later) is released with support for Ruby 3.1.0.
+
 This article will help you set up a development environment for Ruby on Rails on a Mac. This guide is for beginners as well as experienced developers setting up a new computer. If you need Ruby but not Rails, follow the guide to [Install Ruby on macOS](https://mac.install.guide/ruby/index.html).
 
 This guide provides full details, how to:
